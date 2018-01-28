@@ -1,5 +1,0 @@
-name: Samuel Schimmel, Gameplay & AI Programmer
-markdown: kramdown
-permalink: /blog/:year/:month/:day/:title
-plugins:
-  - jekyll-sitemap
