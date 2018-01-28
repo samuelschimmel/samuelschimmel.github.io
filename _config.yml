@@ -1,5 +1,6 @@
 name: Samuel Schimmel, Gameplay & AI Programmer
 markdown: kramdown
+theme: minima
 permalink: /blog/:year/:month/:day/:title
 plugins:
   - jekyll-sitemap
