@@ -8,7 +8,7 @@ Coming December 2018
 <br>Unreal Engine 4
 <br>Inspired by <em>DOOM</em>, <em>The Last of Us</em>, and Arkane Studios
 
-<h2><strong>Contributions</strong></h2>
+<h2><strong>Responsibilities</strong></h2>
 
 Implemented combat gameplay, AI, object interaction, inventory system, objective system, and feedback in C++
 
@@ -22,7 +22,7 @@ Developed a player modeling system to provide dynamic difficulty as well as runt
 
 Authored technical documentation and contributed to UX design documentation
 
-<h2><strong>Code</strong></h2>
+<h2><strong>Selected code contributions</strong></h2>
 
 [Player modeling system](https://github.com/samuelschimmel/contraband/blob/master/Actor/Info/PlayerModeling/PlayerModeling.cpp)<br>
 [AI controller](https://github.com/samuelschimmel/contraband/blob/master/Actor/Controller/AIController/AgentAIController/AgentAIController.cpp)<br>
@@ -39,6 +39,10 @@ Authored technical documentation and contributed to UX design documentation
 
 ![]({{ "/assets/wttv/BT_Fight.png" | absolute_url }})
 
-<h2><strong>Player modeling paper</strong></h2>
+<h2><strong>Documentation contributions</strong></h2>
+
+<iframe src="/assets/wttv/docs.pdf" width="100%" height="400"></iframe>
+
+<h2><strong>Player modeling paper for CS 380</strong></h2>
 
 <iframe src="/assets/wttv/PlayerModeling.pdf" width="100%" height="400"></iframe>

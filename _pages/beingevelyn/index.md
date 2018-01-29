@@ -7,7 +7,7 @@ permalink: /projects/beingevelyn/
 <br>Unity
 <br>Inspired by <em>Invisible, Inc.</em>, <em>Mr. Robot</em>, and <em>The Typing of the Dead</em>
 
-<h2><strong>Contributions</strong></h2>
+<h2><strong>Responsibilities</strong></h2>
 
 Implemented turn-based gameplay, AI, diegetic menus, HUD, A* pathfinding, cameras, adaptive music system, 
 and branching dialogue
@@ -24,7 +24,7 @@ Abstracted and extended Unity functionality into usable content design framework
 
 Worked with designers to deliver tools that fulfilled their needs, and gameplay systems that fulfilled players’ need
 
-<h2><strong>Code</strong></h2>
+<h2><strong>Selected code contributions</strong></h2>
 
 [Branching dialogue system](https://bitbucket.org/contraband/unityprojrepo/src/5fa31811425a490fad073520b9d3c41f79773353/Assets/Scripts/Samuel/Screen/Dialogue.cs)<br>
 [A* pathfinder](https://bitbucket.org/contraband/unityprojrepo/src/5fa31811425a490fad073520b9d3c41f79773353/Assets/Scripts/Samuel/Grid/Pathfinding/Pathfinder.cs)<br>

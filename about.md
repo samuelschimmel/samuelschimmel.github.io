@@ -14,6 +14,4 @@ C++ and Unreal Engine 4 are specialities of mine.
 
 [LinkedIn](https://www.linkedin.com/in/samuel-schimmel)
 
-[Design samples](/design/)
-
 [Games collection](https://backloggery.com/isocheim)
