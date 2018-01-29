@@ -6,9 +6,9 @@ layout: home
 ---
 
 <strong><em>[Woe to the Vanquished](/projects/wttv/)</em></strong>
-<br>Coming Winter 2018
-<br>3D, systems-driven, emergent FPS developed in Unreal
+<br>A single player, first-person shooter with visceral, fast-paced combat and environmental storytelling.
+<br>A tale of vengeance, vindication, and survival.
+<br>A story of closure.
 
 <strong><em>[Being Evelyn](/projects/beingevelyn)</em></strong>
-<br>2017
-<br>2D, narrative-driven, social stealth and hacking game developed in Unity
+<br>A 2D, narrative-driven, social stealth and hacking game.
