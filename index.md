@@ -5,8 +5,10 @@
 layout: home
 ---
 
-[Woe to the Vanquished](/projects/wttv/)
+<strong><em>[Woe to the Vanquished](/projects/wttv/)</em></strong>
+<br>Coming Winter 2018
 <br>3D, systems-driven, emergent FPS developed in Unreal
 
-[Being Evelyn](/projects/beingevelyn)
+<strong><em>[Being Evelyn](/projects/beingevelyn)</em></strong>
+<br>2017
 <br>2D, narrative-driven, social stealth and hacking game developed in Unity
