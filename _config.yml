@@ -17,11 +17,9 @@ title: Samuel Schimmel
 tagline: 'Gameplay & AI Programmer'
 email: samuel@samuelschimmel.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Gameplay & AI Programmer
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "http://samuelschimmel.com" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  samuelschimmel
 linkedin_username: samuel-schimmel
 
@@ -30,6 +28,12 @@ markdown: kramdown
 theme: minima
 plugins:
   - jekyll-feed
+
+# Includes  
+include: ["_pages"]
+
+# Permalinks
+permalink: /:title/
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
