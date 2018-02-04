@@ -18,7 +18,9 @@ Used deserialization to make gameplay systems data-driven, customizable, and tra
 
 Supported extension of C++ classes in Blueprint using dynamic multi-cast delegates
 
-Developed a player modeling system to provide dynamic difficulty as well as runtime and serialized analytics
+Developed a player modeling system to provide dynamic difficulty and tailor item spawns to player preferences
+
+Developed extensive debug features, including a gameplay analytics HUD and serialization of analytics after playtest sessions
 
 Authored technical documentation and contributed to UX design documentation
 
@@ -30,10 +32,6 @@ Authored technical documentation and contributed to UX design documentation
 [AI targeting algorithm](https://github.com/samuelschimmel/contraband/blob/e6719f881c7c3e1bf8d689961398ea0f1573fd78/Actor/Pawn/Character/Agent/Agent.cpp#L1124-L1199)<br>
 [AI weighted random firearm selection algorithm](https://github.com/samuelschimmel/contraband/blob/e6719f881c7c3e1bf8d689961398ea0f1573fd78/Actor/Pawn/Character/Agent/Enemy/Enemy.cpp#L60-L111)<br>
 [Gaussian random shot grouping](https://github.com/samuelschimmel/contraband/blob/e6719f881c7c3e1bf8d689961398ea0f1573fd78/Actor/InteractiveObject/Firearm/Firearm.cpp#L283-L317)<br>
-
-<h2><strong>Media</strong></h2>
-
-![]({{ "/assets/wttv/logo.png" | absolute_url }})
 
 <h2><strong>Behavior trees</strong></h2>
 
