@@ -33,6 +33,30 @@ Authored technical documentation and contributed to UX design documentation
 [AI weighted random firearm selection algorithm](https://github.com/samuelschimmel/contraband/blob/e6719f881c7c3e1bf8d689961398ea0f1573fd78/Actor/Pawn/Character/Agent/Enemy/Enemy.cpp#L60-L111)<br>
 [Gaussian random shot grouping](https://github.com/samuelschimmel/contraband/blob/e6719f881c7c3e1bf8d689961398ea0f1573fd78/Actor/InteractiveObject/Firearm/Firearm.cpp#L283-L317)<br>
 
+<h2><strong>Media</strong></h2>
+
+![]({{ "/assets/wttv/1.png" | absolute_url }})
+
+![]({{ "/assets/wttv/2.png" | absolute_url }})
+
+![]({{ "/assets/wttv/3.png" | absolute_url }})
+
+![]({{ "/assets/wttv/4.png" | absolute_url }})
+
+![]({{ "/assets/wttv/5.png" | absolute_url }})
+
+![]({{ "/assets/wttv/6.png" | absolute_url }})
+
+![]({{ "/assets/wttv/7.png" | absolute_url }})
+
+![]({{ "/assets/wttv/8.png" | absolute_url }})
+
+![]({{ "/assets/wttv/9.png" | absolute_url }})
+
+![]({{ "/assets/wttv/10.png" | absolute_url }})
+
+![]({{ "/assets/wttv/11.png" | absolute_url }})
+
 <h2><strong>Behavior trees</strong></h2>
 
 ![]({{ "/assets/wttv/BT_Fight.png" | absolute_url }})
