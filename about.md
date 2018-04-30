@@ -5,8 +5,6 @@ permalink: /About/
 ---
 
 DigiPen RTIS with game design minor. Technical Director of Contraband.
-Interested in all kinds of software development, but most interested in gameplay and AI programming.
-C++ and Unreal Engine 4 are specialities of mine.
 
 [Email](mailto:samuel@samuelschimmel.com)
 
@@ -14,4 +12,4 @@ C++ and Unreal Engine 4 are specialities of mine.
 
 [LinkedIn](https://www.linkedin.com/in/samuel-schimmel)
 
-[Games collection](https://backloggery.com/isocheim)
+[Games I like](https://backloggery.com/isocheim)
