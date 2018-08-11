@@ -4,34 +4,27 @@ title: Perdition
 permalink: /projects/perdition/
 ---
 
-Coming December 2018
+Coming April 2019
 <br>Unreal Engine 4
 <br>Inspired by <em>DOOM</em>, <em>The Last of Us</em>, and Arkane Studios
 
-<h2><strong>Responsibilities</strong></h2>
-
-Implemented combat gameplay, AI, object interaction, inventory system, objective system, and feedback in C++
-
-Emphasized inheritance to reuse code and ensure substitutability of agents and interactive objects
-
-Used deserialization to make gameplay systems data-driven, customizable, and transparent for designers
-
-Supported extension of C++ classes in Blueprint using dynamic multi-cast delegates
-
-Developed a player modeling system to provide dynamic difficulty and tailor item spawns to player preferences
-
-Developed extensive debug features, including a gameplay analytics HUD and serialization of analytics after playtest sessions
-
-Authored technical documentation and contributed to UX design documentation
-
 <h2><strong>Selected code contributions</strong></h2>
 
-[Player modeling system](https://github.com/samuelschimmel/contraband/blob/master/Actor/Info/PlayerModeling/PlayerModeling.cpp)<br>
-[AI controller](https://github.com/samuelschimmel/contraband/blob/master/Actor/Controller/AIController/AgentAIController/AgentAIController.cpp)<br>
-[AI positioning algorithm](https://github.com/samuelschimmel/contraband/blob/master/BTNode/BTTaskNode/BTTask_BlackboardBase/FindAttackLocation.cpp)<br>
-[AI targeting algorithm](https://github.com/samuelschimmel/contraband/blob/e6719f881c7c3e1bf8d689961398ea0f1573fd78/Actor/Pawn/Character/Agent/Agent.cpp#L1124-L1199)<br>
-[AI weighted random firearm selection algorithm](https://github.com/samuelschimmel/contraband/blob/e6719f881c7c3e1bf8d689961398ea0f1573fd78/Actor/Pawn/Character/Agent/Enemy/Enemy.cpp#L60-L111)<br>
-[Gaussian random shot grouping](https://github.com/samuelschimmel/contraband/blob/e6719f881c7c3e1bf8d689961398ea0f1573fd78/Actor/InteractiveObject/Firearm/Firearm.cpp#L283-L317)<br>
+[AI positioning](Link)<br>
+[Agent TakeDamage function](Link)<br>
+[Agent firearm inventory management](Link)<br>
+[Weapon firing](Link)<br>
+[Normal melee attack](Link)<br>
+[Melee takedown](Link)<br>
+[Lock-on attack](Link)<br>
+[Player targeting](Link)<br>
+[Ladders](Link)<br>
+[Obstacle climbing](Link)<br>
+[Quest manager](Link)<br>
+[Enemy wave spawning system](Link)<br>
+[Templatized asset loading function with caching](Link)<br>
+[Player modeling](Link)<br>
+[Weighted random firearm spawning using player modeling data](Link)<br>
 
 <h2><strong>Media</strong></h2>
 
