@@ -16,6 +16,7 @@ Coming April 2019
 [Normal melee attack](https://github.com/samuelschimmel/perdition/blob/master/MeleeAttacks.cpp)<br>
 [Melee takedown](https://github.com/samuelschimmel/perdition/blob/master/MeleeTakedown.cpp)<br>
 [Lock-on attack](https://github.com/samuelschimmel/perdition/blob/master/LockOnAttack.cpp)<br>
+[Player input](https://github.com/samuelschimmel/perdition/blob/master/PlayerInput.cpp)<br>
 [Player targeting](https://github.com/samuelschimmel/perdition/blob/master/PlayerTargeting.cpp)<br>
 [Ladders](https://github.com/samuelschimmel/perdition/blob/master/Ladders.cpp)<br>
 [Obstacle climbing](https://github.com/samuelschimmel/perdition/blob/master/ObstacleClimbing.cpp)<br>
