@@ -6,7 +6,6 @@ permalink: /projects/perdition/
 
 Coming April 2019
 <br>Unreal Engine 4
-<br>Inspired by <em>DOOM</em>, <em>The Last of Us</em>, and Arkane Studios
 
 <h2><strong>Selected code contributions</strong></h2>
 
