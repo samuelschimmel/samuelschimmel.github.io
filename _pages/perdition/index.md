@@ -10,21 +10,21 @@ Coming April 2019
 
 <h2><strong>Selected code contributions</strong></h2>
 
-[AI positioning](Link)<br>
-[Agent TakeDamage function](Link)<br>
-[Agent firearm inventory management](Link)<br>
-[Weapon firing](Link)<br>
-[Normal melee attack](Link)<br>
-[Melee takedown](Link)<br>
-[Lock-on attack](Link)<br>
-[Player targeting](Link)<br>
-[Ladders](Link)<br>
-[Obstacle climbing](Link)<br>
-[Quest manager](Link)<br>
-[Enemy wave spawning system](Link)<br>
-[Templatized asset loading function with caching](Link)<br>
-[Player modeling](Link)<br>
-[Weighted random firearm spawning using player modeling data](Link)<br>
+[AI positioning](https://github.com/samuelschimmel/perdition/blob/master/AIPositioning.cpp)<br>
+[Agent TakeDamage function](https://github.com/samuelschimmel/perdition/blob/master/AgentTakeDamage.cpp)<br>
+[Agent firearm inventory management](https://github.com/samuelschimmel/perdition/blob/master/AgentFirearmInventoryManagement.cpp)<br>
+[Weapon firing](https://github.com/samuelschimmel/perdition/blob/master/WeaponFiring.cpp)<br>
+[Normal melee attack](https://github.com/samuelschimmel/perdition/blob/master/MeleeAttacks.cpp)<br>
+[Melee takedown](https://github.com/samuelschimmel/perdition/blob/master/MeleeTakedown.cpp)<br>
+[Lock-on attack](https://github.com/samuelschimmel/perdition/blob/master/LockOnAttack.cpp)<br>
+[Player targeting](https://github.com/samuelschimmel/perdition/blob/master/PlayerTargeting.cpp)<br>
+[Ladders](https://github.com/samuelschimmel/perdition/blob/master/Ladders.cpp)<br>
+[Obstacle climbing](https://github.com/samuelschimmel/perdition/blob/master/ObstacleClimbing.cpp)<br>
+[Quest manager](https://github.com/samuelschimmel/perdition/blob/master/QuestManager.cpp)<br>
+[Enemy wave spawning system](https://github.com/samuelschimmel/perdition/blob/master/Encounter.cpp)<br>
+[Templatized asset loading function with caching](https://github.com/samuelschimmel/perdition/blob/master/GetAsset.cpp)<br>
+[Player modeling](https://github.com/samuelschimmel/perdition/blob/master/PlayerModeling.cpp)<br>
+[Weighted random firearm spawning using player modeling data](https://github.com/samuelschimmel/perdition/blob/master/SpawnWeightedRandomFirearm.cpp)<br>
 
 <h2><strong>Media</strong></h2>
 
