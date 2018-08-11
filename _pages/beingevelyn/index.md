@@ -5,7 +5,6 @@ permalink: /projects/beingevelyn/
 ---
 2017
 <br>Unity
-<br>Inspired by <em>Invisible, Inc.</em>, <em>Mr. Robot</em>, and <em>The Typing of the Dead</em>
 
 <h2><strong>Selected code contributions</strong></h2>
 
