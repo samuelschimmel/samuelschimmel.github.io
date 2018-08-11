@@ -14,10 +14,8 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Samuel Schimmel
-tagline: 'Gameplay & AI Programmer'
+tagline: 'Gameplay Programmer'
 email: samuel@samuelschimmel.com
-description: >- # this means to ignore newlines until "baseurl:"
-  Gameplay & AI Programmer
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://samuelschimmel.com" # the base hostname & protocol for your site, e.g. http://example.com
 
