@@ -5,7 +5,7 @@
 layout: home
 ---
 
-<strong><em>[Woe to the Vanquished](/projects/wttv/)</em></strong>
+<strong><em>[Perdition](/projects/perdition/)</em></strong>
 <br>A single player, first-person shooter with visceral, fast-paced combat and environmental storytelling.
 <br>A tale of vengeance, vindication, and survival.
 <br>A story of closure.
