@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Woe to the Vanquished
-permalink: /projects/wttv/
+title: Perdition
+permalink: /projects/perdition/
 ---
 
 Coming December 2018
