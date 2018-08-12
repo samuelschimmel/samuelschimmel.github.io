@@ -6,7 +6,7 @@ permalink: /projects/beingevelyn/
 2017
 <br>Unity
 
-<h2><strong>Selected code contributions</strong></h2>
+<h2><strong>Code samples</strong></h2>
 
 [Branching dialogue system](https://bitbucket.org/contraband/unityprojrepo/src/5fa31811425a490fad073520b9d3c41f79773353/Assets/Scripts/Samuel/Screen/Dialogue.cs)<br>
 [A* pathfinder](https://bitbucket.org/contraband/unityprojrepo/src/5fa31811425a490fad073520b9d3c41f79773353/Assets/Scripts/Samuel/Grid/Pathfinding/Pathfinder.cs)<br>
