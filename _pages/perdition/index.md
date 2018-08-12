@@ -7,7 +7,7 @@ permalink: /projects/perdition/
 Coming April 2019
 <br>Unreal Engine 4
 
-<h2><strong>Selected code contributions</strong></h2>
+<h2><strong>Code samples</strong></h2>
 
 [AI positioning](https://github.com/samuelschimmel/perdition/blob/master/AIPositioning.cpp)<br>
 [Agent TakeDamage function](https://github.com/samuelschimmel/perdition/blob/master/AgentTakeDamage.cpp)<br>
