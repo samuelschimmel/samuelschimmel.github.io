@@ -13,13 +13,14 @@ Coming April 2019
 [Agent TakeDamage function](https://github.com/samuelschimmel/perdition/blob/master/AgentTakeDamage.cpp)<br>
 [Agent firearm inventory management](https://github.com/samuelschimmel/perdition/blob/master/AgentFirearmInventoryManagement.cpp)<br>
 [Weapon firing](https://github.com/samuelschimmel/perdition/blob/master/WeaponFiring.cpp)<br>
-[Normal melee attack](https://github.com/samuelschimmel/perdition/blob/master/MeleeAttacks.cpp)<br>
+[Melee attack](https://github.com/samuelschimmel/perdition/blob/master/MeleeAttacks.cpp)<br>
 [Melee takedown](https://github.com/samuelschimmel/perdition/blob/master/MeleeTakedown.cpp)<br>
 [Lock-on attack](https://github.com/samuelschimmel/perdition/blob/master/LockOnAttack.cpp)<br>
 [Player input](https://github.com/samuelschimmel/perdition/blob/master/PlayerInput.cpp)<br>
 [Player targeting](https://github.com/samuelschimmel/perdition/blob/master/PlayerTargeting.cpp)<br>
 [Ladders](https://github.com/samuelschimmel/perdition/blob/master/Ladders.cpp)<br>
 [Obstacle climbing](https://github.com/samuelschimmel/perdition/blob/master/ObstacleClimbing.cpp)<br>
+[Fire propagation](https://github.com/samuelschimmel/perdition/blob/master/DamageVolume.cpp)<br>
 [Quest manager](https://github.com/samuelschimmel/perdition/blob/master/QuestManager.cpp)<br>
 [Enemy wave spawning system](https://github.com/samuelschimmel/perdition/blob/master/Encounter.cpp)<br>
 [Templatized asset loading function with caching](https://github.com/samuelschimmel/perdition/blob/master/GetAsset.cpp)<br>
