@@ -27,14 +27,13 @@ Coming April 2019
 [Player modeling](https://github.com/samuelschimmel/perdition/blob/master/PlayerModeling.cpp)<br>
 [Weighted random firearm spawning using player modeling data](https://github.com/samuelschimmel/perdition/blob/master/SpawnWeightedRandomFirearm.cpp)<br>
 
-<h2><strong>Media</strong></h2>
+<h2><strong>Videos</strong></h2>
 
 <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/284635802?portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 <p>http://www.samuelschimmel.com/projects/perdition/<br />
 https://github.com/samuelschimmel/perdition/blob/master/DamageVolume.cpp</p>
 
-<style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://www.youtube.com/embed/kmlL2PiFl3E?rel=0' frameborder='0' allowfullscreen></iframe></div>
-<br>
+<h2><strong>Images</strong></h2>
 
 ![]({{ "/assets/wttv/1.png" | absolute_url }})
 
