@@ -13,6 +13,7 @@ Coming April 2019
 [Agent TakeDamage function](https://github.com/samuelschimmel/perdition/blob/master/AgentTakeDamage.cpp)<br>
 [Agent firearm inventory management](https://github.com/samuelschimmel/perdition/blob/master/AgentFirearmInventoryManagement.cpp)<br>
 [Weapon firing](https://github.com/samuelschimmel/perdition/blob/master/WeaponFiring.cpp)<br>
+[Radial damage](https://github.com/samuelschimmel/perdition/blob/master/RadialDamage.cpp)<br>
 [Melee attack](https://github.com/samuelschimmel/perdition/blob/master/MeleeAttacks.cpp)<br>
 [Melee takedown](https://github.com/samuelschimmel/perdition/blob/master/MeleeTakedown.cpp)<br>
 [Lock-on attack](https://github.com/samuelschimmel/perdition/blob/master/LockOnAttack.cpp)<br>
