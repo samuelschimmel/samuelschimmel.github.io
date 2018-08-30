@@ -10,6 +10,7 @@ Coming April 2019
 <h2><strong>Code samples</strong></h2>
 
 [AI positioning](https://github.com/samuelschimmel/perdition/blob/master/AIPositioning.cpp)<br>
+[AI formations](https://github.com/samuelschimmel/perdition/blob/master/AIFormations.cpp)<br>
 [Agent TakeDamage function](https://github.com/samuelschimmel/perdition/blob/master/AgentTakeDamage.cpp)<br>
 [Agent firearm inventory management](https://github.com/samuelschimmel/perdition/blob/master/AgentFirearmInventoryManagement.cpp)<br>
 [Weapon firing](https://github.com/samuelschimmel/perdition/blob/master/WeaponFiring.cpp)<br>
