@@ -11,6 +11,7 @@ Coming April 2019
 
 [AI positioning](https://github.com/samuelschimmel/perdition/blob/master/AIPositioning.cpp)<br>
 [AI formations](https://github.com/samuelschimmel/perdition/blob/master/AIFormations.cpp)<br>
+[Calculating player illumination for stealth](https://github.com/samuelschimmel/perdition/blob/master/CamoIndex.cpp)<br>
 [Agent TakeDamage function](https://github.com/samuelschimmel/perdition/blob/master/AgentTakeDamage.cpp)<br>
 [Agent firearm inventory management](https://github.com/samuelschimmel/perdition/blob/master/AgentFirearmInventoryManagement.cpp)<br>
 [Weapon firing](https://github.com/samuelschimmel/perdition/blob/master/WeaponFiring.cpp)<br>
