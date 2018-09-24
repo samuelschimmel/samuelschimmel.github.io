@@ -22,7 +22,7 @@ url: "http://samuelschimmel.com" # the base hostname & protocol for your site, e
 
 # Build settings
 markdown: kramdown
-theme: jekyll-theme-midnight
+theme: minima
 plugins:
   - jekyll-feed
 
