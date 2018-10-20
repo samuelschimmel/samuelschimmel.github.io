@@ -56,11 +56,9 @@ Coming April 2019
 
 ![]({{ "/assets/wttv/10.png" | absolute_url }})
 
-![]({{ "/assets/wttv/11.png" | absolute_url }})
-
 <h2><strong>Behavior trees</strong></h2>
 
-![]({{ "/assets/wttv/BT_Fight.png" | absolute_url }})
+![]({{ "/assets/wttv/BT.png" | absolute_url }})
 
 <h2><strong>UE4 C++ workshop given as a GAM 300 TA</strong></h2>
 
