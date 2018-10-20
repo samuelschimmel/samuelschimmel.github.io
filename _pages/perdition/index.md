@@ -62,6 +62,10 @@ Coming April 2019
 
 ![]({{ "/assets/wttv/BT_Fight.png" | absolute_url }})
 
+<h2><strong>UE4 C++ workshop given as a GAM 300 TA</strong></h2>
+
+<iframe src="/assets/wttv/UE4Workshop.pdf" width="100%" height="400"></iframe>
+
 <h2><strong>Documentation contributions</strong></h2>
 
 <iframe src="/assets/wttv/docs.pdf" width="100%" height="400"></iframe>
