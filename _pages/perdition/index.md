@@ -13,7 +13,7 @@ Coming April 2019
 [AI formations](https://github.com/samuelschimmel/perdition/blob/master/AIFormations.cpp)<br>
 [Calculating player illumination for stealth](https://github.com/samuelschimmel/perdition/blob/master/CamoIndex.cpp)<br>
 [Agent TakeDamage function](https://github.com/samuelschimmel/perdition/blob/master/AgentTakeDamage.cpp)<br>
-[Agent weapon inventory management](https://github.com/samuelschimmel/perdition/blob/master/AgentWeaponInventoryManagement.cpp)<br>
+[Inventory system](https://github.com/samuelschimmel/perdition/blob/master/InventorySystem.cpp)<br>
 [Weapon firing](https://github.com/samuelschimmel/perdition/blob/master/WeaponFiring.cpp)<br>
 [Radial damage](https://github.com/samuelschimmel/perdition/blob/master/RadialDamage.cpp)<br>
 [Melee combat](https://github.com/samuelschimmel/perdition/blob/master/Melee.cpp)<br>
