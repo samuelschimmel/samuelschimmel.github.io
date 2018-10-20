@@ -23,6 +23,7 @@ Coming April 2019
 [Obstacle climbing](https://github.com/samuelschimmel/perdition/blob/master/ObstacleClimbing.cpp)<br>
 [Fire propagation](https://github.com/samuelschimmel/perdition/blob/master/DamageVolume.cpp)<br>
 [Quest manager](https://github.com/samuelschimmel/perdition/blob/master/QuestManager.cpp)<br>
+[Save manager](https://github.com/samuelschimmel/perdition/blob/master/SaveManager.cpp)<br>
 [Enemy wave spawning system](https://github.com/samuelschimmel/perdition/blob/master/Encounter.cpp)<br>
 [Templatized asset loading function with caching](https://github.com/samuelschimmel/perdition/blob/master/GetAsset.cpp)<br>
 [Player modeling](https://github.com/samuelschimmel/perdition/blob/master/PlayerModeling.cpp)<br>
