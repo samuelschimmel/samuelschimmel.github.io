@@ -16,8 +16,7 @@ Coming April 2019
 [Agent weapon inventory management](https://github.com/samuelschimmel/perdition/blob/master/AgentWeaponInventoryManagement.cpp)<br>
 [Weapon firing](https://github.com/samuelschimmel/perdition/blob/master/WeaponFiring.cpp)<br>
 [Radial damage](https://github.com/samuelschimmel/perdition/blob/master/RadialDamage.cpp)<br>
-[Melee attack](https://github.com/samuelschimmel/perdition/blob/master/MeleeAttacks.cpp)<br>
-[Melee takedown](https://github.com/samuelschimmel/perdition/blob/master/MeleeTakedown.cpp)<br>
+[Melee combat](https://github.com/samuelschimmel/perdition/blob/master/Melee.cpp)<br>
 [Lock-on attack](https://github.com/samuelschimmel/perdition/blob/master/LockOnAttack.cpp)<br>
 [Player targeting](https://github.com/samuelschimmel/perdition/blob/master/PlayerTargeting.cpp)<br>
 [Ladders](https://github.com/samuelschimmel/perdition/blob/master/Ladders.cpp)<br>
