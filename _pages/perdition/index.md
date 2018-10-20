@@ -60,7 +60,7 @@ Coming April 2019
 
 ![]({{ "/assets/wttv/BT.png" | absolute_url }})
 
-<h2><strong>UE4 C++ workshop given as a GAM 300 TA</strong></h2>
+<h2><strong>UE4 C++ workshop given as GAM 300 TA</strong></h2>
 
 <iframe src="/assets/wttv/UE4Workshop.pdf" width="100%" height="400"></iframe>
 
