@@ -13,13 +13,12 @@ Coming April 2019
 [AI formations](https://github.com/samuelschimmel/perdition/blob/master/AIFormations.cpp)<br>
 [Calculating player illumination for stealth](https://github.com/samuelschimmel/perdition/blob/master/CamoIndex.cpp)<br>
 [Agent TakeDamage function](https://github.com/samuelschimmel/perdition/blob/master/AgentTakeDamage.cpp)<br>
-[Agent firearm inventory management](https://github.com/samuelschimmel/perdition/blob/master/AgentFirearmInventoryManagement.cpp)<br>
+[Agent weapon inventory management](https://github.com/samuelschimmel/perdition/blob/master/AgentWeaponInventoryManagement.cpp)<br>
 [Weapon firing](https://github.com/samuelschimmel/perdition/blob/master/WeaponFiring.cpp)<br>
 [Radial damage](https://github.com/samuelschimmel/perdition/blob/master/RadialDamage.cpp)<br>
 [Melee attack](https://github.com/samuelschimmel/perdition/blob/master/MeleeAttacks.cpp)<br>
 [Melee takedown](https://github.com/samuelschimmel/perdition/blob/master/MeleeTakedown.cpp)<br>
 [Lock-on attack](https://github.com/samuelschimmel/perdition/blob/master/LockOnAttack.cpp)<br>
-[Player input](https://github.com/samuelschimmel/perdition/blob/master/PlayerInput.cpp)<br>
 [Player targeting](https://github.com/samuelschimmel/perdition/blob/master/PlayerTargeting.cpp)<br>
 [Ladders](https://github.com/samuelschimmel/perdition/blob/master/Ladders.cpp)<br>
 [Obstacle climbing](https://github.com/samuelschimmel/perdition/blob/master/ObstacleClimbing.cpp)<br>
@@ -28,7 +27,6 @@ Coming April 2019
 [Enemy wave spawning system](https://github.com/samuelschimmel/perdition/blob/master/Encounter.cpp)<br>
 [Templatized asset loading function with caching](https://github.com/samuelschimmel/perdition/blob/master/GetAsset.cpp)<br>
 [Player modeling](https://github.com/samuelschimmel/perdition/blob/master/PlayerModeling.cpp)<br>
-[Weighted random firearm spawning using player modeling data](https://github.com/samuelschimmel/perdition/blob/master/SpawnWeightedRandomFirearm.cpp)<br>
 
 <h2><strong>Videos</strong></h2>
 
