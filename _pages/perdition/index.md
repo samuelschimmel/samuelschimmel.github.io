@@ -56,7 +56,7 @@ Coming April 2019
 
 ![]({{ "/assets/wttv/10.png" | absolute_url }})
 
-<h2><strong>Behavior trees</strong></h2>
+<h2><strong>Behavior tree</strong></h2>
 
 ![]({{ "/assets/wttv/BT.png" | absolute_url }})
 
