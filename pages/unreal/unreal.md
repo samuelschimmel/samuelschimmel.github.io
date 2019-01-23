@@ -34,7 +34,7 @@ permalink: /unreal/
 
 <h2><strong>Features implemented</strong></h2>
 
-<em>Agent</em>
+<b>Agent</b>
 
 Agent is the shared player/NPC base class. Players and NPCs behave similarly enough that I could factor out and resuse over a thousand lines of code by moving it to the base class. In addition to code reuse, the Agent class also promotes consistency by making sure that players and NPCs are governed by the same ruleset. Deriving players and NPCs from the same base class also allowed me to use the same AI controller class for both of them, which proved useful when implementing autoplay.
 
@@ -44,23 +44,23 @@ Player-exclusive functionality includes health regeneration, losing and restarti
 
 NPC-exclusive functionality includes AI state feedback (idle, alert, etc.), random equipment spawning, and stun.
 
-<em>[AI formations](https://github.com/samuelschimmel/perdition/blob/master/AIFormations.cpp)</em>
+<b>[AI formations](https://github.com/samuelschimmel/perdition/blob/master/AIFormations.cpp)</b>
 
 AI formations are handled by a custom behavior tree service called Command. When Command is ticked, agents of class Leader remove dead soldiers from their soldiers container, add new soldiers, and update their soldiers’ target locations. Soldiers can be added to the container if they don’t already have leaders, and are within range and line of sight of the leader. The algorithm for selecting target locations is as follows. First, the formation radius is calculated based on the number of soldiers in the squad. Then the soldiers are assigned evenly spaced points on a semicircle. The semicircle is based on the leader’s forward vector during the patrol state. During combat, it is based on the vector between the leader and the player, which allows the soldiers to take defensive positions around their leader.
 
-<em>AI aiming</em>
+<b>AI aiming</b>
 
 AI aiming is handled by the custom behavior tree service CheckTargetActor. When CheckTargetActor is ticked, NPCs in combat will focus on an intercept point offset from their target. This point is calculated using the NPC’s firearm’s projectile speed and gravity in order to compensate for target velocity and bullet drop. Assuming zero spread and zero projectile gravity, NPCs are perfectly accurate against targets with constant velocity, which requires the player to vary their movement patterns in order to dodge projectiles.
 
-<em>AI vision</em>
+<b>AI vision</b>
 
 Enemies are alerted if they see a dead body.
 
-<em>AI hearing</em>
+<b>AI hearing</b>
 
 Footsteps, gunshots, explosions, projectile impacts, and thrown prop impacts all create noise for AI purposes. Since explosions are the loudest sounds in the game, I made the explosion sound intensity 1, and set "max hearing radius" to the distance at which NPCs should be able to hear explosions. All other sound intensities are relative to the explosion sound intensity.
 
-<em>AI detection</em>
+<b>AI detection</b>
 
 NPCs instantaneously detect other NPCs, and gradually detect the player. The detection meter fills while the player is in line of sight, and not 100% concealed (otherwise, the meter decays by a constant rate). The meter also fills by a constant amount when the AI hears the player, and immediately fills to max on collision with player. Visual fill rate is given as:
 
@@ -68,9 +68,9 @@ NPCs instantaneously detect other NPCs, and gradually detect the player. The det
 
 …where player concealment is calculated once every 100 ms based on lighting and stance.
 
-<em>[AI positioning](https://github.com/samuelschimmel/perdition/blob/master/AIPositioning.cpp)</em>
+<b>[AI positioning](https://github.com/samuelschimmel/perdition/blob/master/AIPositioning.cpp)</b>
 
-<em>[Player illumination calculation](https://github.com/samuelschimmel/perdition/blob/master/CamoIndex.cpp)</em>
+<b>[Player illumination calculation](https://github.com/samuelschimmel/perdition/blob/master/CamoIndex.cpp)</b>
 
 Player illumination calculation works with directional lights, point lights, and spot lights. For point and spot lights, the calculation uses inverse square attenuation. The penalty to the player’s concealment is given as:
 
@@ -78,17 +78,17 @@ light intensity / distance from the player squared
 
 Player illumination calculation requires iterating over a container of every light in the level, but this is mitigated by a) only updating every 100 ms, and b) culling lights by doing tests in order of least expensive to most expensive (distance, then field of view, then collision).
 
-<em>Behavior tree-compatible scripting nodes</em>
+<b>Behavior tree-compatible scripting nodes</b>
 
 The built-in AIMoveTo node is incompatible with behavior trees. To combine custom scripting with procedural behaviors, I created custom MoveToActor and MoveToLocation nodes. When they are called, the agent will stop whatever they're doing, go to the given location or actor (and follow the actor if it moves), and then resume normal behavior once they arrive. This behavior takes priority over patrol and combat behaviors, but not stun or stationary behaviors. The biggest limitation of MoveToActor and MoveToLocation is that they lack AIMoveTo’s asychronous "OnSuccess" and "OnFailure" pins.
 
-<em>[Damage system](https://github.com/samuelschimmel/perdition/blob/master/AgentTakeDamage.cpp)</em>
+<b>[Damage system](https://github.com/samuelschimmel/perdition/blob/master/AgentTakeDamage.cpp)</b>
 
-<em>[Inventory manager](https://github.com/samuelschimmel/perdition/blob/master/InventorySystem.cpp)</em>
+<b>[Inventory manager](https://github.com/samuelschimmel/perdition/blob/master/InventorySystem.cpp)</b>
 
 The inventory manager object persists between levels, but is reset to its state at the last checkpoint when the player dies.
 
-<em>[Weapons](https://github.com/samuelschimmel/perdition/blob/master/WeaponFiring.cpp)</em>
+<b>[Weapons](https://github.com/samuelschimmel/perdition/blob/master/WeaponFiring.cpp)</b>
 
 Projectiles can be rotated to follow the vector from the firearm’s muzzle to the user’s current target. This allows projectiles to always hit the center of the player’s crosshair. When the agent is more than 5 meters from their target, projectiles are rotated to fire directly at the target. Between 5 and 1 meters, projectiles fire at the average of the target vector and the look vector (if they are just fired at the target vector, the rotation is noticeable; if they are just fired at look vector, the transition is noticeable). Closer than 1 meter, projectiles can’t be fired. If the user has no target (i.e., while looking at the sky), just the look vector is used.
 
@@ -96,9 +96,9 @@ Spread is calculated using the weapon’s base spread and the agent’s movement
 
 An event is fired when players start and stop facing an obstacle (i.e., the raycast sent every frame from the camera hits a non-agent object at less than a certain distance) to allow for weapon handling animations. The event only fires when the result changes, not every frame if the result is the same.
 
-<em>Projectiles</em>
+<b>Projectiles</b>
 
-<em>[Melee combat](https://github.com/samuelschimmel/perdition/blob/master/Melee.cpp)</em>
+<b>[Melee combat](https://github.com/samuelschimmel/perdition/blob/master/Melee.cpp)</b>
 
 I originally tried implementing melee using colliders, but the player had to stand excessively close to their target in order to damage them. I tried making the collider bigger, but because overlap events are only fired when an actor enters a collider, the player was only able to melee targets that were just barely in melee range (if the player were any closer, the overlap event would have already fired). I tried storing a pointer to the current melee collider overlap actor and damaging it during the melee attack, but this lead to attacking nearby but incorrect targets. I also tried storing those overlapped actors in an array, but this would require an algorithm to pick the best one.
 
@@ -110,67 +110,67 @@ Enemies can also melee attack instead of firing their weapon if their target is 
 
 I also implemented a melee takedown mechanic similar to those found in Far Cry and Dishonored. When the player targets a stunned enemy within a given distance and hits the melee button, input is disable, the player lerps to their target, and a melee attack is performed, which instantly kills the enemy. During this sequence, the camera also lerps to look at the target agent. All melee attacks on unaware enemies are takedowns. Enemies do not alert other enemies if they are killed by a takedown.
 
-<em>[Lock-on targeting](https://github.com/samuelschimmel/perdition/blob/master/LockOnAttack.cpp)</em>
+<b>[Lock-on targeting](https://github.com/samuelschimmel/perdition/blob/master/LockOnAttack.cpp)</b>
 
-<em>[Player targeting](https://github.com/samuelschimmel/perdition/blob/master/PlayerTargeting.cpp)</em>
+<b>[Player targeting](https://github.com/samuelschimmel/perdition/blob/master/PlayerTargeting.cpp)</b>
 
-<em>Rifle scope</em>
+<b>Rifle scope</b>
 
-<em>Destructible armor</em>
+<b>Destructible armor</b>
 
-<em>[Radial damage](https://github.com/samuelschimmel/perdition/blob/master/RadialDamage.cpp)</em>
+<b>[Radial damage](https://github.com/samuelschimmel/perdition/blob/master/RadialDamage.cpp)</b>
 
-<em>[Fire propagation](https://github.com/samuelschimmel/perdition/blob/master/DamageVolume.cpp)</em>
+<b>[Fire propagation](https://github.com/samuelschimmel/perdition/blob/master/DamageVolume.cpp)</b>
 
 Damage volumes start with 0 radius and tick up to a given maximum within a few seconds. Fire spreads to the player, NPCs, interactive objects, and static mesh actors. When a damage volume overlaps an actor, it checks if is already has a damage volume attached to it before spawning one.
 
 Environmental damage volumes are also supported. Designers can drag damage volumes into the level, which will act as hazards and never expire. If an actor is on fire and they overlap more fire, their fire’s timer restarts.
 
-<em>Dash mechanic</em>
+<b>Dash mechanic</b>
 
-<em>[Obstacle climbing](https://github.com/samuelschimmel/perdition/blob/master/ObstacleClimbing.cpp)</em>
+<b>[Obstacle climbing](https://github.com/samuelschimmel/perdition/blob/master/ObstacleClimbing.cpp)</b>
 
 The min and max slope of climbable obstacles can be specified in degrees. How directly the player needs to be facing obstacles in order to climb them can also be specified as an angle in degrees. Collision is disabled during the climbing sequence to make the sequence smoother. Climbing also cancels the player's velocity to make the sequence feel less floaty. An event is fired when the player is facing a climbable obstacle so that UMG can display a prompt.
 
-<em>Object interaction</em>
+<b>Object interaction</b>
 
 Props receive and deal a fixed amount of damage when thrown. This allows thrown explosive props to detonate on impact.
 
-<em>[Ladders](https://github.com/samuelschimmel/perdition/blob/master/Ladders.cpp)</em>
+<b>[Ladders](https://github.com/samuelschimmel/perdition/blob/master/Ladders.cpp)</b>
 
 Ladders can be mounted from any position, including while the player is falling. Ladders calculate their mount and dismount locations based on position, rotation, and bounds. When dismounting, the player lerps to a position a bit past the ladder, where the height is the top of the ladder, or the height of the surface they're climbing onto plus capsule half height, whichever is higher.
 
-<em>Doors</em>
+<b>Doors</b>
 
-<em>[Quest manager](https://github.com/samuelschimmel/perdition/blob/master/QuestManager.cpp)</em>
+<b>[Quest manager](https://github.com/samuelschimmel/perdition/blob/master/QuestManager.cpp)</b>
 
 The quest system supports multiple simultaneous sets of objectives, each with their own separate objective locators. The quest system can handle objectives being destroyed early.
 
-<em>RPG mechanics</em>
+<b>RPG mechanics</b>
 
 The stat system supports multiple tiers of stats (e.g., tier 0 for player level, tier 1 for attributes, tier 2 for skills, and tier 3 for perks). Stats can have parent stats like in Shadowrun (i.e., your rifle skill level can’t exceed your ranged combat skill level). Players are awarded points for each tier. When the player attempts to level up a stat, the stat’s max level is checked, the parent stat’s level is checked, and their points in that tier are checked. Leveling up can award points for other tiers. Stat levels can be queried elsewhere in the code. For example, the player’s firearm skill is used to calculate the spread of each shot.
 
-<em>[Checkpoints and saving](https://github.com/samuelschimmel/perdition/blob/master/SaveManager.cpp)</em>
+<b>[Checkpoints and saving](https://github.com/samuelschimmel/perdition/blob/master/SaveManager.cpp)</b>
 
 All unsaved items are lost when players reload their last checkpoint.
 
-<em>[Enemy wave spawning system](https://github.com/samuelschimmel/perdition/blob/master/Encounter.cpp)</em>
+<b>[Enemy wave spawning system](https://github.com/samuelschimmel/perdition/blob/master/Encounter.cpp)</b>
 
 Instances of BP_Encounter are placed in the level, and spawners and triggers are attached to them in the world outliner. Parameters include spawn tickets for each enemy type, min and max concurrent enemies, wave size mean and standard deviation, and wave delay mean and standard deviation. Each wave size is calculated using a normal distribution, and each wave delay is calculated using a binomial distribution. Combat start and end feedback properly handles the player being in more than one encounter at the same time. When the player triggers an encounter, only the first wave will spawn (unaware of the player) until the player enters combat. If the player is already in combat when they trigger an encounter, the encounter will spawn waves of enemies normally. Enemies spawned by encounters while the player is in combat will automatically be aware of the player. Encounters can also be started from the level blueprint.
 
-<em>[Asset loading with caching](https://github.com/samuelschimmel/perdition/blob/master/GetAsset.cpp)</em>
+<b>[Asset loading with caching](https://github.com/samuelschimmel/perdition/blob/master/GetAsset.cpp)</b>
 
 I optimized my custom asset lookup function by having it cache the assets it loads in a TMap<FString, UObject *>. This way, it only has to call Unreal's asset loading code the first time my code requests an asset. All subsequent times it can get the asset from the map, with the key being the asset's path. The function is templatized to work with static meshes as well as UObjects.
 
-<em>Options menu backend</em>
+<b>Options menu backend</b>
 
 I made a derived class of GameUserSettings and edited DefaultEngine to use it. I also made a class with static blueprint callable functions for communication with an options menu. This allows for game options like difficulty, invert mouse, show objective locator, etc. When options are updated, the changes are reflected in-game and saved to a file. I also added a function which takes a string and returns a copy with actions/axes in square brackets (case insensitive) replaced with the first key currently bound to that action/axis. This allows tutorials and UI to avoid hardcoding rebindable inputs. I also added functions for rebinding keys that remove any previous bindings.
 
-<em>Worldspace UI</em>
+<b>Worldspace UI</b>
 
-<em>Dynamic multicast delegate Blueprint interface</em>
+<b>Dynamic multicast delegate Blueprint interface</b>
 
-<em>Combat feedback</em>
+<b>Combat feedback</b>
 
 I added very brief slow motion after the player performs a scoped rifle headshot or melee kill. For both props and agents, point damage with knockback will push the damage receiver away from the damage instigator. For both props and agents, radial damage with knockback will push the damage receiver away from the origin of the damage.
 
@@ -178,13 +178,13 @@ Instead of immediately dropping their guns, dead enemies pull the trigger for on
 
 Instead of having NPCs immediately drop all of their equipment on death, I have them wait a fraction of a second before doing so, so their armor goes flying when they ragdoll instead of just falling to the ground. I also made it so when you kill an enemy with a headshot, their helmet flies off.
 
-<em>Narrative manager</em>
+<b>Narrative manager</b>
 
 Any time the player triggers a trigger or uses an interactive object, the persistent narrative manager checks if a) that actor is a narration actor and b) the game is not ready for narration. If both of those are true, the player can't use the item/trigger the trigger. The second condition is based on whether the player is in combat and whether narration is already playing.
 
 If the actor is a narration actor and the game is ready for narration, the game mode sends an event with the name of the actor. Audio can use that name to play the right audio event, and the HUD can pass that name to the text manager to get the appropriate subtitle. Meanwhile, player input is disabled. When the audio is finished playing, the audio engine can call a function that will re-enable player input and tell the HUD to remove the subtitle.
 
-<em>[Player modeling, dynamic difficulty, dynamic tutorials, and weighted random item spawning](https://github.com/samuelschimmel/perdition/blob/master/PlayerModeling.cpp)</em>
+<b>[Player modeling, dynamic difficulty, dynamic tutorials, and weighted random item spawning](https://github.com/samuelschimmel/perdition/blob/master/PlayerModeling.cpp)</b>
 
 At periodic intervals while the player is alive and not in combat, the player modeling system determines which action the player has performed the least, and displays a tutorial for that action. It will only display one tutorial per action per level. Tutorials that teach controls are responsive to key rebinding.
 
