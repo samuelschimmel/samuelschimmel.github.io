@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Being Evelyn
-permalink: /projects/beingevelyn/
+title: Unity
+permalink: /unity/
 ---
 2017
 <br>Unity
