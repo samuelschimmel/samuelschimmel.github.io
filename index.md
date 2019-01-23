@@ -4,11 +4,6 @@
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 layout: home
 ---
+<strong><em>[Unreal Engine 4 projects](/unreal/)</em></strong>
 
-<strong><em>[Perdition](/projects/perdition/)</em></strong>
-<br>A single player, first-person shooter with visceral, fast-paced combat and environmental storytelling.
-<br>A tale of vengeance, vindication, and survival.
-<br>A story of closure.
-
-<strong><em>[Being Evelyn](/projects/beingevelyn)</em></strong>
-<br>A 2D, narrative-driven, social stealth and hacking game.
+<strong><em>[Unity projects](/unity)</em></strong>
