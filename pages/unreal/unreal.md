@@ -42,7 +42,7 @@ AI aiming is handled by the custom behavior tree service CheckTargetActor. When 
 
 NPCs instantaneously detect other NPCs, and gradually detect the player. The detection meter fills while the player is in line of sight, and not 100% concealed (otherwise, the meter decays by a constant rate). The meter also fills by a constant amount when the AI hears the player, and immediately fills to max on collision with player. Visual fill rate is given as:
 
-<img src="https://tex.s2cms.ru/svg/fillModifier%20*%20deltaTime%20*%20(weightedConcealmentModifier%20%2B%20weightedDistanceModifier%20%2B%20weightedFOVModifier)" alt="fillModifier * deltaTime * (weightedConcealmentModifier + weightedDistanceModifier + weightedFOVModifier)" height="400"/>
+<img src="https://tex.s2cms.ru/svg/fillModifier%20*%20deltaTime%20*%20(weightedConcealmentModifier%20%2B%20weightedDistanceModifier%20%2B%20weightedFOVModifier)" alt="fillModifier * deltaTime * (weightedConcealmentModifier + weightedDistanceModifier + weightedFOVModifier)" />
 
 …where player concealment is calculated once every 100 ms based on lighting and stance.
 
