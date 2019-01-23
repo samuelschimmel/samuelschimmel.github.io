@@ -23,6 +23,6 @@ permalink: /unity/
 
 <h2><strong>Images</strong></h2>
 
-![]({{ "/assets/beingevelyn/mainmenu.png" | absolute_url }})
+![]({{ "/assets/unity/mainmenu.png" | absolute_url }})
 
-![]({{ "/assets/beingevelyn/gameplay.png" | absolute_url }})
+![]({{ "/assets/unity/gameplay.png" | absolute_url }})
