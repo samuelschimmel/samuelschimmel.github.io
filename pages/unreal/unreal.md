@@ -42,7 +42,7 @@ AI aiming is handled by the custom behavior tree service CheckTargetActor. When 
 
 NPCs instantaneously detect other NPCs, and gradually detect the player. The detection meter fills while the player is in line of sight, and not 100% concealed (otherwise, the meter decays by a constant rate). The meter also fills by a constant amount when the AI hears the player, and immediately fills to max on collision with player. Visual fill rate is given as:
 
-[(player concealment modifier * weight) + (distance modifier * weight) + (FOV modifier * weight)] * (constant fill modifier) * (delta time)
+$$[(player concealment modifier * weight) + (distance modifier * weight) + (FOV modifier * weight)] * (constant fill modifier) * (delta time)$$
 
 …where player concealment is calculated once every 100 ms based on lighting and stance.
 
@@ -162,7 +162,7 @@ I made a derived class of GameUserSettings and edited DefaultEngine to use it. I
 
 Player illumination calculation works with directional lights, point lights, and spot lights. For point and spot lights, the calculation uses inverse square attenuation. The penalty to the player’s concealment is given as:
 
-light intensity / distance from the player squared
+$$light intensity / distance from the player squared$$
 
 Player illumination calculation requires iterating over a container of every light in the level, but this is mitigated by a) only updating every 100 ms, and b) culling lights by doing tests in order of least expensive to most expensive (distance, then field of view, then collision).
 
