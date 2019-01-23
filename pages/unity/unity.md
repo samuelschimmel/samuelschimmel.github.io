@@ -3,8 +3,6 @@ layout: page
 title: Unity
 permalink: /unity/
 ---
-2017
-<br>Unity
 
 <h2><strong>Code samples</strong></h2>
 
