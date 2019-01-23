@@ -4,9 +4,6 @@ title: Unreal
 permalink: /unreal/
 ---
 
-Coming April 2019
-<br>Unreal Engine 4
-
 <h2><strong>Code samples</strong></h2>
 
 [AI positioning](https://github.com/samuelschimmel/perdition/blob/master/AIPositioning.cpp)<br>
@@ -34,38 +31,24 @@ Coming April 2019
 
 <h2><strong>Images</strong></h2>
 
-![]({{ "/assets/wttv/1.png" | absolute_url }})
+![]({{ "/assets/unreal/1.png" | absolute_url }})
 
-![]({{ "/assets/wttv/2.png" | absolute_url }})
+![]({{ "/assets/unreal/2.png" | absolute_url }})
 
-![]({{ "/assets/wttv/3.png" | absolute_url }})
+![]({{ "/assets/unreal/3.png" | absolute_url }})
 
-![]({{ "/assets/wttv/4.png" | absolute_url }})
+![]({{ "/assets/unreal/4.png" | absolute_url }})
 
-![]({{ "/assets/wttv/5.png" | absolute_url }})
+![]({{ "/assets/unreal/5.png" | absolute_url }})
 
-![]({{ "/assets/wttv/6.png" | absolute_url }})
+![]({{ "/assets/unreal/6.png" | absolute_url }})
 
-![]({{ "/assets/wttv/7.png" | absolute_url }})
-
-![]({{ "/assets/wttv/8.png" | absolute_url }})
-
-![]({{ "/assets/wttv/9.png" | absolute_url }})
-
-![]({{ "/assets/wttv/10.png" | absolute_url }})
+![]({{ "/assets/unreal/7.png" | absolute_url }})
 
 <h2><strong>Behavior tree</strong></h2>
 
-![]({{ "/assets/wttv/BT.png" | absolute_url }})
+![]({{ "/assets/unreal/bt.png" | absolute_url }})
 
 <h2><strong>UE4 C++ workshop given as GAM 300 TA</strong></h2>
 
-<iframe src="/assets/wttv/UE4Workshop.pdf" width="100%" height="400"></iframe>
-
-<h2><strong>Documentation contributions</strong></h2>
-
-<iframe src="/assets/wttv/docs.pdf" width="100%" height="400"></iframe>
-
-<h2><strong>Player modeling paper for CS 380</strong></h2>
-
-<iframe src="/assets/wttv/PlayerModeling.pdf" width="100%" height="400"></iframe>
+<iframe src="/assets/unreal/workshop.pdf" width="100%" height="400"></iframe>
