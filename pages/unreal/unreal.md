@@ -144,7 +144,7 @@ If the actor is a narration actor and the game is ready for narration, the game 
 
 Ladders can be mounted from any position, including while the player is falling. Ladders calculate their mount and dismount locations based on position, rotation, and bounds. When dismounting, the player lerps to a position a bit past the ladder, where the height is the top of the ladder, or the height of the surface they're climbing onto plus capsule half height, whichever is higher.
 
-<b>Lock-on targeting</b> [[code sample]](https://github.com/samuelschimmel/perdition/blob/master/LockOnTargeting.cpp)
+<b>Lock-on targeting</b> [[code sample]](https://github.com/samuelschimmel/perdition/blob/master/LockOnAttack.cpp)
 
 <b>Object interaction</b>
 
