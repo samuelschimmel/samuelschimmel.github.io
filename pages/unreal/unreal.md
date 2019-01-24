@@ -144,7 +144,7 @@ If the actor is a narration actor and the game is ready for narration, the game 
 
 Ladders can be mounted from any position, including while the player is falling. Ladders calculate their mount and dismount locations based on position, rotation, and bounds. When dismounting, the player lerps to a position a bit past the ladder, where the height is the top of the ladder, or the height of the surface they're climbing onto plus capsule half height, whichever is higher.
 
-<b>Lock-on targeting</b> [[code sample]](https://github.com/samuelschimmel/perdition/blob/master/GetAsset.cpp)
+<b>Lock-on targeting</b> [[code sample]](https://github.com/samuelschimmel/perdition/blob/master/LockOnTargeting.cpp)
 
 <b>Object interaction</b>
 
@@ -176,7 +176,7 @@ A "use WASD to move" tutorial plays at the beginning of the game if the player d
 
 <b>Player targeting</b> [[code sample]](https://github.com/samuelschimmel/perdition/blob/master/PlayerTargeting.cpp)
 
-<b>Quest system</b> [[code sample]](https://github.com/samuelschimmel/perdition/blob/master/GetAsset.cpp)
+<b>Quest system</b> [[code sample]](https://github.com/samuelschimmel/perdition/blob/master/QuestManager.cpp)
 
 The quest manager supports multiple simultaneous sets of objectives, each with their own separate objective locators. The quest system can handle objectives being destroyed early.
 
