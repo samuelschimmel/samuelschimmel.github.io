@@ -46,7 +46,7 @@ NPCs instantaneously detect other NPCs, and gradually detect the player. The det
 
 …where player concealment is calculated once every 100 ms based on lighting and stance.
 
-<b>[AI formations](https://github.com/samuelschimmel/perdition/blob/master/AIFormations.cpp)</b>
+<b>AI formations</b> [[Code sample]](https://github.com/samuelschimmel/perdition/blob/master/AIFormations.cpp)
 
 AI formations are handled by a custom behavior tree service called Command. When Command is ticked, agents of class Leader remove dead soldiers from their soldiers container, add new soldiers, and update their soldiers’ target locations. Soldiers can be added to the container if they don’t already have leaders, and are within range and line of sight of the leader. The algorithm for selecting target locations is as follows. First, the formation radius is calculated based on the number of soldiers in the squad. Then the soldiers are assigned evenly spaced points on a semicircle. The semicircle is based on the leader’s forward vector during the patrol state. During combat, it is based on the vector between the leader and the player, which allows the soldiers to take defensive positions around their leader.
 
