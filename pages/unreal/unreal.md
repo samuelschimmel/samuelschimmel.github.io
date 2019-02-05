@@ -58,6 +58,8 @@ Footsteps, gunshots, explosions, projectile impacts, and thrown prop impacts all
 
 <b>AI positioning</b>
 
+<script src="https://gist.github.com/samuelschimmel/8dea9b991893a01987af134be038fb5e.js"></script>
+
 <b>AI vision</b>
 
 Enemies are alerted if they see a dead body.
@@ -76,6 +78,8 @@ NPC-exclusive functionality includes AI state feedback (idle, alert, etc.), rand
 
 I optimized my custom asset lookup function by having it cache the assets it loads in a TMap<FString, UObject *>. This way, it only has to call Unreal's asset loading code the first time my code requests an asset. All subsequent times it can get the asset from the map, with the key being the asset's path. The function is templatized to work with static meshes as well as UObjects.
 
+<script src="https://gist.github.com/samuelschimmel/57e2f107aca5d9b086eed2cf4f612b1e.js"></script>
+
 <b>Behavior tree-compatible scripting nodes</b>
 
 The built-in AIMoveTo node is incompatible with behavior trees. To combine custom scripting with procedural behaviors, I created custom MoveToActor and MoveToLocation nodes. When they are called, the agent will stop whatever they're doing, go to the given location or actor (and follow the actor if it moves), and then resume normal behavior once they arrive. This behavior takes priority over patrol and combat behaviors, but not stun or stationary behaviors. The biggest limitation of MoveToActor and MoveToLocation is that they lack AIMoveTo’s asychronous "OnSuccess" and "OnFailure" pins.
@@ -83,6 +87,8 @@ The built-in AIMoveTo node is incompatible with behavior trees. To combine custo
 <b>Checkpoints and saving</b>
 
 All unsaved items are lost when players reload their last checkpoint.
+
+<script src="https://gist.github.com/samuelschimmel/f7aba5aff29d4abb295f86ecf2455c94.js"></script>
 
 <b>Combat feedback</b>
 
@@ -94,6 +100,8 @@ Instead of having NPCs immediately drop all of their equipment on death, I have 
 
 <b>Damage system</b>
 
+<script src="https://gist.github.com/samuelschimmel/4cd3a5eea2195a8e301b38df336669d3.js"></script>
+
 <b>Dash mechanic</b>
 
 <b>Destructible armor</b>
@@ -102,9 +110,13 @@ Instead of having NPCs immediately drop all of their equipment on death, I have 
 
 <b>Dynamic multicast delegate Blueprint interface</b>
 
+<script src="https://gist.github.com/samuelschimmel/248c709d791b858c74bcad6758a93fde.js"></script>
+
 <b>Enemy wave spawning system</b>
 
 Instances of BP_Encounter are placed in the level, and spawners and triggers are attached to them in the world outliner. Parameters include spawn tickets for each enemy type, min and max concurrent enemies, wave size mean and standard deviation, and wave delay mean and standard deviation. Each wave size is calculated using a normal distribution, and each wave delay is calculated using a binomial distribution. Combat start and end feedback properly handles the player being in more than one encounter at the same time. When the player triggers an encounter, only the first wave will spawn (unaware of the player) until the player enters combat. If the player is already in combat when they trigger an encounter, the encounter will spawn waves of enemies normally. Enemies spawned by encounters while the player is in combat will automatically be aware of the player. Encounters can also be started from the level blueprint.
+
+<script src="https://gist.github.com/samuelschimmel/72ee16b0e160b0a920ba3aebd52631e4.js"></script>
 
 <b>Firearms</b>
 
@@ -114,15 +126,27 @@ Spread is calculated using the weapon’s base spread and the agent’s movement
 
 An event is fired when players start and stop facing an obstacle (i.e., the raycast sent every frame from the camera hits a non-agent object at less than a certain distance) to allow for weapon handling animations. The event only fires when the result changes, not every frame if the result is the same.
 
+<script src="https://gist.github.com/samuelschimmel/2c8b9822296b5b096722de6f0519f46c.js"></script>
+
 <b>Fire propagation</b>
 
 Damage volumes start with 0 radius and tick up to a given maximum within a few seconds. Fire spreads to the player, NPCs, interactive objects, and static mesh actors. When a damage volume overlaps an actor, it checks if is already has a damage volume attached to it before spawning one.
 
 Environmental damage volumes are also supported. Designers can drag damage volumes into the level, which will act as hazards and never expire. If an actor is on fire and they overlap more fire, their fire’s timer restarts.
 
+<script src="https://gist.github.com/samuelschimmel/2cb0d482e4f4237187f7b36341492943.js"></script>
+
+<b>First-person obstacle climbing</b>
+
+The min and max slope of climbable obstacles can be specified in degrees. How directly the player needs to be facing obstacles in order to climb them can also be specified as an angle in degrees. Collision is disabled during the climbing sequence to make the sequence smoother. Climbing also cancels the player's velocity to make the sequence feel less floaty. An event is fired when the player is facing a climbable obstacle so that UMG can display a prompt.
+
+<script src="https://gist.github.com/samuelschimmel/ad73a4fe2a9bb1e2a6d5a26b4fac6338.js"></script>
+
 <b>Inventory system</b>
 
 The inventory manager object persists between levels, but is reset to its state at the last checkpoint when the player dies.
+
+<script src="https://gist.github.com/samuelschimmel/fee1f912d1a58ad05d20dd515f02cb4d.js"></script>
 
 <b>Melee combat</b>
 
@@ -136,6 +160,8 @@ Enemies can also melee attack instead of firing their weapon if their target is 
 
 I also implemented a melee takedown mechanic similar to those found in Far Cry and Dishonored. When the player targets a stunned enemy within a given distance and hits the melee button, input is disable, the player lerps to their target, and a melee attack is performed, which instantly kills the enemy. During this sequence, the camera also lerps to look at the target agent. All melee attacks on unaware enemies are takedowns. Enemies do not alert other enemies if they are killed by a takedown.
 
+<script src="https://gist.github.com/samuelschimmel/7621e64308c0738b31d22953c1cde3df.js"></script>
+
 <b>Narrative manager</b>
 
 Any time the player triggers a trigger or uses an interactive object, the persistent narrative manager checks if a) that actor is a narration actor and b) the game is not ready for narration. If both of those are true, the player can't use the item/trigger the trigger. The second condition is based on whether the player is in combat and whether narration is already playing.
@@ -146,15 +172,15 @@ If the actor is a narration actor and the game is ready for narration, the game 
 
 Ladders can be mounted from any position, including while the player is falling. Ladders calculate their mount and dismount locations based on position, rotation, and bounds. When dismounting, the player lerps to a position a bit past the ladder, where the height is the top of the ladder, or the height of the surface they're climbing onto plus capsule half height, whichever is higher.
 
+<script src="https://gist.github.com/samuelschimmel/ee2ed56011589091ea6b1fd2db11e9e5.js"></script>
+
 <b>Lock-on targeting</b>
+
+<script src="https://gist.github.com/samuelschimmel/cc769718f7a05b23aa3203618fa98ed1.js"></script>
 
 <b>Object interaction</b>
 
 Props receive and deal a fixed amount of damage when thrown. This allows thrown explosive props to detonate on impact.
-
-<b>Obstacle climbing</b>
-
-The min and max slope of climbable obstacles can be specified in degrees. How directly the player needs to be facing obstacles in order to climb them can also be specified as an angle in degrees. Collision is disabled during the climbing sequence to make the sequence smoother. Climbing also cancels the player's velocity to make the sequence feel less floaty. An event is fired when the player is facing a climbable obstacle so that UMG can display a prompt.
 
 <b>Options menu backend</b>
 
@@ -168,6 +194,8 @@ Player illumination calculation works with directional lights, point lights, and
 
 Player illumination calculation requires iterating over a container of every light in the level, but this is mitigated by a) only updating every 100 ms, and b) culling lights by doing tests in order of least expensive to most expensive (distance, then field of view, then collision).
 
+<script src="https://gist.github.com/samuelschimmel/6cd809d7dc35408418cc0153193f825b.js"></script>
+
 <b>Player modeling, dynamic difficulty, dynamic tutorials, and weighted random item spawning</b>
 
 At periodic intervals while the player is alive and not in combat, the player modeling system determines which action the player has performed the least, and displays a tutorial for that action. It will only display one tutorial per action per level. Tutorials that teach controls are responsive to key rebinding.
@@ -176,13 +204,21 @@ Player modeling also tracks weapon and item pickups in order to display tutorial
 
 A "use WASD to move" tutorial plays at the beginning of the game if the player doesn’t move for more than a few seconds. The tutorial uses the current movement mappings, and will never play after the player has moved.
 
+<script src="https://gist.github.com/samuelschimmel/eaf4a9f4766c7ac291da34f6430805f6.js"></script>
+
 <b>Player targeting</b>
+
+<script src="https://gist.github.com/samuelschimmel/fdf19a98ca4247fd2643f2b3130cd109.js"></script>
 
 <b>Quest system</b>
 
 The quest manager supports multiple simultaneous sets of objectives, each with their own separate objective locators. The quest system can handle objectives being destroyed early.
 
+<script src="https://gist.github.com/samuelschimmel/cd15bcb5213e3ead37c5e180c4b9f50a.js"></script>
+
 <b>Radial damage</b>
+
+<script src="https://gist.github.com/samuelschimmel/938c3645a8141f49dfcd36a404536c32.js"></script>
 
 <b>Rifle scope</b>
 
