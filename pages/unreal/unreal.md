@@ -34,11 +34,11 @@ permalink: /unreal/
 
 <h2><strong>Features implemented</strong></h2>
 
-<h3>AI aiming</h3>
+<h3><i>AI aiming</i></h3>
 
 AI aiming is handled by the custom behavior tree service CheckTargetActor. When CheckTargetActor is ticked, NPCs in combat will focus on an intercept point offset from their target. This point is calculated using the NPC’s firearm’s projectile speed and gravity in order to compensate for target velocity and bullet drop. Assuming zero spread and zero projectile gravity, NPCs are perfectly accurate against targets with constant velocity, which requires the player to vary their movement patterns in order to dodge projectiles.
 
-<h3>AI detection</h3>
+<h3><em>AI detection</em></h3>
 
 NPCs instantaneously detect other NPCs, and gradually detect the player. The detection meter fills while the player is in line of sight, and not 100% concealed (otherwise, the meter decays by a constant rate). The meter also fills by a constant amount when the AI hears the player, and immediately fills to max on collision with player. Visual fill rate is given as:
 
