@@ -4,7 +4,7 @@ title: Unreal
 permalink: /unreal/
 ---
 
-@import "/assets/style.scss"
+<link rel="stylesheet" href="styles/default.css">
 
 <h2><strong>Videos</strong></h2>
 
