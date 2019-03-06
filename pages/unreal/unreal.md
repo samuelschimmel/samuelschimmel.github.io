@@ -44,9 +44,9 @@ AI aiming is handled by the custom behavior tree service CheckTargetActor. When 
 <summary>AI detection</summary>
 
 NPCs instantaneously detect other NPCs, and gradually detect the player. The detection meter fills while the player is in line of sight, and not 100% concealed (otherwise, the meter decays by a constant rate). The meter also fills by a constant amount when the AI hears the player, and immediately fills to max on collision with player. Visual fill rate is given as:
-<br>
+<br><br>
 <img src="https://tex.s2cms.ru/svg/fillModifier%20*%20deltaTime%20*%20(weightedConcealmentModifier%20%2B%20weightedDistanceModifier%20%2B%20weightedFOVModifier)" alt="fillModifier * deltaTime * (weightedConcealmentModifier + weightedDistanceModifier + weightedFOVModifier)" />
-<br>
+<br><br>
 …where player concealment is calculated once every 100 ms based on lighting and stance.
 </details><br>
 
@@ -54,7 +54,7 @@ NPCs instantaneously detect other NPCs, and gradually detect the player. The det
 <summary>AI formations</summary>
 
 AI formations are handled by a custom behavior tree service called Command. When Command is ticked, agents of class Leader remove dead soldiers from their soldiers container, add new soldiers, and update their soldiers’ target locations. Soldiers can be added to the container if they don’t already have leaders, and are within range and line of sight of the leader. The algorithm for selecting target locations is as follows. First, the formation radius is calculated based on the number of soldiers in the squad. Then the soldiers are assigned evenly spaced points on a semicircle. The semicircle is based on the leader’s forward vector during the patrol state. During combat, it is based on the vector between the leader and the player, which allows the soldiers to take defensive positions around their leader.
-<br>
+<br><br>
 <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://player.vimeo.com/video/315609030' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div>
 <br>
 <script src="https://gist.github.com/samuelschimmel/6c0cc776b004cbdbd40ad4f3091e24d5.js"></script>
