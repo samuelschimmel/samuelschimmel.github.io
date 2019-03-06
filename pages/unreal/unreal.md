@@ -150,7 +150,7 @@ Instead of having NPCs immediately drop all of their equipment on death, I have 
 <summary>Enemy wave spawning system</summary>
 
 Instances of BP_Encounter are placed in the level, and spawners and triggers are attached to them in the world outliner. Parameters include spawn tickets for each enemy type, min and max concurrent enemies, wave size mean and standard deviation, and wave delay mean and standard deviation. Each wave size is calculated using a normal distribution, and each wave delay is calculated using a binomial distribution. Combat start and end feedback properly handles the player being in more than one encounter at the same time. When the player triggers an encounter, only the first wave will spawn (unaware of the player) until the player enters combat. If the player is already in combat when they trigger an encounter, the encounter will spawn waves of enemies normally. Enemies spawned by encounters while the player is in combat will automatically be aware of the player. Encounters can also be started from the level blueprint.
-<br>
+<br><br>
 <script src="https://gist.github.com/samuelschimmel/72ee16b0e160b0a920ba3aebd52631e4.js"></script>
 </details><br>
 
@@ -162,7 +162,7 @@ Projectiles can be rotated to follow the vector from the firearm’s muzzle to t
 Spread is calculated using the weapon’s base spread and the agent’s movement. For players, RPG skills are also considered. NPCs have a minimum spread to prevent them from being too accurate with precise, high damage weapons.
 
 An event is fired when players start and stop facing an obstacle (i.e., the raycast sent every frame from the camera hits a non-agent object at less than a certain distance) to allow for weapon handling animations. The event only fires when the result changes, not every frame if the result is the same.
-<br>
+<br><br>
 <script src="https://gist.github.com/samuelschimmel/2c8b9822296b5b096722de6f0519f46c.js"></script>
 </details><br>
 
@@ -172,7 +172,7 @@ An event is fired when players start and stop facing an obstacle (i.e., the rayc
 Damage volumes start with 0 radius and tick up to a given maximum within a few seconds. Fire spreads to the player, NPCs, interactive objects, and static mesh actors. When a damage volume overlaps an actor, it checks if is already has a damage volume attached to it before spawning one.
 
 Environmental damage volumes are also supported. Designers can drag damage volumes into the level, which will act as hazards and never expire. If an actor is on fire and they overlap more fire, their fire’s timer restarts.
-<br>
+<br><br>
 <script src="https://gist.github.com/samuelschimmel/2cb0d482e4f4237187f7b36341492943.js"></script>
 </details><br>
 
@@ -190,7 +190,7 @@ The min and max slope of climbable obstacles can be specified in degrees. How di
 <summary>Inventory system</summary>
 
 The inventory manager object persists between levels, but is reset to its state at the last checkpoint when the player dies.
-<br>
+<br><br>
 <script src="https://gist.github.com/samuelschimmel/fee1f912d1a58ad05d20dd515f02cb4d.js"></script>
 </details><br>
 
@@ -206,7 +206,7 @@ In order for damage to only occur during the appropriate frames of the melee ani
 Enemies can also melee attack instead of firing their weapon if their target is near enough.
 
 I also implemented a melee takedown mechanic similar to those found in Far Cry and Dishonored. When the player targets a stunned enemy within a given distance and hits the melee button, input is disable, the player lerps to their target, and a melee attack is performed, which instantly kills the enemy. During this sequence, the camera also lerps to look at the target agent. All melee attacks on unaware enemies are takedowns. Enemies do not alert other enemies if they are killed by a takedown.
-<br>
+<br><br>
 <script src="https://gist.github.com/samuelschimmel/7621e64308c0738b31d22953c1cde3df.js"></script>
 </details><br>
 
@@ -222,7 +222,7 @@ If the actor is a narration actor and the game is ready for narration, the game 
 <summary>Ladders</summary>
 
 Ladders can be mounted from any position, including while the player is falling. Ladders calculate their mount and dismount locations based on position, rotation, and bounds. When dismounting, the player lerps to a position a bit past the ladder, where the height is the top of the ladder, or the height of the surface they're climbing onto plus capsule half height, whichever is higher.
-<br>
+<br><br>
 <script src="https://gist.github.com/samuelschimmel/ee2ed56011589091ea6b1fd2db11e9e5.js"></script>
 </details><br>
 
@@ -252,7 +252,7 @@ Player illumination calculation works with directional lights, point lights, and
 <img src="https://tex.s2cms.ru/svg/lightIntensity%20%5Cover%20distanceToPlayer%5E2" alt="lightIntensity \over distanceToPlayer^2" />
 <br><br>
 Player illumination calculation requires iterating over a container of every light in the level, but this is mitigated by a) only updating every 100 ms, and b) culling lights by doing tests in order of least expensive to most expensive (distance, then field of view, then collision).
-<br>
+<br><br>
 <script src="https://gist.github.com/samuelschimmel/6cd809d7dc35408418cc0153193f825b.js"></script>
 </details><br>
 
@@ -264,7 +264,7 @@ At periodic intervals while the player is alive and not in combat, the player mo
 Player modeling also tracks weapon and item pickups in order to display tutorials the first time they are  acquired. These tutorials don't conflict with the tutorials that play the first two times weapons of any type are picked up (i.e., “press LMB to fire” and “use scroll wheel to switch weapons”).
 
 A "use WASD to move" tutorial plays at the beginning of the game if the player doesn’t move for more than a few seconds. The tutorial uses the current movement mappings, and will never play after the player has moved.
-<br>
+<br><br>
 <script src="https://gist.github.com/samuelschimmel/eaf4a9f4766c7ac291da34f6430805f6.js"></script>
 </details><br>
 
@@ -278,7 +278,7 @@ A "use WASD to move" tutorial plays at the beginning of the game if the player d
 <summary>Quest system</summary>
 
 The quest manager supports multiple simultaneous sets of objectives, each with their own separate objective locators. The quest system can handle objectives being destroyed early.
-<br>
+<br><br>
 <script src="https://gist.github.com/samuelschimmel/cd15bcb5213e3ead37c5e180c4b9f50a.js"></script>
 </details><br>
 
