@@ -51,6 +51,7 @@ NPCs instantaneously detect other NPCs, and gradually detect the player. The det
 
 …where player concealment is calculated once every 100 ms based on lighting and stance.
 
+
 <br>
 </details>
 
