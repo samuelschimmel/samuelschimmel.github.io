@@ -44,9 +44,9 @@ AI aiming is handled by the custom behavior tree service CheckTargetActor. When 
 <summary>AI detection</summary>
 
 NPCs instantaneously detect other NPCs, and gradually detect the player. The detection meter fills while the player is in line of sight, and not 100% concealed (otherwise, the meter decays by a constant rate). The meter also fills by a constant amount when the AI hears the player, and immediately fills to max on collision with player. Visual fill rate is given as:
-
+<br>
 <img src="https://tex.s2cms.ru/svg/fillModifier%20*%20deltaTime%20*%20(weightedConcealmentModifier%20%2B%20weightedDistanceModifier%20%2B%20weightedFOVModifier)" alt="fillModifier * deltaTime * (weightedConcealmentModifier + weightedDistanceModifier + weightedFOVModifier)" />
-
+<br>
 …where player concealment is calculated once every 100 ms based on lighting and stance.
 </details><br>
 
@@ -54,9 +54,9 @@ NPCs instantaneously detect other NPCs, and gradually detect the player. The det
 <summary>AI formations</summary>
 
 AI formations are handled by a custom behavior tree service called Command. When Command is ticked, agents of class Leader remove dead soldiers from their soldiers container, add new soldiers, and update their soldiers’ target locations. Soldiers can be added to the container if they don’t already have leaders, and are within range and line of sight of the leader. The algorithm for selecting target locations is as follows. First, the formation radius is calculated based on the number of soldiers in the squad. Then the soldiers are assigned evenly spaced points on a semicircle. The semicircle is based on the leader’s forward vector during the patrol state. During combat, it is based on the vector between the leader and the player, which allows the soldiers to take defensive positions around their leader.
-
-<style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://player.vimeo.com/video/315609030' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div><br>
-
+<br>
+<style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://player.vimeo.com/video/315609030' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div>
+<br>
 <script src="https://gist.github.com/samuelschimmel/6c0cc776b004cbdbd40ad4f3091e24d5.js"></script>
 </details><br>
 
@@ -68,7 +68,7 @@ Footsteps, gunshots, explosions, projectile impacts, and thrown prop impacts all
 
 <details>
 <summary>AI positioning</summary>
-
+<br>
 <script src="https://gist.github.com/samuelschimmel/8dea9b991893a01987af134be038fb5e.js"></script>
 </details><br>
 
@@ -94,7 +94,7 @@ NPC-exclusive functionality includes AI state feedback (idle, alert, etc.), rand
 <summary>Asset loading with caching</summary>
 
 I optimized my custom asset lookup function by having it cache the assets it loads in a TMap<FString, UObject *>. This way, it only has to call Unreal's asset loading code the first time my code requests an asset. All subsequent times it can get the asset from the map, with the key being the asset's path. The function is templatized to work with static meshes as well as UObjects.
-
+<br>
 <script src="https://gist.github.com/samuelschimmel/57e2f107aca5d9b086eed2cf4f612b1e.js"></script>
 </details><br>
 
@@ -108,7 +108,7 @@ The built-in AIMoveTo node is incompatible with behavior trees. To combine custo
 <summary>Checkpoints and saving</summary>
 
 All unsaved items are lost when players reload their last checkpoint.
-
+<br>
 <script src="https://gist.github.com/samuelschimmel/f7aba5aff29d4abb295f86ecf2455c94.js"></script>
 </details><br>
 
@@ -124,7 +124,7 @@ Instead of having NPCs immediately drop all of their equipment on death, I have 
 
 <details>
 <summary>Damage system</summary>
-
+<br>
 <script src="https://gist.github.com/samuelschimmel/4cd3a5eea2195a8e301b38df336669d3.js"></script>
 </details><br>
 
@@ -142,7 +142,7 @@ Instead of having NPCs immediately drop all of their equipment on death, I have 
 
 <details>
 <summary>Dynamic multicast delegate Blueprint interface</summary>
-
+<br>
 <script src="https://gist.github.com/samuelschimmel/248c709d791b858c74bcad6758a93fde.js"></script>
 </details><br>
 
@@ -150,7 +150,7 @@ Instead of having NPCs immediately drop all of their equipment on death, I have 
 <summary>Enemy wave spawning system</summary>
 
 Instances of BP_Encounter are placed in the level, and spawners and triggers are attached to them in the world outliner. Parameters include spawn tickets for each enemy type, min and max concurrent enemies, wave size mean and standard deviation, and wave delay mean and standard deviation. Each wave size is calculated using a normal distribution, and each wave delay is calculated using a binomial distribution. Combat start and end feedback properly handles the player being in more than one encounter at the same time. When the player triggers an encounter, only the first wave will spawn (unaware of the player) until the player enters combat. If the player is already in combat when they trigger an encounter, the encounter will spawn waves of enemies normally. Enemies spawned by encounters while the player is in combat will automatically be aware of the player. Encounters can also be started from the level blueprint.
-
+<br>
 <script src="https://gist.github.com/samuelschimmel/72ee16b0e160b0a920ba3aebd52631e4.js"></script>
 </details><br>
 
@@ -162,7 +162,7 @@ Projectiles can be rotated to follow the vector from the firearm’s muzzle to t
 Spread is calculated using the weapon’s base spread and the agent’s movement. For players, RPG skills are also considered. NPCs have a minimum spread to prevent them from being too accurate with precise, high damage weapons.
 
 An event is fired when players start and stop facing an obstacle (i.e., the raycast sent every frame from the camera hits a non-agent object at less than a certain distance) to allow for weapon handling animations. The event only fires when the result changes, not every frame if the result is the same.
-
+<br>
 <script src="https://gist.github.com/samuelschimmel/2c8b9822296b5b096722de6f0519f46c.js"></script>
 </details><br>
 
@@ -172,7 +172,7 @@ An event is fired when players start and stop facing an obstacle (i.e., the rayc
 Damage volumes start with 0 radius and tick up to a given maximum within a few seconds. Fire spreads to the player, NPCs, interactive objects, and static mesh actors. When a damage volume overlaps an actor, it checks if is already has a damage volume attached to it before spawning one.
 
 Environmental damage volumes are also supported. Designers can drag damage volumes into the level, which will act as hazards and never expire. If an actor is on fire and they overlap more fire, their fire’s timer restarts.
-
+<br>
 <script src="https://gist.github.com/samuelschimmel/2cb0d482e4f4237187f7b36341492943.js"></script>
 </details><br>
 
@@ -180,9 +180,9 @@ Environmental damage volumes are also supported. Designers can drag damage volum
 <summary>First-person obstacle climbing</summary>
 
 The min and max slope of climbable obstacles can be specified in degrees. How directly the player needs to be facing obstacles in order to climb them can also be specified as an angle in degrees. Collision is disabled during the climbing sequence to make the sequence smoother. Climbing also cancels the player's velocity to make the sequence feel less floaty. An event is fired when the player is facing a climbable obstacle so that UMG can display a prompt.
-
+<br>
 <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://player.vimeo.com/video/320170064' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div><br>
-
+<br>
 <script src="https://gist.github.com/samuelschimmel/ad73a4fe2a9bb1e2a6d5a26b4fac6338.js"></script>
 </details><br>
 
@@ -190,7 +190,7 @@ The min and max slope of climbable obstacles can be specified in degrees. How di
 <summary>Inventory system</summary>
 
 The inventory manager object persists between levels, but is reset to its state at the last checkpoint when the player dies.
-
+<br>
 <script src="https://gist.github.com/samuelschimmel/fee1f912d1a58ad05d20dd515f02cb4d.js"></script>
 </details><br>
 
@@ -206,7 +206,7 @@ In order for damage to only occur during the appropriate frames of the melee ani
 Enemies can also melee attack instead of firing their weapon if their target is near enough.
 
 I also implemented a melee takedown mechanic similar to those found in Far Cry and Dishonored. When the player targets a stunned enemy within a given distance and hits the melee button, input is disable, the player lerps to their target, and a melee attack is performed, which instantly kills the enemy. During this sequence, the camera also lerps to look at the target agent. All melee attacks on unaware enemies are takedowns. Enemies do not alert other enemies if they are killed by a takedown.
-
+<br>
 <script src="https://gist.github.com/samuelschimmel/7621e64308c0738b31d22953c1cde3df.js"></script>
 </details><br>
 
@@ -222,13 +222,13 @@ If the actor is a narration actor and the game is ready for narration, the game 
 <summary>Ladders</summary>
 
 Ladders can be mounted from any position, including while the player is falling. Ladders calculate their mount and dismount locations based on position, rotation, and bounds. When dismounting, the player lerps to a position a bit past the ladder, where the height is the top of the ladder, or the height of the surface they're climbing onto plus capsule half height, whichever is higher.
-
+<br>
 <script src="https://gist.github.com/samuelschimmel/ee2ed56011589091ea6b1fd2db11e9e5.js"></script>
 </details><br>
 
 <details>
 <summary>Lock-on targeting</summary>
-
+<br>
 <script src="https://gist.github.com/samuelschimmel/cc769718f7a05b23aa3203618fa98ed1.js"></script>
 </details><br>
 
@@ -248,11 +248,11 @@ I made a derived class of GameUserSettings and edited DefaultEngine to use it. I
 <summary>Player illumination calculation</summary>
 
 Player illumination calculation works with directional lights, point lights, and spot lights. For point and spot lights, the calculation uses inverse square attenuation. The penalty to the player’s concealment is given as:
-
+<br>
 <img src="https://tex.s2cms.ru/svg/lightIntensity%20%5Cover%20distanceToPlayer%5E2" alt="lightIntensity \over distanceToPlayer^2" />
-
+<br>
 Player illumination calculation requires iterating over a container of every light in the level, but this is mitigated by a) only updating every 100 ms, and b) culling lights by doing tests in order of least expensive to most expensive (distance, then field of view, then collision).
-
+<br>
 <script src="https://gist.github.com/samuelschimmel/6cd809d7dc35408418cc0153193f825b.js"></script>
 </details><br>
 
@@ -264,13 +264,13 @@ At periodic intervals while the player is alive and not in combat, the player mo
 Player modeling also tracks weapon and item pickups in order to display tutorials the first time they are  acquired. These tutorials don't conflict with the tutorials that play the first two times weapons of any type are picked up (i.e., “press LMB to fire” and “use scroll wheel to switch weapons”).
 
 A "use WASD to move" tutorial plays at the beginning of the game if the player doesn’t move for more than a few seconds. The tutorial uses the current movement mappings, and will never play after the player has moved.
-
+<br>
 <script src="https://gist.github.com/samuelschimmel/eaf4a9f4766c7ac291da34f6430805f6.js"></script>
 </details><br>
 
 <details>
 <summary>Player targeting</summary>
-
+<br>
 <script src="https://gist.github.com/samuelschimmel/fdf19a98ca4247fd2643f2b3130cd109.js"></script>
 </details><br>
 
@@ -278,13 +278,13 @@ A "use WASD to move" tutorial plays at the beginning of the game if the player d
 <summary>Quest system</summary>
 
 The quest manager supports multiple simultaneous sets of objectives, each with their own separate objective locators. The quest system can handle objectives being destroyed early.
-
+<br>
 <script src="https://gist.github.com/samuelschimmel/cd15bcb5213e3ead37c5e180c4b9f50a.js"></script>
 </details><br>
 
 <details>
 <summary>Radial damage</summary>
-
+<br>
 <script src="https://gist.github.com/samuelschimmel/938c3645a8141f49dfcd36a404536c32.js"></script>
 </details><br>
 
