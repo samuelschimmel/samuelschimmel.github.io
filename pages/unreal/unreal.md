@@ -94,7 +94,7 @@ NPC-exclusive functionality includes AI state feedback (idle, alert, etc.), rand
 <summary>Asset loading with caching</summary>
 
 I optimized my custom asset lookup function by having it cache the assets it loads in a TMap<FString, UObject *>. This way, it only has to call Unreal's asset loading code the first time my code requests an asset. All subsequent times it can get the asset from the map, with the key being the asset's path. The function is templatized to work with static meshes as well as UObjects.
-<br>
+<br><br>
 <script src="https://gist.github.com/samuelschimmel/57e2f107aca5d9b086eed2cf4f612b1e.js"></script>
 </details><br>
 
@@ -108,7 +108,7 @@ The built-in AIMoveTo node is incompatible with behavior trees. To combine custo
 <summary>Checkpoints and saving</summary>
 
 All unsaved items are lost when players reload their last checkpoint.
-<br>
+<br><br>
 <script src="https://gist.github.com/samuelschimmel/f7aba5aff29d4abb295f86ecf2455c94.js"></script>
 </details><br>
 
