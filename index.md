@@ -5,6 +5,4 @@
 layout: home
 ---
 
-<strong><em>[Unreal projects](/unreal/)</em></strong>
-
-<strong><em>[Unity projects](/unity)</em></strong>
+<a href="http://www.samuelschimmel.com/unreal/"><img src="http://www.samuelschimmel.com/assets/unreal/1.png" onmouseover="this.src='http://www.samuelschimmel.com/assets/unreal/unreal_mouseover.png'" onmouseout="this.src='http://www.samuelschimmel.com/assets/unreal/1.png'" /></a>
