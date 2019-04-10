@@ -88,24 +88,20 @@ I optimized my custom asset lookup function by having it cache the assets it loa
 
 <details>
 <summary>Behavior tree-compatible scripting nodes</summary>
-
 The built-in AIMoveTo node is incompatible with behavior trees. To combine custom scripting with procedural behaviors, I created custom MoveToActor and MoveToLocation nodes. When they are called, the agent will stop whatever they're doing, go to the given location or actor (and follow the actor if it moves), and then resume normal behavior once they arrive. This behavior takes priority over patrol and combat behaviors, but not stun or stationary behaviors. The biggest limitation of MoveToActor and MoveToLocation is that they lack AIMoveTo’s asychronous "OnSuccess" and "OnFailure" pins.
 </details><br>
 
 <details>
 <summary>Checkpoints and saving</summary>
-
-All unsaved items are lost when players reload their last checkpoint.
-<br><br>
+<br>
 <script src="https://gist.github.com/samuelschimmel/f7aba5aff29d4abb295f86ecf2455c94.js"></script>
 </details><br>
 
 <details>
 <summary>Combat feedback</summary>
-
 I added very brief slow motion after the player performs a scoped rifle headshot or melee kill. For both props and agents, point damage with knockback will push the damage receiver away from the damage instigator. For both props and agents, radial damage with knockback will push the damage receiver away from the origin of the damage.
 
-Instead of immediately dropping their guns, dead enemies pull the trigger for one second and then release and drop the gun like in F.E.A.R. 2. During this time, the projectiles spawn with the rotation of the firearm world mesh instead of the agent's "actor eyes view point.”
+Instead of immediately dropping their guns, dead enemies pull the trigger for one second and then release and drop the gun like in <i>F.E.A.R. 2</i>. During this time, the projectiles spawn with the rotation of the firearm world mesh instead of the agent's "actor eyes view point.”
 
 Instead of having NPCs immediately drop all of their equipment on death, I have them wait a fraction of a second before doing so, so their armor goes flying when they ragdoll instead of just falling to the ground. I also made it so when you kill an enemy with a headshot, their helmet flies off.
 </details><br>
@@ -117,18 +113,6 @@ Instead of having NPCs immediately drop all of their equipment on death, I have 
 </details><br>
 
 <details>
-<summary>Dash mechanic</summary>
-</details><br>
-
-<details>
-<summary>Destructible armor</summary>
-</details><br>
-
-<details>
-<summary>Doors</summary>
-</details><br>
-
-<details>
 <summary>Dynamic multicast delegate Blueprint interface</summary>
 <br>
 <script src="https://gist.github.com/samuelschimmel/248c709d791b858c74bcad6758a93fde.js"></script>
@@ -136,7 +120,6 @@ Instead of having NPCs immediately drop all of their equipment on death, I have 
 
 <details>
 <summary>Enemy wave spawning system</summary>
-
 Instances of BP_Encounter are placed in the level, and spawners and triggers are attached to them in the world outliner. Parameters include spawn tickets for each enemy type, min and max concurrent enemies, wave size mean and standard deviation, and wave delay mean and standard deviation. Each wave size is calculated using a normal distribution, and each wave delay is calculated using a binomial distribution. Combat start and end feedback properly handles the player being in more than one encounter at the same time. When the player triggers an encounter, only the first wave will spawn (unaware of the player) until the player enters combat. If the player is already in combat when they trigger an encounter, the encounter will spawn waves of enemies normally. Enemies spawned by encounters while the player is in combat will automatically be aware of the player. Encounters can also be started from the level blueprint.
 <br><br>
 <script src="https://gist.github.com/samuelschimmel/72ee16b0e160b0a920ba3aebd52631e4.js"></script>
@@ -144,7 +127,6 @@ Instances of BP_Encounter are placed in the level, and spawners and triggers are
 
 <details>
 <summary>Firearms</summary>
-
 Projectiles can be rotated to follow the vector from the firearm’s muzzle to the user’s current target. This allows projectiles to always hit the center of the player’s crosshair. When the agent is more than 5 meters from their target, projectiles are rotated to fire directly at the target. Between 5 and 1 meters, projectiles fire at the average of the target vector and the look vector (if they are just fired at the target vector, the rotation is noticeable; if they are just fired at look vector, the transition is noticeable). Closer than 1 meter, projectiles can’t be fired. If the user has no target (i.e., while looking at the sky), just the look vector is used.
 
 Spread is calculated using the weapon’s base spread and the agent’s movement. For players, RPG skills are also considered. NPCs have a minimum spread to prevent them from being too accurate with precise, high damage weapons.
@@ -156,7 +138,6 @@ An event is fired when players start and stop facing an obstacle (i.e., the rayc
 
 <details>
 <summary>Fire propagation</summary>
-
 Damage volumes start with 0 radius and tick up to a given maximum within a few seconds. Fire spreads to the player, NPCs, interactive objects, and static mesh actors. When a damage volume overlaps an actor, it checks if is already has a damage volume attached to it before spawning one.
 
 Environmental damage volumes are also supported. Designers can drag damage volumes into the level, which will act as hazards and never expire. If an actor is on fire and they overlap more fire, their fire’s timer restarts.
@@ -166,7 +147,6 @@ Environmental damage volumes are also supported. Designers can drag damage volum
 
 <details>
 <summary>First-person obstacle climbing</summary>
-
 The min and max slope of climbable obstacles can be specified in degrees. How directly the player needs to be facing obstacles in order to climb them can also be specified as an angle in degrees. Collision is disabled during the climbing sequence to make the sequence smoother. Climbing also cancels the player's velocity to make the sequence feel less floaty. An event is fired when the player is facing a climbable obstacle so that UMG can display a prompt.
 <br><br>
 <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://player.vimeo.com/video/320170064' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div><br>
@@ -176,15 +156,12 @@ The min and max slope of climbable obstacles can be specified in degrees. How di
 
 <details>
 <summary>Inventory system</summary>
-
-The inventory manager object persists between levels, but is reset to its state at the last checkpoint when the player dies.
-<br><br>
+<br>
 <script src="https://gist.github.com/samuelschimmel/fee1f912d1a58ad05d20dd515f02cb4d.js"></script>
 </details><br>
 
 <details>
 <summary>Melee combat</summary>
-
 I originally tried implementing melee using colliders, but the player had to stand excessively close to their target in order to damage them. I tried making the collider bigger, but because overlap events are only fired when an actor enters a collider, the player was only able to melee targets that were just barely in melee range (if the player were any closer, the overlap event would have already fired). I tried storing a pointer to the current melee collider overlap actor and damaging it during the melee attack, but this lead to attacking nearby but incorrect targets. I also tried storing those overlapped actors in an array, but this would require an algorithm to pick the best one.
 
 I think the collider approach would work well for a third person game, or for enemy melee attacks where collision can and should be more accurate. However, for first person player melee, I found it more effective to use raycasts. The player’s current target is checked every frame of the melee animation. Damage is dealt on the first frame that the target is within melee range of the weapon socket. Using the raycast method, designers can adjust first person melee weapon range, and attacks will always hit the target in the player’s crosshair. Checking distance from the weapon socket allows the range of the attack to extend slightly over the course of the animation.
@@ -200,7 +177,6 @@ I also implemented a melee takedown mechanic similar to those found in Far Cry a
 
 <details>
 <summary>Narrative manager</summary>
-
 Any time the player triggers a trigger or uses an interactive object, the persistent narrative manager checks if a) that actor is a narration actor and b) the game is not ready for narration. If both of those are true, the player can't use the item/trigger the trigger. The second condition is based on whether the player is in combat and whether narration is already playing.
 
 If the actor is a narration actor and the game is ready for narration, the game mode sends an event with the name of the actor. Audio can use that name to play the right audio event, and the HUD can pass that name to the text manager to get the appropriate subtitle. Meanwhile, player input is disabled. When the audio is finished playing, the audio engine can call a function that will re-enable player input and tell the HUD to remove the subtitle.
@@ -208,7 +184,6 @@ If the actor is a narration actor and the game is ready for narration, the game 
 
 <details>
 <summary>Ladders</summary>
-
 Ladders can be mounted from any position, including while the player is falling. Ladders calculate their mount and dismount locations based on position, rotation, and bounds. When the player reaches the top of a ladder, their dismount location's height is the height of the ladder or the height of the surface directly behind the ladder plus capsule half height, whichever is higher.
 <br><br>
 <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://player.vimeo.com/video/329509194' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div>
@@ -223,20 +198,12 @@ Ladders can be mounted from any position, including while the player is falling.
 </details><br>
 
 <details>
-<summary>Object interaction</summary>
-
-Props receive and deal a fixed amount of damage when thrown. This allows thrown explosive props to detonate on impact.
-</details><br>
-
-<details>
 <summary>Options menu backend</summary>
-
 I made a derived class of GameUserSettings and edited DefaultEngine to use it. I also made a class with static blueprint callable functions for communication with an options menu. This allows for game options like difficulty, invert mouse, show objective locator, etc. When options are updated, the changes are reflected in-game and saved to a file. I also added a function which takes a string and returns a copy with actions/axes in square brackets (case insensitive) replaced with the first key currently bound to that action/axis. This allows tutorials and UI to avoid hardcoding rebindable inputs. I also added functions for rebinding keys that remove any previous bindings.
 </details><br>
 
 <details>
 <summary>Player illumination calculation</summary>
-
 Player illumination calculation works with directional lights, point lights, and spot lights. For point and spot lights, the calculation uses inverse square attenuation. The penalty to the player’s concealment is given as:
 <br><br>
 <img src="https://tex.s2cms.ru/svg/lightIntensity%20%5Cover%20distanceToPlayer%5E2" alt="lightIntensity \over distanceToPlayer^2" />
@@ -248,7 +215,6 @@ Player illumination calculation requires iterating over a container of every lig
 
 <details>
 <summary>Player modeling, dynamic difficulty, dynamic tutorials, and weighted random item spawning</summary>
-
 At periodic intervals while the player is alive and not in combat, the player modeling system determines which action the player has performed the least, and displays a tutorial for that action. It will only display one tutorial per action per level. Tutorials that teach controls are responsive to key rebinding.
 
 Player modeling also tracks weapon and item pickups in order to display tutorials the first time they are  acquired. These tutorials don't conflict with the tutorials that play the first two times weapons of any type are picked up (i.e., “press LMB to fire” and “use scroll wheel to switch weapons”).
@@ -266,7 +232,6 @@ A "use WASD to move" tutorial plays at the beginning of the game if the player d
 
 <details>
 <summary>Quest system</summary>
-
 The quest manager supports multiple simultaneous sets of objectives, each with their own separate objective locators. The quest system can handle objectives being destroyed early.
 <br><br>
 <script src="https://gist.github.com/samuelschimmel/cd15bcb5213e3ead37c5e180c4b9f50a.js"></script>
@@ -280,14 +245,11 @@ The quest manager supports multiple simultaneous sets of objectives, each with t
 
 <details>
 <summary>Rifle scope</summary>
+<br>
+<script src="https://gist.github.com/samuelschimmel/401eed69335b95aaa72f445065ae4490.js"></script>
 </details><br>
 
 <details>
 <summary>RPG mechanics</summary>
-
 The stat system supports multiple tiers of stats (e.g., tier 0 for player level, tier 1 for attributes, tier 2 for skills, and tier 3 for perks). Stats can have parent stats like in Shadowrun (i.e., your rifle skill level can’t exceed your ranged combat skill level). Players are awarded points for each tier. When the player attempts to level up a stat, the stat’s max level is checked, the parent stat’s level is checked, and their points in that tier are checked. Leveling up can award points for other tiers. Stat levels can be queried elsewhere in the code. For example, the player’s firearm skill is used to calculate the spread of each shot.
-</details><br>
-
-<details>
-<summary>Worldspace UI</summary>
 </details><br>
