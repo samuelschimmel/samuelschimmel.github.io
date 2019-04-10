@@ -221,7 +221,7 @@ If the actor is a narration actor and the game is ready for narration, the game 
 <details>
 <summary>Ladders</summary>
 
-Ladders can be mounted from any position, including while the player is falling. Ladders calculate their mount and dismount locations based on position, rotation, and bounds. When dismounting, the player lerps to a position a bit past the ladder, where the height is the top of the ladder, or the height of the surface they're climbing onto plus capsule half height, whichever is higher.
+Ladders can be mounted from any position, including while the player is falling. Ladders calculate their mount and dismount locations based on position, rotation, and bounds. When the player reaches the top of a ladder, their dismount location's height is the height of the ladder or the height of the surface directly behind the ladder plus capsule half height, whichever is higher.
 <br><br>
 <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://player.vimeo.com/video/329509194' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div>
 <br>
