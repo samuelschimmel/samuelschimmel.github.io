@@ -17,16 +17,16 @@ permalink: /unity/
 
 <h2><strong>Features implemented</strong></h2>
 
-<b>[Branching dialogue system](https://bitbucket.org/contraband/unityprojrepo/src/5fa31811425a490fad073520b9d3c41f79773353/Assets/Scripts/Samuel/Screen/Dialogue.cs)</b>
+[Branching dialogue system](https://bitbucket.org/contraband/unityprojrepo/src/5fa31811425a490fad073520b9d3c41f79773353/Assets/Scripts/Samuel/Screen/Dialogue.cs)
 
-<b>[A* pathfinder](https://bitbucket.org/contraband/unityprojrepo/src/5fa31811425a490fad073520b9d3c41f79773353/Assets/Scripts/Samuel/Grid/Pathfinding/Pathfinder.cs)</b>
+[A* pathfinder](https://bitbucket.org/contraband/unityprojrepo/src/5fa31811425a490fad073520b9d3c41f79773353/Assets/Scripts/Samuel/Grid/Pathfinding/Pathfinder.cs)
 
-<b>[Agent manager](https://bitbucket.org/contraband/unityprojrepo/src/5fa31811425a490fad073520b9d3c41f79773353/Assets/Scripts/Samuel/Grid/TileOccupants/Actors/Actors.cs)</b>
+[Agent manager](https://bitbucket.org/contraband/unityprojrepo/src/5fa31811425a490fad073520b9d3c41f79773353/Assets/Scripts/Samuel/Grid/TileOccupants/Actors/Actors.cs)
 
-<b>[Enemy class](https://bitbucket.org/contraband/unityprojrepo/src/5fa31811425a490fad073520b9d3c41f79773353/Assets/Scripts/Samuel/Grid/TileOccupants/Actors/Enemy.cs)</b>
+[Enemy class](https://bitbucket.org/contraband/unityprojrepo/src/5fa31811425a490fad073520b9d3c41f79773353/Assets/Scripts/Samuel/Grid/TileOccupants/Actors/Enemy.cs)
 
-<b>[Camera class](https://bitbucket.org/contraband/unityprojrepo/src/5fa31811425a490fad073520b9d3c41f79773353/Assets/Scripts/Samuel/Cameras/MainCamera.cs)</b>
+[Camera class](https://bitbucket.org/contraband/unityprojrepo/src/5fa31811425a490fad073520b9d3c41f79773353/Assets/Scripts/Samuel/Cameras/MainCamera.cs)
 
-<b>[HUD manager](https://bitbucket.org/contraband/unityprojrepo/src/5fa31811425a490fad073520b9d3c41f79773353/Assets/Scripts/Samuel/Screen/HUD/HUD.cs)</b>
+[HUD manager](https://bitbucket.org/contraband/unityprojrepo/src/5fa31811425a490fad073520b9d3c41f79773353/Assets/Scripts/Samuel/Screen/HUD/HUD.cs)
 
-<b>[HUD element base class](https://bitbucket.org/contraband/unityprojrepo/src/5fa31811425a490fad073520b9d3c41f79773353/Assets/Scripts/Samuel/Screen/HUD/HUDElement.cs)</b>
+[HUD element base class](https://bitbucket.org/contraband/unityprojrepo/src/5fa31811425a490fad073520b9d3c41f79773353/Assets/Scripts/Samuel/Screen/HUD/HUDElement.cs)
