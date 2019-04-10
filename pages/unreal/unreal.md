@@ -37,10 +37,6 @@ permalink: /unreal/
 <details>
 <summary>AI aiming</summary>
 AI aiming is handled by the custom behavior tree service CheckTargetActor. When CheckTargetActor is ticked, NPCs in combat will focus on an intercept point offset from their target. This point is calculated using the NPC’s firearm’s projectile speed and gravity in order to compensate for target velocity and bullet drop. Assuming zero spread and zero projectile gravity, NPCs are perfectly accurate against targets with constant velocity, which requires the player to vary their movement patterns in order to dodge projectiles.
-
-
-<script src="https://gist.github.com/samuelschimmel/6c0cc776b004cbdbd40ad4f3091e24d5.js" style="max-height:350px; overflow:auto;"></script>
-
 </details><br>
 
 <details>
@@ -75,7 +71,6 @@ Footsteps, gunshots, explosions, projectile impacts, and thrown prop impacts all
 <details>
 <summary>Agent</summary>
 Agent is the shared player/NPC base class. Players and NPCs behave similarly enough that I could factor out and resuse over a thousand lines of code by moving it to the base class. In addition to code reuse, the Agent class also promotes consistency by making sure that players and NPCs are governed by the same ruleset. Deriving players and NPCs from the same base class also allowed me to use the same AI controller class for both of them, which proved useful when implementing autoplay.
-
 Functionality shared between players and NPCs via the Agent class include obstacle climbing, health, stamina, damage, dashing, ladders, melee, object interaction, speed, stances, weapon usage, and weapon inventory.
 
 Player-exclusive functionality includes health regeneration, losing and restarting, locking on, aiming with the scope, determining the player’s current target, illumination calculation, melee takedowns, a “last stand” state (in which lethal damage to the player is clamped to 1 HP, unless they are already at 1 HP), and input (including allowing or disallowing input depending on various states).
