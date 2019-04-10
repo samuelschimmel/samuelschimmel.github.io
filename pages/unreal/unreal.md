@@ -70,13 +70,7 @@ Footsteps, gunshots, explosions, projectile impacts, and thrown prop impacts all
 
 <details>
 <summary>Agent</summary>
-Agent is the shared player/NPC base class. Players and NPCs behave similarly enough that I could factor out and resuse over a thousand lines of code by moving it to the base class. In addition to code reuse, the Agent class also promotes consistency by making sure that players and NPCs are governed by the same ruleset. Deriving players and NPCs from the same base class also allowed me to use the same AI controller class for both of them, which proved useful when implementing autoplay.
-
-Functionality shared between players and NPCs via the Agent class include obstacle climbing, health, stamina, damage, dashing, ladders, melee, object interaction, speed, stances, weapon usage, and weapon inventory.
-
-Player-exclusive functionality includes health regeneration, losing and restarting, locking on, aiming with the scope, determining the player’s current target, illumination calculation, melee takedowns, a “last stand” state (in which lethal damage to the player is clamped to 1 HP, unless they are already at 1 HP), and input (including allowing or disallowing input depending on various states).
-
-NPC-exclusive functionality includes AI state feedback (idle, alert, etc.), random equipment spawning, and stun.
+Agent is the shared player/NPC base class. Players and NPCs behave similarly enough that I could factor out and resuse over a thousand lines of code by moving it to the base class. In addition to code reuse, the Agent class also promotes consistency by making sure that players and NPCs are governed by the same ruleset. Deriving players and NPCs from the same base class also allowed me to use the same AI controller class for both of them, which proved useful when implementing autoplay. Functionality shared between players and NPCs via the Agent class include obstacle climbing, health, stamina, damage, dashing, ladders, melee, object interaction, speed, stances, weapon usage, and weapon inventory. Player-exclusive functionality includes health regeneration, losing and restarting, locking on, aiming with the scope, determining the player’s current target, illumination calculation, melee takedowns, a “last stand” state (in which lethal damage to the player is clamped to 1 HP, unless they are already at 1 HP), and input (including allowing or disallowing input depending on various states). NPC-exclusive functionality includes AI state feedback (idle, alert, etc.), random equipment spawning, and stun.
 </details><br>
 
 <details>
@@ -99,11 +93,7 @@ The built-in AIMoveTo node is incompatible with behavior trees. To combine custo
 
 <details>
 <summary>Combat feedback</summary>
-I added very brief slow motion after the player performs a scoped rifle headshot or melee kill. For both props and agents, point damage with knockback will push the damage receiver away from the damage instigator. For both props and agents, radial damage with knockback will push the damage receiver away from the origin of the damage.
-
-Instead of immediately dropping their guns, dead enemies pull the trigger for one second and then release and drop the gun like in <i>F.E.A.R. 2</i>. During this time, the projectiles spawn with the rotation of the firearm world mesh instead of the agent's "actor eyes view point.”
-
-Instead of having NPCs immediately drop all of their equipment on death, I have them wait a fraction of a second before doing so, so their armor goes flying when they ragdoll instead of just falling to the ground. I also made it so when you kill an enemy with a headshot, their helmet flies off.
+I added very brief slow motion after the player performs a scoped rifle headshot or melee kill. For both props and agents, point damage with knockback will push the damage receiver away from the damage instigator. For both props and agents, radial damage with knockback will push the damage receiver away from the origin of the damage. Instead of immediately dropping their guns, dead enemies pull the trigger for one second and then release and drop the gun like in <i>F.E.A.R. 2</i>. During this time, the projectiles spawn with the rotation of the firearm world mesh instead of the agent's "actor eyes view point.” Instead of having NPCs immediately drop all of their equipment on death, I have them wait a fraction of a second before doing so, so their armor goes flying when they ragdoll instead of just falling to the ground. I also made it so when you kill an enemy with a headshot, their helmet flies off.
 </details><br>
 
 <details>
@@ -127,20 +117,14 @@ Instances of BP_Encounter are placed in the level, and spawners and triggers are
 
 <details>
 <summary>Firearms</summary>
-Projectiles can be rotated to follow the vector from the firearm’s muzzle to the user’s current target. This allows projectiles to always hit the center of the player’s crosshair. When the agent is more than 5 meters from their target, projectiles are rotated to fire directly at the target. Between 5 and 1 meters, projectiles fire at the average of the target vector and the look vector (if they are just fired at the target vector, the rotation is noticeable; if they are just fired at look vector, the transition is noticeable). Closer than 1 meter, projectiles can’t be fired. If the user has no target (i.e., while looking at the sky), just the look vector is used.
-
-Spread is calculated using the weapon’s base spread and the agent’s movement. For players, RPG skills are also considered. NPCs have a minimum spread to prevent them from being too accurate with precise, high damage weapons.
-
-An event is fired when players start and stop facing an obstacle (i.e., the raycast sent every frame from the camera hits a non-agent object at less than a certain distance) to allow for weapon handling animations. The event only fires when the result changes, not every frame if the result is the same.
+Projectiles can be rotated to follow the vector from the firearm’s muzzle to the user’s current target. This allows projectiles to always hit the center of the player’s crosshair. When the agent is more than 5 meters from their target, projectiles are rotated to fire directly at the target. Between 5 and 1 meters, projectiles fire at the average of the target vector and the look vector (if they are just fired at the target vector, the rotation is noticeable; if they are just fired at look vector, the transition is noticeable). Closer than 1 meter, projectiles can’t be fired. If the user has no target (i.e., while looking at the sky), just the look vector is used. Spread is calculated using the weapon’s base spread and the agent’s movement. For players, RPG skills are also considered. NPCs have a minimum spread to prevent them from being too accurate with precise, high damage weapons. An event is fired when players start and stop facing an obstacle (i.e., the raycast sent every frame from the camera hits a non-agent object at less than a certain distance) to allow for weapon handling animations. The event only fires when the result changes, not every frame if the result is the same.
 <br><br>
 <script src="https://gist.github.com/samuelschimmel/2c8b9822296b5b096722de6f0519f46c.js"></script>
 </details><br>
 
 <details>
 <summary>Fire propagation</summary>
-Damage volumes start with 0 radius and tick up to a given maximum within a few seconds. Fire spreads to the player, NPCs, interactive objects, and static mesh actors. When a damage volume overlaps an actor, it checks if is already has a damage volume attached to it before spawning one.
-
-Environmental damage volumes are also supported. Designers can drag damage volumes into the level, which will act as hazards and never expire. If an actor is on fire and they overlap more fire, their fire’s timer restarts.
+Damage volumes start with 0 radius and tick up to a given maximum within a few seconds. Fire spreads to the player, NPCs, interactive objects, and static mesh actors. When a damage volume overlaps an actor, it checks if is already has a damage volume attached to it before spawning one. Environmental damage volumes are also supported. Designers can drag damage volumes into the level, which will act as hazards and never expire. If an actor is on fire and they overlap more fire, their fire’s timer restarts.
 <br><br>
 <script src="https://gist.github.com/samuelschimmel/2cb0d482e4f4237187f7b36341492943.js"></script>
 </details><br>
@@ -162,24 +146,14 @@ The min and max slope of climbable obstacles can be specified in degrees. How di
 
 <details>
 <summary>Melee combat</summary>
-I originally tried implementing melee using colliders, but the player had to stand excessively close to their target in order to damage them. I tried making the collider bigger, but because overlap events are only fired when an actor enters a collider, the player was only able to melee targets that were just barely in melee range (if the player were any closer, the overlap event would have already fired). I tried storing a pointer to the current melee collider overlap actor and damaging it during the melee attack, but this lead to attacking nearby but incorrect targets. I also tried storing those overlapped actors in an array, but this would require an algorithm to pick the best one.
-
-I think the collider approach would work well for a third person game, or for enemy melee attacks where collision can and should be more accurate. However, for first person player melee, I found it more effective to use raycasts. The player’s current target is checked every frame of the melee animation. Damage is dealt on the first frame that the target is within melee range of the weapon socket. Using the raycast method, designers can adjust first person melee weapon range, and attacks will always hit the target in the player’s crosshair. Checking distance from the weapon socket allows the range of the attack to extend slightly over the course of the animation.
-
-In order for damage to only occur during the appropriate frames of the melee animation, the animation blueprint must call C++ functions that enable and disable damage. Damage is also disabled until the end of the animation after a target is struck.
-
-Enemies can also melee attack instead of firing their weapon if their target is near enough.
-
-I also implemented a melee takedown mechanic similar to those found in Far Cry and Dishonored. When the player targets a stunned enemy within a given distance and hits the melee button, input is disable, the player lerps to their target, and a melee attack is performed, which instantly kills the enemy. During this sequence, the camera also lerps to look at the target agent. All melee attacks on unaware enemies are takedowns. Enemies do not alert other enemies if they are killed by a takedown.
+I originally tried implementing melee using colliders, but the player had to stand excessively close to their target in order to damage them. I tried making the collider bigger, but because overlap events are only fired when an actor enters a collider, the player was only able to melee targets that were just barely in melee range (if the player were any closer, the overlap event would have already fired). I tried storing a pointer to the current melee collider overlap actor and damaging it during the melee attack, but this lead to attacking nearby but incorrect targets. I also tried storing those overlapped actors in an array, but this would require an algorithm to pick the best one. I think the collider approach would work well for a third person game, or for enemy melee attacks where collision can and should be more accurate. However, for first person player melee, I found it more effective to use raycasts. The player’s current target is checked every frame of the melee animation. Damage is dealt on the first frame that the target is within melee range of the weapon socket. Using the raycast method, designers can adjust first person melee weapon range, and attacks will always hit the target in the player’s crosshair. Checking distance from the weapon socket allows the range of the attack to extend slightly over the course of the animation. In order for damage to only occur during the appropriate frames of the melee animation, the animation blueprint must call C++ functions that enable and disable damage. Damage is also disabled until the end of the animation after a target is struck. Enemies can also melee attack instead of firing their weapon if their target is near enough. I also implemented a melee takedown mechanic similar to those found in Far Cry and Dishonored. When the player targets a stunned enemy within a given distance and hits the melee button, input is disable, the player lerps to their target, and a melee attack is performed, which instantly kills the enemy. During this sequence, the camera also lerps to look at the target agent. All melee attacks on unaware enemies are takedowns. Enemies do not alert other enemies if they are killed by a takedown.
 <br><br>
 <script src="https://gist.github.com/samuelschimmel/7621e64308c0738b31d22953c1cde3df.js"></script>
 </details><br>
 
 <details>
 <summary>Narrative manager</summary>
-Any time the player triggers a trigger or uses an interactive object, the persistent narrative manager checks if a) that actor is a narration actor and b) the game is not ready for narration. If both of those are true, the player can't use the item/trigger the trigger. The second condition is based on whether the player is in combat and whether narration is already playing.
-
-If the actor is a narration actor and the game is ready for narration, the game mode sends an event with the name of the actor. Audio can use that name to play the right audio event, and the HUD can pass that name to the text manager to get the appropriate subtitle. Meanwhile, player input is disabled. When the audio is finished playing, the audio engine can call a function that will re-enable player input and tell the HUD to remove the subtitle.
+Any time the player triggers a trigger or uses an interactive object, the persistent narrative manager checks if a) that actor is a narration actor and b) the game is not ready for narration. If both of those are true, the player can't use the item/trigger the trigger. The second condition is based on whether the player is in combat and whether narration is already playing. If the actor is a narration actor and the game is ready for narration, the game mode sends an event with the name of the actor. Audio can use that name to play the right audio event, and the HUD can pass that name to the text manager to get the appropriate subtitle. Meanwhile, player input is disabled. When the audio is finished playing, the audio engine can call a function that will re-enable player input and tell the HUD to remove the subtitle.
 </details><br>
 
 <details>
@@ -215,11 +189,7 @@ Player illumination calculation requires iterating over a container of every lig
 
 <details>
 <summary>Player modeling, dynamic difficulty, dynamic tutorials, and weighted random item spawning</summary>
-At periodic intervals while the player is alive and not in combat, the player modeling system determines which action the player has performed the least, and displays a tutorial for that action. It will only display one tutorial per action per level. Tutorials that teach controls are responsive to key rebinding.
-
-Player modeling also tracks weapon and item pickups in order to display tutorials the first time they are  acquired. These tutorials don't conflict with the tutorials that play the first two times weapons of any type are picked up (i.e., “press LMB to fire” and “use scroll wheel to switch weapons”).
-
-A "use WASD to move" tutorial plays at the beginning of the game if the player doesn’t move for more than a few seconds. The tutorial uses the current movement mappings, and will never play after the player has moved.
+At periodic intervals while the player is alive and not in combat, the player modeling system determines which action the player has performed the least, and displays a tutorial for that action. It will only display one tutorial per action per level. Tutorials that teach controls are responsive to key rebinding. Player modeling also tracks weapon and item pickups in order to display tutorials the first time they are  acquired. These tutorials don't conflict with the tutorials that play the first two times weapons of any type are picked up (i.e., “press LMB to fire” and “use scroll wheel to switch weapons”). A "use WASD to move" tutorial plays at the beginning of the game if the player doesn’t move for more than a few seconds. The tutorial uses the current movement mappings, and will never play after the player has moved.
 <br><br>
 <script src="https://gist.github.com/samuelschimmel/eaf4a9f4766c7ac291da34f6430805f6.js"></script>
 </details><br>
