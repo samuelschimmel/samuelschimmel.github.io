@@ -39,7 +39,7 @@ permalink: /unreal/
 AI aiming is handled by the custom behavior tree service CheckTargetActor. When CheckTargetActor is ticked, NPCs in combat will focus on an intercept point offset from their target. This point is calculated using the NPC’s firearm’s projectile speed and gravity in order to compensate for target velocity and bullet drop. Assuming zero spread and zero projectile gravity, NPCs are perfectly accurate against targets with constant velocity, which requires the player to vary their movement patterns in order to dodge projectiles.
 
 
-<script src="https://gist.github.com/samuelschimmel/6c0cc776b004cbdbd40ad4f3091e24d5.js" style="max-width:350px; overflow:auto;"></script>
+<script src="https://gist.github.com/samuelschimmel/6c0cc776b004cbdbd40ad4f3091e24d5.js" style="max-height:350px; overflow:auto;"></script>
 
 </details><br>
 
