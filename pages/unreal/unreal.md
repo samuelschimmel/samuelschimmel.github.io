@@ -36,13 +36,11 @@ permalink: /unreal/
 
 <details>
 <summary>AI aiming</summary>
-
 AI aiming is handled by the custom behavior tree service CheckTargetActor. When CheckTargetActor is ticked, NPCs in combat will focus on an intercept point offset from their target. This point is calculated using the NPC’s firearm’s projectile speed and gravity in order to compensate for target velocity and bullet drop. Assuming zero spread and zero projectile gravity, NPCs are perfectly accurate against targets with constant velocity, which requires the player to vary their movement patterns in order to dodge projectiles.
 </details><br>
 
 <details>
 <summary>AI detection</summary>
-
 NPCs instantaneously detect other NPCs, and gradually detect the player. The detection meter fills while the player is in line of sight, and not 100% concealed (otherwise, the meter decays by a constant rate). The meter also fills by a constant amount when the AI hears the player, and immediately fills to max on collision with player. Visual fill rate is given as:
 <br><br>
 <img src="https://tex.s2cms.ru/svg/fillModifier%20*%20deltaTime%20*%20(weightedConcealmentModifier%20%2B%20weightedDistanceModifier%20%2B%20weightedFOVModifier)" alt="fillModifier * deltaTime * (weightedConcealmentModifier + weightedDistanceModifier + weightedFOVModifier)" />
@@ -52,7 +50,6 @@ NPCs instantaneously detect other NPCs, and gradually detect the player. The det
 
 <details>
 <summary>AI formations</summary>
-
 AI formations are handled by a custom behavior tree service called Command. When Command is ticked, agents of class Leader remove dead soldiers from their soldiers container, add new soldiers, and update their soldiers’ target locations. Soldiers can be added to the container if they don’t already have leaders, and are within range and line of sight of the leader. The algorithm for selecting target locations is as follows. First, the formation radius is calculated based on the number of soldiers in the squad. Then the soldiers are assigned evenly spaced points on a semicircle. The semicircle is based on the leader’s forward vector during the patrol state. During combat, it is based on the vector between the leader and the player, which allows the soldiers to take defensive positions around their leader.
 <br><br>
 <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://player.vimeo.com/video/315609030' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div>
@@ -62,7 +59,6 @@ AI formations are handled by a custom behavior tree service called Command. When
 
 <details>
 <summary>AI hearing</summary>
-
 Footsteps, gunshots, explosions, projectile impacts, and thrown prop impacts all create noise for AI purposes. Since explosions are the loudest sounds in the game, I made the explosion sound intensity 1, and set "max hearing radius" to the distance at which NPCs should be able to hear explosions. All other sound intensities are relative to the explosion sound intensity.
 </details><br>
 
@@ -73,14 +69,7 @@ Footsteps, gunshots, explosions, projectile impacts, and thrown prop impacts all
 </details><br>
 
 <details>
-<summary>AI vision</summary>
-
-Enemies are alerted if they see a dead body.
-</details><br>
-
-<details>
 <summary>Agent</summary>
-
 Agent is the shared player/NPC base class. Players and NPCs behave similarly enough that I could factor out and resuse over a thousand lines of code by moving it to the base class. In addition to code reuse, the Agent class also promotes consistency by making sure that players and NPCs are governed by the same ruleset. Deriving players and NPCs from the same base class also allowed me to use the same AI controller class for both of them, which proved useful when implementing autoplay.
 
 Functionality shared between players and NPCs via the Agent class include obstacle climbing, health, stamina, damage, dashing, ladders, melee, object interaction, speed, stances, weapon usage, and weapon inventory.
@@ -92,7 +81,6 @@ NPC-exclusive functionality includes AI state feedback (idle, alert, etc.), rand
 
 <details>
 <summary>Asset loading with caching</summary>
-
 I optimized my custom asset lookup function by having it cache the assets it loads in a TMap<FString, UObject *>. This way, it only has to call Unreal's asset loading code the first time my code requests an asset. All subsequent times it can get the asset from the map, with the key being the asset's path. The function is templatized to work with static meshes as well as UObjects.
 <br><br>
 <script src="https://gist.github.com/samuelschimmel/57e2f107aca5d9b086eed2cf4f612b1e.js"></script>
