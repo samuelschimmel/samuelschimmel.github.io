@@ -71,6 +71,7 @@ Footsteps, gunshots, explosions, projectile impacts, and thrown prop impacts all
 <details>
 <summary>Agent</summary>
 Agent is the shared player/NPC base class. Players and NPCs behave similarly enough that I could factor out and resuse over a thousand lines of code by moving it to the base class. In addition to code reuse, the Agent class also promotes consistency by making sure that players and NPCs are governed by the same ruleset. Deriving players and NPCs from the same base class also allowed me to use the same AI controller class for both of them, which proved useful when implementing autoplay.
+
 Functionality shared between players and NPCs via the Agent class include obstacle climbing, health, stamina, damage, dashing, ladders, melee, object interaction, speed, stances, weapon usage, and weapon inventory.
 
 Player-exclusive functionality includes health regeneration, losing and restarting, locking on, aiming with the scope, determining the player’s current target, illumination calculation, melee takedowns, a “last stand” state (in which lethal damage to the player is clamped to 1 HP, unless they are already at 1 HP), and input (including allowing or disallowing input depending on various states).
