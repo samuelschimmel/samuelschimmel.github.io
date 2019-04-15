@@ -221,7 +221,8 @@ Enemies spawned without weapons are assigned a weighted random weapon that the p
 
 <details>
 <summary>Player targeting</summary>
-<br>
+The player targeting system uses a wide sphere sweep for agents and weapons, and a narrow sphere sweep for non-weapon interactive objects. This makes it easier to pick up weapons, melee enemies, perform takedowns, or lock-on to agents while in combat, while reducing the likelihood of players accidentally activating quest objects. This system is also responsible for detecting whether the player has just started or stopped facing an obstacle, so that the appropriate first person animation (i.e., raising or lowering the player's weapon) can be played.
+<br><br>
 <script src="https://gist.github.com/samuelschimmel/fdf19a98ca4247fd2643f2b3130cd109.js"></script>
 </details><br>
 
