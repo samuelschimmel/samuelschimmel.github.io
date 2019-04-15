@@ -188,10 +188,25 @@ Player illumination calculation requires iterating over a container of every lig
 </details><br>
 
 <details>
-<summary>Player modeling, dynamic difficulty, dynamic tutorials, and weighted random item spawning</summary>
-At periodic intervals while the player is alive and not in combat, the player modeling system determines which action the player has performed the least, and displays a tutorial for that action. It will only display one tutorial per action per level. Tutorials that teach controls are responsive to key rebinding. Player modeling also tracks weapon and item pickups in order to display tutorials the first time they are  acquired. These tutorials don't conflict with the tutorials that play the first two times weapons of any type are picked up (i.e., “press LMB to fire” and “use scroll wheel to switch weapons”). A "use WASD to move" tutorial plays at the beginning of the game if the player doesn’t move for more than a few seconds. The tutorial uses the current movement mappings, and will never play after the player has moved.
+<summary>Player modeling: dynamic difficulty</summary>
+Dynamic difficulty is driven by the player’s “performance” moving average, which is recalculated at the end of every player modeling interval based on moving averages of damage dealt and damage taken. Moving averages are ideal for dynamic difficulty because they represent recent behavior – each new observation has the same weight regardless of sample size, and old observations don’t continue to skew data long after the player’s behavior has changed. The moving average is given as:
 <br><br>
-<script src="https://gist.github.com/samuelschimmel/eaf4a9f4766c7ac291da34f6430805f6.js"></script>
+<img src="https://tex.s2cms.ru/svg/%24%24movingAverage%20%3D%20%5Calpha%20*%20newObservation%20%2B%20(1%20%E2%80%93%20%5Calpha)%24%24" />
+<br><br>
+α, the learning rate, is usually 0.05 if changes are common, or 0.01 if changes are rare. The performance moving average is used to calculate a player damage multiplier. I considered also having an enemy damage multiplier, but decided this would be too noticeable for players. In different games, the performance moving average could influence all kinds of variables, including item drops, enemy spawns, enemy reaction times, and enemy perception.
+<br><br>
+</details><br>
+
+<details>
+<summary>Player modeling: dynamic tutorials</summary>
+At periodic intervals while the player is alive and not in combat, player modeling determines which action the player has performed the least, and displays a tutorial for that action. It will only display one tutorial per action per level. Tutorials that teach controls are responsive to key rebinding. Player modeling also tracks weapon and item pickups in order to display tutorials the first time they are acquired. These tutorials don’t conflict with the tutorials that play the first two times weapons of any type are picked up (i.e., “press LMB to fire” and “use the scroll wheel to switch weapons”).
+<br><br>
+</details><br>
+
+<details>
+<summary>Player modeling: weighted random item spawning</summary>
+Enemies spawned without weapons are assigned a weighted random weapon that the player has used before but has been using less recently. At the end of each player modeling interval, after updating damage dealt moving averages for each weapon, I sum these moving averages, then divide each moving average by the sum and subtract the quotient from 1. This gives the probability of each weapon being the next weapon to spawn with a new enemy. Weapons the player has been using a lot recently have lower probabilities, and weapons the player hasn’t been using as much recently have higher probabilities.
+<br><br>
 </details><br>
 
 <details>
