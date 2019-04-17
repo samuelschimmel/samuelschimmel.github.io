@@ -16,7 +16,7 @@ permalink: /unity/
 
 <h2><strong>Features implemented</strong></h2>
 
-<h2>[Branching dialogue system](https://bitbucket.org/contraband/unityprojrepo/src/5fa31811425a490fad073520b9d3c41f79773353/Assets/Scripts/Samuel/Screen/Dialogue.cs)</h2>
+[Branching dialogue system](https://bitbucket.org/contraband/unityprojrepo/src/5fa31811425a490fad073520b9d3c41f79773353/Assets/Scripts/Samuel/Screen/Dialogue.cs)
 
 [A* pathfinder](https://bitbucket.org/contraband/unityprojrepo/src/5fa31811425a490fad073520b9d3c41f79773353/Assets/Scripts/Samuel/Grid/Pathfinding/Pathfinder.cs)
 
