@@ -5,4 +5,8 @@
 layout: home
 ---
 
+<strong><em>[Unreal Engine 4 projects](/unreal/)</em></strong>
+
+<strong><em>[Unity projects](/unity)</em></strong>
+
 <iframe src="/assets/resume.pdf" width="100%" height="950"></iframe>
