@@ -6,7 +6,7 @@ permalink: /unreal/
 
 <h2><strong>Accolades</strong></h2>
 
-<i>Perdition</i>: 2019 DigiPen PAX Arcade Booth Selection
+<i>Perdition</i>: 2019 DigiPen PAX Arcade Booth Senior Game Selection
 
 <h2><strong>Videos</strong></h2>
 
