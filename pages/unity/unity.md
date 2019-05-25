@@ -6,7 +6,7 @@ permalink: /unity/
 
 <h2><strong>Projects</strong></h2>
 
-Technical Director, <i>Being Evelyn</i>
+<b>Technical Director</b>, <i>Being Evelyn</i>
 
 2016-2017
 
