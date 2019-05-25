@@ -6,13 +6,13 @@ permalink: /unreal/
 
 <h2><strong>Projects</strong></h2>
 
-Technical Director, <i>Perdition</i>
+<b>Technical Director<b>, <i>Perdition</i>
 
 2017-2018
 
 3D, systems-driven, emergent FPS developed in Unreal using C++
 
-2019 DigiPen PAX Arcade Booth Senior Game Selection
+<b>2019 DigiPen PAX Arcade Booth Senior Game Selection</b>
 
 <h2><strong>Videos</strong></h2>
 
