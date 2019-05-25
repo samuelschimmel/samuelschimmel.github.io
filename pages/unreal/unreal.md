@@ -6,7 +6,7 @@ permalink: /unreal/
 
 <h2><strong>Projects</strong></h2>
 
-<b>Technical Director<b>, <i>Perdition</i>
+<b>Technical Director</b>, <i>Perdition</i>
 
 2017-2018
 
