@@ -8,7 +8,7 @@ permalink: /unreal/
 
 <b>Technical Director</b>, <i>Perdition</i>
 
-2017-2018
+2017-18
 
 3D, systems-driven, emergent FPS developed in Unreal using C++
 
