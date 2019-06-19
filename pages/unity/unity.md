@@ -8,7 +8,7 @@ permalink: /unity/
 
 <b>Technical Director</b>, <i>Being Evelyn</i>
 
-2016-2017
+2016-17
 
 2D, narrative-driven, social stealth and hacking game developed in Unity
 
