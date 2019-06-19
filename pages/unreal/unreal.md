@@ -12,7 +12,7 @@ permalink: /unreal/
 
 3D, systems-driven, emergent FPS developed in Unreal using C++
 
-2019 DigiPen PAX Arcade Booth Senior Game Selection
+2019 DigiPen PAX West Senior Game Selection
 
 [Available for download from the DigiPen Game Gallery](https://games.digipen.edu/games/perdition)
 
