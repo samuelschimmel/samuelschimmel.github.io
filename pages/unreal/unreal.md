@@ -14,6 +14,8 @@ permalink: /unreal/
 
 2019 DigiPen PAX West Senior Game Selection
 
+Coming soon to Steam
+
 [Available for download from the DigiPen Game Gallery](https://games.digipen.edu/games/perdition)
 
 <h2><strong>Videos</strong></h2>
