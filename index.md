@@ -5,4 +5,6 @@
 layout: home
 ---
 
+![]({{ "/assets/banner.png" | absolute_url }})
+
 <iframe src="/assets/resume.pdf" width="100%" height="950"></iframe>
