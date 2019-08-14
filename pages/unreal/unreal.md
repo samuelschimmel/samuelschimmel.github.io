@@ -14,7 +14,7 @@ permalink: /unreal/
 
 2019 DigiPen PAX West Senior Game Selection
 
-<iframe src="https://store.steampowered.com/widget/1137910/" frameborder="0" width="646" height="190"></iframe>
+<center><iframe src="https://store.steampowered.com/widget/1137910/" frameborder="0" width="646" height="190"></iframe></center>
 
 <h2><strong>Videos</strong></h2>
 
