@@ -9,4 +9,6 @@ layout: home
 
 <iframe src="https://store.steampowered.com/widget/1137910/" frameborder="0" width="646" height="190"></iframe>
 
+---
 <iframe src="/assets/resume.pdf" width="100%" height="950"></iframe>
+---
