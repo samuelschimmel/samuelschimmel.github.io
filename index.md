@@ -7,6 +7,8 @@ layout: home
 
 ![]({{ "/assets/banner.png" | absolute_url }})
 
+![]({{ "/assets/banner2.png" | absolute_url }})
+
 <center><iframe src="https://store.steampowered.com/widget/1137910/" frameborder="0" width="100%" height="190"></iframe></center>
 
 <iframe src="/assets/resume.pdf" width="100%" height="950"></iframe>
