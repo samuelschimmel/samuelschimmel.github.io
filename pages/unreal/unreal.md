@@ -30,7 +30,7 @@ permalink: /unreal/
 
 <h2><strong>Fan screenshots</strong></h2>
 
-<a href="https://steamcommunity.com/sharedfiles/filedetails/?id=1841958870"><img src="http://www.samuelschimmel.com/assets/unreal/1.png"/></a>
+<a href="https://steamcommunity.com/sharedfiles/filedetails/?id=1841958870"><img src="http://www.samuelschimmel.com/assets/unreal/1.png"></a>
 
 <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=1843257925"><img src="/assets/unreal/2.png" alt="Fan screenshot"></a>
 <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=1841958901"><img src="/assets/unreal/3.png" alt="Fan screenshot"></a>
