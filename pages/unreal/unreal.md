@@ -46,7 +46,7 @@ permalink: /unreal/
 
 <h2><strong>Behavior tree</strong></h2>
 
-![]({{ "/assets/unreal/bt.png" | absolute_url }})
+![https://steamcommunity.com/sharedfiles/filedetails/?id=1843261740]({{ "/assets/unreal/bt.png" | absolute_url }})
 
 <h2><strong>UE4 C++ workshop given as GAM 300 TA</strong></h2>
 
