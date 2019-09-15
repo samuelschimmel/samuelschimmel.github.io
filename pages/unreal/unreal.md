@@ -18,17 +18,13 @@ permalink: /unreal/
 
 [DRM-free download](https://www.digipen.edu/showcase/student-games/perdition)
 
-[Steam reviews](https://steamcommunity.com/app/1137910/positivereviews/?p=1&browsefilter=toprated)
-
-[Review](https://www.alphabetagamer.com/perdition-student-game/)
-
 <h2><strong>Videos</strong></h2>
 
 <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://www.youtube-nocookie.com/embed/rvK8N8vYwKQ' frameborder='0' allowfullscreen></iframe></div>
 <br>
 <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://www.youtube-nocookie.com/embed/s9_TVrtvwVw' frameborder='0' allowfullscreen></iframe></div>
 
-<h2><strong>Fan screenshots</strong></h2>
+<h2><strong>Steam Community screenshots</strong></h2>
 
 <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=1841958870"><img src="/assets/unreal/1.jpg"></a>
 
