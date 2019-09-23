@@ -40,11 +40,7 @@ permalink: /unreal/
 
 <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=1843258508"><img src="/assets/unreal/7.jpg"></a>
 
-<a href="https://steamcommunity.com/sharedfiles/filedetails/?id=1843258343"><img src="/assets/unreal/8.jpg"></a>
-
 <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=1841959025"><img src="/assets/unreal/9.jpg"></a>
-
-<a href="https://steamcommunity.com/sharedfiles/filedetails/?id=1841959170"><img src="/assets/unreal/10.jpg"></a>
 
 <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=1841959200"><img src="/assets/unreal/11.jpg"></a>
 
