@@ -10,3 +10,5 @@ layout: home
 <center><iframe src="https://store.steampowered.com/widget/1137910/" frameborder="0" width="100%" height="190"></iframe></center>
 
 <iframe src="/assets/resume.pdf" width="100%" height="950"></iframe>
+
+<embed src="https://samuelschimmel.github.io/assets/resume.pdf" type="application/pdf" />
