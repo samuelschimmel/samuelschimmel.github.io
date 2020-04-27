@@ -67,6 +67,8 @@ permalink: /unreal/
 
 <iframe src="/assets/unreal/workshop.pdf" width="100%" height="400"></iframe>
 
+<a href="samuelschimmel.github.io/unreal/workshop.pdf" target="_blank">PDF.</a>
+
 <h2><strong>Features implemented</strong></h2>
 
 <details>
