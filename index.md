@@ -11,4 +11,4 @@ layout: home
 
 <iframe src="/assets/resume.pdf" width="100%" height="950"></iframe>
 
-<img src="/assets/resume.pdf" alt="Resume">
+<p><img src="/assets/resume.pdf" alt="Resume"></p>
