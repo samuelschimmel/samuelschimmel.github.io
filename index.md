@@ -9,6 +9,4 @@ layout: home
 
 <center><iframe src="https://store.steampowered.com/widget/1137910/" frameborder="0" width="100%" height="190"></iframe></center>
 
-<iframe src="/assets/resume.pdf" width="100%" height="950"></iframe>
-
-<p><img src="/assets/resume.pdf" alt="Resume"></p>
+![]({{ "/assets/resume.png" | absolute_url }})
