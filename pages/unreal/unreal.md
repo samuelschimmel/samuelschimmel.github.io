@@ -63,10 +63,6 @@ permalink: /unreal/
 
 ![]({{ "/assets/unreal/bt.png" | absolute_url }})
 
-<h2><strong>UE4 C++ workshop given as GAM 300 TA</strong></h2>
-
-<iframe src="/assets/unreal/workshop.pdf" width="100%" height="400"></iframe>
-
 <h2><strong>Features implemented</strong></h2>
 
 <details>
