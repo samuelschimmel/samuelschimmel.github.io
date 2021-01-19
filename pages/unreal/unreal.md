@@ -24,8 +24,6 @@ permalink: /unreal/
 <br>
 <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://www.youtube-nocookie.com/embed/s9_TVrtvwVw' frameborder='0' allowfullscreen></iframe></div>
 <br>
-<style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://www.youtube-nocookie.com/embed/y9RUjk5qs1A' frameborder='0' allowfullscreen></iframe></div>
-<br>
 
 <h2><strong>Steam Community screenshots</strong></h2>
 
