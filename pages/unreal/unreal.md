@@ -14,9 +14,9 @@ permalink: /unreal/
 
 2019 DigiPen PAX West Senior Game Selection
 
-[Steam store page](https://store.steampowered.com/app/1137910/Perdition/)
-
 [DRM-free download](https://www.digipen.edu/showcase/student-games/perdition)
+
+<center><iframe src="https://store.steampowered.com/widget/1137910/" frameborder="0" width="100%" height="190"></iframe></center>
 
 <h2><strong>Videos</strong></h2>
 
