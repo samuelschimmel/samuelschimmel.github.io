@@ -12,6 +12,8 @@ permalink: /unreal/
 
 3D, systems-driven, emergent FPS developed in Unreal using C++
 
+Published on Steam (87% of 97 user reviews are positive)
+
 2019 DigiPen PAX West Senior Game Selection
 
 [DRM-free download](https://www.digipen.edu/showcase/student-games/perdition)
