@@ -80,7 +80,6 @@ The min and max slope of climbable obstacles can be specified in degrees. How di
 <details>
 <summary>Code</summary>
 <script src="https://gist.github.com/samuelschimmel/ad73a4fe2a9bb1e2a6d5a26b4fac6338.js"></script>
-<br>
 </details>
 <br>
 
@@ -106,7 +105,6 @@ Player illumination calculation requires iterating over a container of every lig
 <details>
 <summary>Code</summary>
 <script src="https://gist.github.com/samuelschimmel/6cd809d7dc35408418cc0153193f825b.js"></script>
-<br>
 </details>
 <br>
 
@@ -118,6 +116,7 @@ AI aiming is handled by the custom behavior tree service CheckTargetActor. When 
 <details>
 <summary>AI detection</summary>
 NPCs instantaneously detect other NPCs, and gradually detect the player. The detection meter fills while the player is in line of sight, and not 100% concealed (otherwise, the meter decays by a constant rate). The meter also fills by a constant amount when the AI hears the player, and immediately fills to max on collision with player. Visual fill rate is given as:
+<br><br>
 <br><br>
 <img src="https://tex.s2cms.ru/svg/fillModifier%20*%20deltaTime%20*%20(weightedConcealmentModifier%20%2B%20weightedDistanceModifier%20%2B%20weightedFOVModifier)" alt="fillModifier * deltaTime * (weightedConcealmentModifier + weightedDistanceModifier + weightedFOVModifier)" />
 <br><br>
