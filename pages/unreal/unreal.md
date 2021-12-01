@@ -76,7 +76,7 @@ AI formations are handled by a custom behavior tree service called Command. When
 <strong>First-person obstacle climbing</strong>
 
 The min and max slope of climbable obstacles can be specified in degrees. How directly the player needs to be facing obstacles in order to climb them can also be specified as an angle in degrees. Collision is disabled during the climbing sequence to make the sequence smoother. Climbing also cancels the player's velocity to make the sequence feel less floaty. An event is fired when the player is facing a climbable obstacle so that UMG can display a prompt.
-<style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://player.vimeo.com/video/320170064' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div><br>
+<style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://player.vimeo.com/video/320170064' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div>
 <details>
 <summary>Code</summary>
 <script src="https://gist.github.com/samuelschimmel/ad73a4fe2a9bb1e2a6d5a26b4fac6338.js"></script>
@@ -101,7 +101,7 @@ Player illumination calculation works with directional lights, point lights, and
 <br><br>
 Player illumination calculation requires iterating over a container of every light in the level, but this is mitigated by a) only updating every 100 ms, and b) culling lights by doing tests in order of least expensive to most expensive (distance, then field of view, then collision).
 <br><br>
-<style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://player.vimeo.com/video/330944593' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div><br>
+<style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://player.vimeo.com/video/330944593' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div>
 <details>
 <summary>Code</summary>
 <script src="https://gist.github.com/samuelschimmel/6cd809d7dc35408418cc0153193f825b.js"></script>
@@ -116,7 +116,6 @@ AI aiming is handled by the custom behavior tree service CheckTargetActor. When 
 <details>
 <summary>AI detection</summary>
 NPCs instantaneously detect other NPCs, and gradually detect the player. The detection meter fills while the player is in line of sight, and not 100% concealed (otherwise, the meter decays by a constant rate). The meter also fills by a constant amount when the AI hears the player, and immediately fills to max on collision with player. Visual fill rate is given as:
-<br><br>
 <br><br>
 <img src="https://tex.s2cms.ru/svg/fillModifier%20*%20deltaTime%20*%20(weightedConcealmentModifier%20%2B%20weightedDistanceModifier%20%2B%20weightedFOVModifier)" alt="fillModifier * deltaTime * (weightedConcealmentModifier + weightedDistanceModifier + weightedFOVModifier)" />
 <br><br>
