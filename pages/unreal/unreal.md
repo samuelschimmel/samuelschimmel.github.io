@@ -71,6 +71,7 @@ AI formations are handled by a custom behavior tree service called Command. When
 <script src="https://gist.github.com/samuelschimmel/6c0cc776b004cbdbd40ad4f3091e24d5.js"></script>
 <br>
 </details>
+<br>
 
 <strong>First-person obstacle climbing</strong>
 
@@ -81,6 +82,7 @@ The min and max slope of climbable obstacles can be specified in degrees. How di
 <script src="https://gist.github.com/samuelschimmel/ad73a4fe2a9bb1e2a6d5a26b4fac6338.js"></script>
 <br>
 </details>
+<br>
 
 <strong>Ladders</strong>
 
@@ -91,6 +93,7 @@ Ladders can be mounted from any position, including while the player is falling.
 <script src="https://gist.github.com/samuelschimmel/ee2ed56011589091ea6b1fd2db11e9e5.js"></script>
 <br>
 </details>
+<br>
 
 <strong>Player illumination calculation</strong>
 
@@ -105,6 +108,7 @@ Player illumination calculation requires iterating over a container of every lig
 <script src="https://gist.github.com/samuelschimmel/6cd809d7dc35408418cc0153193f825b.js"></script>
 <br>
 </details>
+<br>
 
 <details>
 <summary>AI aiming</summary>
