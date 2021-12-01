@@ -77,7 +77,7 @@ NPCs instantaneously detect other NPCs, and gradually detect the player. The det
 </details><br>
 
 <details>
-<summary>AI formations (includes video)</summary>
+<summary>AI formations <strong>(includes video)</strong></summary>
 AI formations are handled by a custom behavior tree service called Command. When Command is ticked, agents of class Leader remove dead soldiers from their soldiers container, add new soldiers, and update their soldiers’ target locations. Soldiers can be added to the container if they don’t already have leaders, and are within range and line of sight of the leader. The algorithm for selecting target locations is as follows. First, the formation radius is calculated based on the number of soldiers in the squad. Then the soldiers are assigned evenly spaced points on a semicircle. The semicircle is based on the leader’s forward vector during the patrol state. During combat, it is based on the vector between the leader and the player, which allows the soldiers to take defensive positions around their leader.
 <br><br>
 <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://player.vimeo.com/video/315609030' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div>
@@ -158,7 +158,7 @@ Damage volumes start with 0 radius and tick up to a given maximum within a few s
 </details><br>
 
 <details>
-<summary>First-person obstacle climbing (includes video)</summary>
+<summary>First-person obstacle climbing <strong>(includes video)</strong></summary>
 The min and max slope of climbable obstacles can be specified in degrees. How directly the player needs to be facing obstacles in order to climb them can also be specified as an angle in degrees. Collision is disabled during the climbing sequence to make the sequence smoother. Climbing also cancels the player's velocity to make the sequence feel less floaty. An event is fired when the player is facing a climbable obstacle so that UMG can display a prompt.
 <br><br>
 <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://player.vimeo.com/video/320170064' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div><br>
@@ -192,7 +192,7 @@ Any time the player triggers a trigger or uses an interactive object, the persis
 </details><br>
 
 <details>
-<summary>Ladders (includes video)</summary>
+<summary>Ladders <strong>(includes video)</strong></summary>
 Ladders can be mounted from any position, including while the player is falling. Ladders can be rotated or scaled and will automatically calculate their mount and dismount locations without the need for level designer configuration. When the player reaches the top of a ladder, their dismount location's height is the height of the ladder or the height of the surface directly behind the ladder plus capsule half height, whichever is higher.
 <br><br>
 <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://player.vimeo.com/video/329509194' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div>
@@ -212,7 +212,7 @@ I made a derived class of GameUserSettings and edited DefaultEngine to use it. I
 </details><br>
 
 <details>
-<summary>Player illumination calculation (includes video)</summary>
+<summary>Player illumination calculation <strong>(includes video)</strong></summary>
 Player illumination calculation works with directional lights, point lights, and spot lights. For point and spot lights, the calculation uses inverse square attenuation. The penalty to the player’s concealment is given as:
 <br><br>
 <img src="https://tex.s2cms.ru/svg/lightIntensity%20%5Cover%20distanceToPlayer%5E2" alt="lightIntensity \over distanceToPlayer^2" />
