@@ -80,7 +80,7 @@ Player illumination calculation works with directional lights, point lights, and
 <br><br>
 Player illumination calculation requires iterating over a container of every light in the level, but this is mitigated by a) only updating every 100 ms, and b) culling lights by doing tests in order of least expensive to most expensive (distance, then field of view, then collision).
 <br>
-<style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://player.vimeo.com/video/330944593' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div>
+<style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://player.vimeo.com/video/329509194' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div>
 <details>
 <summary>Code</summary>
 <script src="https://gist.github.com/samuelschimmel/6cd809d7dc35408418cc0153193f825b.js"></script>
@@ -100,7 +100,7 @@ The min and max slope of climbable obstacles can be specified in degrees. How di
 <strong>Ladders</strong>
 
 Ladders can be mounted from any position, including while the player is falling. Ladders can be rotated or scaled and will automatically calculate their mount and dismount locations without the need for level designer configuration. When the player reaches the top of a ladder, their dismount location's height is the height of the ladder or the height of the surface directly behind the ladder plus capsule half height, whichever is higher.
-<style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://player.vimeo.com/video/329509194' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div>
+<style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://player.vimeo.com/video/330944593' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div>
 <details>
 <summary>Code</summary>
 <script src="https://gist.github.com/samuelschimmel/ee2ed56011589091ea6b1fd2db11e9e5.js"></script>
