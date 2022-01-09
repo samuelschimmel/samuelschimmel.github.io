@@ -73,6 +73,20 @@ AI formations are handled by a custom behavior tree service called Command. When
 </details>
 <br>
 
+<strong>Player illumination calculation</strong>
+
+Player illumination calculation works with directional lights, point lights, and spot lights. For point and spot lights, the calculation uses inverse square attenuation. The penalty to the player’s concealment is given as:
+<img src="https://tex.s2cms.ru/svg/lightIntensity%20%5Cover%20distanceToPlayer%5E2" alt="lightIntensity \over distanceToPlayer^2" />
+<br><br>
+Player illumination calculation requires iterating over a container of every light in the level, but this is mitigated by a) only updating every 100 ms, and b) culling lights by doing tests in order of least expensive to most expensive (distance, then field of view, then collision).
+<br>
+<style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://player.vimeo.com/video/330944593' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div>
+<details>
+<summary>Code</summary>
+<script src="https://gist.github.com/samuelschimmel/6cd809d7dc35408418cc0153193f825b.js"></script>
+</details>
+<br>
+
 <strong>First-person obstacle climbing</strong>
 
 The min and max slope of climbable obstacles can be specified in degrees. How directly the player needs to be facing obstacles in order to climb them can also be specified as an angle in degrees. Collision is disabled during the climbing sequence to make the sequence smoother. Climbing also cancels the player's velocity to make the sequence feel less floaty. An event is fired when the player is facing a climbable obstacle so that UMG can display a prompt.
@@ -91,20 +105,6 @@ Ladders can be mounted from any position, including while the player is falling.
 <summary>Code</summary>
 <script src="https://gist.github.com/samuelschimmel/ee2ed56011589091ea6b1fd2db11e9e5.js"></script>
 <br>
-</details>
-<br>
-
-<strong>Player illumination calculation</strong>
-
-Player illumination calculation works with directional lights, point lights, and spot lights. For point and spot lights, the calculation uses inverse square attenuation. The penalty to the player’s concealment is given as:
-<img src="https://tex.s2cms.ru/svg/lightIntensity%20%5Cover%20distanceToPlayer%5E2" alt="lightIntensity \over distanceToPlayer^2" />
-<br><br>
-Player illumination calculation requires iterating over a container of every light in the level, but this is mitigated by a) only updating every 100 ms, and b) culling lights by doing tests in order of least expensive to most expensive (distance, then field of view, then collision).
-<br>
-<style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://player.vimeo.com/video/330944593' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div>
-<details>
-<summary>Code</summary>
-<script src="https://gist.github.com/samuelschimmel/6cd809d7dc35408418cc0153193f825b.js"></script>
 </details>
 <br>
 
