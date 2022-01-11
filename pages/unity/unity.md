@@ -10,7 +10,7 @@ permalink: /unity/
 
 2016-17
 
-2D, narrative-driven, social stealth game developed in Unity
+2D, narrative-driven, social stealth game developed in Unity using C#
 
 <h2><strong>Videos</strong></h2>
 
