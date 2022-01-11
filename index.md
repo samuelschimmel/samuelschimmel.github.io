@@ -7,4 +7,12 @@ layout: home
 
 <center><iframe src="https://store.steampowered.com/widget/1137910/" frameborder="0" width="100%" height="190"></iframe></center>
 
+Hello, I am a recent computer science graduate making a career transition from video game programming to software engineering! I graduated magna cum laude from DigiPen Institute of Technology, a game development college in Redmond, WA. I have a background in high performance C++ programming including memory management; strong data structures and algorithms fundamentals; familiarity with networking, databases, and backend web development; several semesters of experience as a teaching assistant; and a shipped game on Steam with 88% positive reviews.
+
+At DigiPen I was a teaching assistant for several programming classes including Data Structures and Computer Networks I and II. Computer Networks I teaches C socket programming using UDP, TCP/IP, and HTTP. Computer Networks II, an elective, teaches distributed systems, cloud computing, and real-time state replication using AWS, EC2, Node.js, MongoDB, and Redis. I also have experience with MySQL and other relational database management systems from taking Introduction to Databases and Advanced Databases as electives. Prior to studying computer science, I completed a BA in political science and part of a BA in game design, so I have backgrounds in writing, research, systems design, and UI/UX design as well.
+
+I have two games in my portfolio, a first-person shooter developed in Unreal Engine 4 using C++, and a stealth game developed in Unity using C#. I was the technical director and lead gameplay programmer on both projects. The FPS, Perdition, was made with seven other students over the course of three semesters. It was demoed at PAX West 2019, and published on Steam, where 88% of its 101 user reviews are positive. Please visit [samuelschimmel.com/unreal](https://www.samuelschimmel.com/unreal) to view a full playthrough and a behind the scenes look at various gameplay mechanics I implemented!
+
+I graduated last year, and after taking some time off for a surgery and to plan my career transition, I am now actively searching for fulltime and contract software engineering roles! I am based in Redmond, WA and open to remote work anywhere in the US. I look forward to hearing from you soon!
+
 ![]({{ "/assets/SchimmelResume.png" | absolute_url }})
