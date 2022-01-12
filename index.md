@@ -15,6 +15,7 @@ Prior to studying computer science, I completed a BA in political science and pa
 
 I graduated in 2021, and after taking some time off for medical reasons, I am now actively searching for fulltime and contract software engineering and gameplay programming roles! I am based in Redmond, WA and open to remote work anywhere in the US. I look forward to hearing from you soon!
 
+
 <center><iframe src="https://store.steampowered.com/widget/1137910/" frameborder="0" width="100%" height="190"></iframe></center>
 
 ![]({{ "/assets/SchimmelResume.png" | absolute_url }})
