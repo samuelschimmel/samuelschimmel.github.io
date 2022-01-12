@@ -163,11 +163,6 @@ NPCs instantaneously detect other NPCs, and gradually detect the player. The det
 </details><br>
 
 <details>
-<summary>AI hearing</summary>
-Footsteps, gunshots, explosions, projectile impacts, and thrown prop impacts all create noise for AI purposes. Since explosions are the loudest sounds in the game, I made the explosion sound intensity 1, and set "max hearing radius" to the distance at which NPCs should be able to hear explosions. All other sound intensities are relative to the explosion sound intensity.
-</details><br>
-
-<details>
 <summary>AI positioning</summary>
 <br>
 <script src="https://gist.github.com/samuelschimmel/8dea9b991893a01987af134be038fb5e.js"></script>
@@ -252,11 +247,6 @@ I originally tried implementing melee using colliders, but the player had to sta
 I implemented a melee takedown mechanic similar to those found in <i>Far Cry</i> and <i>Dishonored</i>. When the player targets a stunned enemy within a given distance and hits the melee button, input is disable, the player lerps to their target, and a melee attack is performed, which instantly kills the enemy. During this sequence, the camera also lerps to look at the target agent. All melee attacks on unaware enemies are takedowns. Enemies do not alert other enemies if they are killed by a takedown.
 <br><br>
 <script src="https://gist.github.com/samuelschimmel/3f8011f01004be1ec2ef937643c1b6f9.js"></script>
-</details><br>
-
-<details>
-<summary>Narrative manager</summary>
-Any time the player triggers a trigger or uses an interactive object, the persistent narrative manager checks if a) that actor is a narration actor and b) the game is not ready for narration. If both of those are true, the player can't use the item/trigger the trigger. The second condition is based on whether the player is in combat and whether narration is already playing. If the actor is a narration actor and the game is ready for narration, the game mode sends an event with the name of the actor. Audio can use that name to play the right audio event, and the HUD can pass that name to the text manager to get the appropriate subtitle. Meanwhile, player input is disabled. When the audio is finished playing, the audio engine can call a function that will re-enable player input and tell the HUD to remove the subtitle.
 </details><br>
 
 <details>
