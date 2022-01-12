@@ -4,8 +4,6 @@ title: Unity
 permalink: /unity/
 ---
 
-<h2><strong>Projects</strong></h2>
-
 <b>Technical Director</b>, <i>Being Evelyn</i>
 
 2016-17
