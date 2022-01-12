@@ -108,7 +108,7 @@ Ladders can be mounted from any position, including while the player is falling.
 </details>
 <br>
 
-<h2><strong>Player modeling system developed for CS 380 reserach project</strong></h2>
+<h2><strong>Player modeling system developed in conjunction with CS 380</strong></h2>
 
 <strong>Player modeling</strong>
 
