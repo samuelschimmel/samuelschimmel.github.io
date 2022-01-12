@@ -295,8 +295,3 @@ The quest manager supports multiple simultaneous sets of objectives, each with t
 <br>
 <script src="https://gist.github.com/samuelschimmel/401eed69335b95aaa72f445065ae4490.js"></script>
 </details><br>
-
-<details>
-<summary>RPG mechanics</summary>
-The stat system supports multiple tiers of stats (e.g., tier 0 for player level, tier 1 for attributes, tier 2 for skills, and tier 3 for perks). Stats can have parent stats like in Shadowrun (i.e., your rifle skill level can’t exceed your ranged combat skill level). Players are awarded points for each tier. When the player attempts to level up a stat, the stat’s max level is checked, the parent stat’s level is checked, and their points in that tier are checked. Leveling up can award points for other tiers. Stat levels can be queried elsewhere in the code. For example, the player’s firearm skill is used to calculate the spread of each shot.
-</details><br>
