@@ -111,14 +111,15 @@ Ladders can be mounted from any position, including while the player is falling.
 <h2><strong>Player modeling system developed for CS 380 reserach project</strong></h2>
 
 <strong>Player modeling</strong>
+
 Player modeling is a form of indirect adaptation that involves recording player behavior and using the resulting data to customize the gameplay experience. I used it for dynamic difficulty, dynamic tutorials, and weighted random item spawning.
 <details>
 <summary>Code</summary>
-<br><br>
 <script src="https://gist.github.com/samuelschimmel/eaf4a9f4766c7ac291da34f6430805f6.js"></script>
 </details><br>
 
 <strong>Dynamic difficulty</strong>
+
 Dynamic difficulty is driven by the player’s “performance” moving average, which is recalculated at the end of every player modeling interval based on moving averages of damage dealt and damage taken. Moving averages are ideal for dynamic difficulty because they represent recent behavior – each new observation has the same weight regardless of sample size, and old observations don’t continue to skew data long after the player’s behavior has changed. The moving average is given as:
 <br><br>
 <img src="https://tex.s2cms.ru/svg/%24%24movingAverage%20%3D%20%5Calpha%20*%20newObservation%20%2B%20(1%20%E2%80%93%20%5Calpha)%24%24" />
@@ -126,23 +127,22 @@ Dynamic difficulty is driven by the player’s “performance” moving average,
 α, the learning rate, is usually 0.05 if changes are common, or 0.01 if changes are rare. The performance moving average is used to calculate a player damage multiplier. I considered also having an enemy damage multiplier, but decided this would be too noticeable for players. In different games, the performance moving average could influence all kinds of variables, including item drops, enemy spawns, enemy reaction times, and enemy perception.
 <details>
 <summary>Code</summary>
-<br><br>
 <script src="https://gist.github.com/samuelschimmel/7aca0ad39175844099e78867d09a8185.js"></script>
 </details><br>
 
 <strong>Dynamic tutorials</strong>
+
 At periodic intervals while the player is alive and not in combat, player modeling determines which action the player has performed the least, and displays a tutorial for that action. It will only display one tutorial per action per level. Tutorials that teach controls are responsive to key rebinding. Player modeling also tracks weapon and item pickups in order to display tutorials the first time they are acquired. These tutorials don’t conflict with the tutorials that play the first two times weapons of any type are picked up (i.e., “press LMB to fire” and “use the scroll wheel to switch weapons”).
 <details>
 <summary>Code</summary>
-<br><br>
 <script src="https://gist.github.com/samuelschimmel/45280472ac09502055ca29ab53845411.js"></script>
 </details><br>
 
 <strong>Weighted random item spawning</strong>
+
 Enemies spawned without weapons are assigned a weighted random weapon that the player has used before but has been using less recently. At the end of each player modeling interval, after updating damage dealt moving averages for each weapon, I sum these moving averages, then divide each moving average by the sum and subtract the quotient from 1. This gives the probability of each weapon being the next weapon to spawn with a new enemy. Weapons the player has been using a lot recently have lower probabilities, and weapons the player hasn’t been using as much recently have higher probabilities.
 <details>
 <summary>Code</summary>
-<br><br>
 <script src="https://gist.github.com/samuelschimmel/e8d2ab14953ddc998e06ed9489296670.js"></script>
 </details><br>
 
