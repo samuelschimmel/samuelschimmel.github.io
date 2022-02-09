@@ -28,8 +28,6 @@ Published on Steam (87% of 97 user reviews are positive)
 
 <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=1843257925"><img src="/assets/unreal/2.jpg"></a>
 
-<a href="https://steamcommunity.com/sharedfiles/filedetails/?id=1841958901"><img src="/assets/unreal/3.jpg"></a>
-
 <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=1841958935"><img src="/assets/unreal/4.jpg"></a>
 
 <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=1843258246"><img src="/assets/unreal/5.jpg"></a>
