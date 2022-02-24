@@ -140,7 +140,7 @@ Enemies spawned without weapons are assigned a weighted random weapon that the p
 <script src="https://gist.github.com/samuelschimmel/e8d2ab14953ddc998e06ed9489296670.js"></script>
 </details><br>
 
-<h2><strong>Other features implemented</strong></h2>
+<h2><strong>Other features implemented (click to expand)</strong></h2>
 
 <details>
 <summary>AI aiming</summary>
