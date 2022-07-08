@@ -7,7 +7,7 @@ layout: home
 
 ![]({{ "/assets/SchimmelResume.png" | absolute_url }})
 
-<div align="center"><i>Perdition</i></div align="center">
+# <div align="center"><i>Perdition</i></div align="center">
 
 <center><iframe src="https://store.steampowered.com/widget/1137910/" frameborder="0" width="100%" height="190"></iframe></center>
 
