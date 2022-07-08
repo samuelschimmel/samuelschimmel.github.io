@@ -6,23 +6,26 @@ layout: home
 ---
 
 ![]({{ "/assets/SchimmelResume.png" | absolute_url }})
-
 <br>
+
 <h1 style="text-align: center;"><i>Minecraft: Education Edition</i></h1>
 
 <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://www.youtube-nocookie.com/embed/MgrEnpssy6M' frameborder='0' allowfullscreen></iframe></div>
-
 <br>
+
+<style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://www.youtube-nocookie.com/embed/hl9ZQiektJE' frameborder='0' allowfullscreen></iframe></div>
+<br>
+
 <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://www.youtube-nocookie.com/embed/3rKuSlgqePo' frameborder='0' allowfullscreen></iframe></div>
-
 <br>
+
 <h1 style="text-align: center;"><i>Perdition</i></h1>
 
 <center><iframe src="https://store.steampowered.com/widget/1137910/" frameborder="0" width="100%" height="190"></iframe></center>
 
 <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://www.youtube-nocookie.com/embed/s9_TVrtvwVw' frameborder='0' allowfullscreen></iframe></div>
-
 <br>
+
 <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=1841958870"><img src="/assets/unreal/1.jpg"></a>
 
 <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=1843257925"><img src="/assets/unreal/2.jpg"></a>
