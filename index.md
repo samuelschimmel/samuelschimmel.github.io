@@ -7,15 +7,16 @@ layout: home
 
 ![]({{ "/assets/SchimmelResume.png" | absolute_url }})
 
-# <div align="center"><i>Minecraft: Education Edition</i>
+# <i>Minecraft: Education Edition</i>
 
 <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://www.youtube-nocookie.com/embed/MgrEnpssy6M' frameborder='0' allowfullscreen></iframe></div>
   
-# <div align="center"><i>Perdition</i>
+# <i>Perdition</i>
 
 <center><iframe src="https://store.steampowered.com/widget/1137910/" frameborder="0" width="100%" height="190"></iframe></center>
 
 <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://www.youtube-nocookie.com/embed/s9_TVrtvwVw' frameborder='0' allowfullscreen></iframe></div>
+
 
 <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=1841958870"><img src="/assets/unreal/1.jpg"></a>
 
