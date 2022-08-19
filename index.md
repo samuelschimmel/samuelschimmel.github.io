@@ -8,6 +8,16 @@ layout: home
 ![]({{ "/assets/SchimmelResume.png" | absolute_url }})
 <br>
 
+<script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
+
+<div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="light" data-type="VERTICAL" data-vanity="samuelschimmel" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://www.linkedin.com/in/samuelschimmel?trk=profile-badge">Samuel Schimmel</a></div>
+
+<div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="light" data-type="HORIZONTAL" data-vanity="samuelschimmel" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://www.linkedin.com/in/samuelschimmel?trk=profile-badge">Samuel Schimmel</a></div>
+
+<div class="badge-base LI-profile-badge" data-locale="en_US" data-size="large" data-theme="light" data-type="VERTICAL" data-vanity="samuelschimmel" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://www.linkedin.com/in/samuelschimmel?trk=profile-badge">Samuel Schimmel</a></div>
+
+<div class="badge-base LI-profile-badge" data-locale="en_US" data-size="large" data-theme="light" data-type="HORIZONTAL" data-vanity="samuelschimmel" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://www.linkedin.com/in/samuelschimmel?trk=profile-badge">Samuel Schimmel</a></div>
+
 <h1 style="text-align: center;"><i>Minecraft Education</i></h1>
 
 <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://www.youtube-nocookie.com/embed/MgrEnpssy6M' frameborder='0' allowfullscreen></iframe></div>
