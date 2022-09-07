@@ -5,7 +5,7 @@
 layout: home
 ---
 
-![]({{ "/assets/SchimmelResume.png" | absolute_url }})
+![]({{ "/SchimmelResume.png" | absolute_url }})
 <br>
 
 <h1 style="text-align: center;"><i>Minecraft Education</i></h1>
