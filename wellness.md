@@ -164,12 +164,34 @@ Not an efficient way to lose weight but still very important
 
 ## Capsules
 
-- Vitamin D: see sun section
+### Supplements
+
+- Anti-inflammation/joint health
+  - Triple action joint health
+  - Glucoasmine with chondroitin and/or MSM
+  - Turmeric/curcumin
 - Heliocare: see sun section
+- Fish oil: should be refrigerated
+- Probiotics
+- Maca
+- Ashwaganda
+
+### Vitamins
+
+- Vitamin D
+- Magnesium glycinate
+- Vitamin E
+- Zinc/copper 
 
 ## Powders
 
 Jars and lids
+
+- Collagen peptides
+- Creatine
+- Taurine
+- Beta-alanine
+- Citrulline malate
 
 # Cleaning
 
