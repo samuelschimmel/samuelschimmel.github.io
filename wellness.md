@@ -1,14 +1,34 @@
 {:toc}
 
-# Hydration and sleep
+# Preamble
 
-I try to drink at least 2 gallons of water per day. I try to drink 1 gallon within the first 2 hours of waking up when I'm most dehydrated from sleeping.
+I find myself frequently dispensing health advice to friends and family members. In particular I give a lot of advice about sun protection, because it is alarmingly overlooked in our deranged sun-worshipping post-WWII American culture. I also compiled a list of less obvious oral care tips that I have sent to several folks. So I decided to combine these into a single document and add some other healthy lifestyle practices I recommend. Very little in this guide requires seeing a doctor or getting a prescription, it's mostly all practices 
 
-Get a BPA-free water bottle. Wash it every day or every other day. Have a few so you can rotate between them while the other is in the dishwasher.
+# Foundations
+
+I don't have a ton to say about these topics, but I start with them because they are some of the most important foundations of a healthy lifestyle.
+
+## Hydration
+
+I try to drink at least 2 gallons of water per day. In particular I try to drink 1.5 gallon within the first 2 hours of waking up when I'm most dehydrated from sleeping.
+
+Get a BPA-free water bottle. Wash it every day or every other day. Have a few so you have spares and can rotate between them while the others are in the dishwasher.
 
 EWG Tap Water Database: https://www.ewg.org/tapwater/
 
+## Sleep
+
+Insufficient sleep causes irreparable brain damage. Always get at least 8 hours of sleep per night.
+
+## Hypertension
+
+Many adults have hypertension (elevated blood pressure). Get a home blood pressure monitor, learn how to interpret the numbers, check your blood pressure. Have your feet flat on the floor and put the cuff directly on your arm with no fabric in between. If your blood pressure is elevated, see a primary care doctor and get a blood pressure medication prescription. For some reason when I found out I have hypertension I was scared of blood pressure medication side effects and wasted a lot of time trying to lower my blood pressure by changing my diet. In retrospect, this was extremely stupid and I really regret it. I now take 50 mg losartan potassium every day and have experienced zero side effects. Untreated hypertension causes permanent organ damage over time. There's no reason to delay starting a blood pressure medication if you have hypertension.
+
 # Sun Protection
+
+## tl;dr
+
+Regardless of season or weather conditions, using sunscreen everyday, and wearing a sun hat and sunglassses when you're outside and the sun is up, are the absolute most important things you can do to limit premature aging and look young in middle age and beyond. There are many things you can do to reduce UV exposure, which I detail in this section, but as with most things in life, you can get 80% of the benefits with 20% of the efforts. **In this case that means applying sunscreen with UVA protection to your face and neck every morning (don't forget SPF lip balm), and wearing sunglasss and a wide-brimmed UPF sun hat whenever you're outside and the sun is up.**
 
 ## The Importance of Sun Protection
 
@@ -34,6 +54,21 @@ Don't rely on just one form of sun protection. The more you can combine the bett
 Apply snscreen 30 minutes before going outside. Reapply for every 80-120 minutes of sun exposure.
 
 Contrary to popular belief, sun exposure is not at all necessary for vitamin D. You can just take vitamin D supplements. You can get them at Costco (https://www.costco.com/kirkland-signature-extra-strength-d3-50-mcg.%2c-600-softgels.product.11467951.html) and they are very cheap. I take 3/day. The sun is actually a very inadequate source of vitamin D, so if you live in the northern hemisphere and are relying on sun exposure for vitamin D, you are probably vitamin D deficient and need to take supplements anyway. Trying to get your vitamin D from sun exposure is like trying to get your calories from rectal feeding - you can technically do it, but that doesn’t mean you should. You can ask your primary care doctor to test your levels. Even if you're not deficient you may want to take vitamin D supplements, as the optimal range for vitamin D levels is much higher than the "sufficient" range.
+
+## EPA tips
+
+Regardless of the UV Index, the following sun safety measures are always encouraged:
+
+- Do Not Burn.
+- Avoid Sun Tanning and Tanning Beds.
+- Generously Apply Sunscreen to all exposed skin using a Sun Protection Factor (SPF) of at least 15 that provides broad-spectrum protection from both ultraviolet A (UVA) and ultraviolet B (UVB) rays. Re-apply every two hours, even on cloudy days, and after swimming or sweating.
+- Wear Protective Clothing, such as a long-sleeved shirt, pants, a wide-brimmed hat and sunglasses, where possible.
+- Seek Shade when appropriate, remembering that the sun's UV rays are strongest between 10 a.m. and 4 p.m.
+- Use Extra Caution Near Water, Snow and Sand as they reflect the damaging rays of the sun which can increase your chance of sunburn.
+- Watch for the UV Index.
+- Get Vitamin D Safely through a diet that includes vitamin supplements. Don't seek the sun.
+
+I would change "at least 15 SPF" to "at least 30 SPF." Personally I never use anything less than 60 SPF. Also be sure to use a European, Japanese, or Korean sunscreen with UVA protection, as most American sunscreens lack do not provide adequate UVA protection.
 
 ## Sunscreen
 
@@ -67,7 +102,7 @@ Sun gloves: https://www.sunsibility.co.uk/product-category/sunsibility-collectio
 Scarf or keffiyeh to protect your neck and shoulders
 Darker clothes are more UV resistant than lighter clothes, but a high UPF rating is most important
 
-Cover your windows with at least 1 layer of UPF blackout curtains, if you do this and don't have any CFL bulbs (see below) you don't need to wear sunscreen at home
+UPF blackout curtains
 
 Vitamin C serum before sunscreen in the morning provides extra sun protection
 
@@ -82,6 +117,10 @@ https://www.npr.org/sections/health-shots/2012/08/08/158426970/energy-efficient-
 https://www.livescience.com/25999-cfl-uv-radiation-skin.html
 
 Get car windows tinted (doctors note in WA for windshield, still may not be strictly legal)
+
+## Do I need to wear sunscreen indoors?
+
+Yes, unless: you're going to be at home inside all day, all your windows are covered with at least 1 layer of UPF blackout curtains, and you don't have any CFL light bulbs. If you're going outside at all, even to take your dog out, it's more than worth it to apply sunscreen.
 
 # Skincare
 
