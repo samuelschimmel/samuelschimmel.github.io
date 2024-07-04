@@ -28,7 +28,7 @@ Many adults have hypertension (elevated blood pressure). Get a home blood pressu
 
 ## tl;dr
 
-Regardless of season or weather conditions, using sunscreen everyday, and wearing a sun hat and sunglassses when you're outside and the sun is up, are the absolute most important things you can do to limit premature aging and look young in middle age and beyond. There are many things you can do to reduce UV exposure, which I detail in this section, but as with most things in life, you can get 80% of the benefits with 20% of the efforts. **In this case that means applying sunscreen with UVA protection to your face and neck every morning (don't forget SPF lip balm), and wearing sunglasss and a wide-brimmed UPF sun hat whenever you're outside and the sun is up.**
+Regardless of season or weather conditions, using UVA sunscreen everyday, and wearing a sun hat and sunglassses when you're outside and the sun is up, are the absolute most important things you can do to limit premature aging and look young in middle age and beyond. There are many things you can do to reduce UV exposure, which I detail in this section, but as with most things in life, you can get 80% of the benefits with 20% of the efforts. **In this case that means applying sunscreen with UVA protection to your face and neck every morning (don't forget SPF lip balm), and wearing sunglasss and a wide-brimmed UPF sun hat whenever you're outside and the sun is up.**
 
 ## The Importance of Sun Protection
 
