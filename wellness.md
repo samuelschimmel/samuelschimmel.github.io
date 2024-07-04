@@ -1,8 +1,11 @@
-{:toc}
+
+* TOC {:toc
+
+Last update: July 2024
 
 # Preamble
 
-I find myself frequently dispensing health advice to friends and family members. In particular I give a lot of advice about sun protection, because it is alarmingly overlooked in our deranged sun-worshipping post-WWII American culture. I also compiled a list of less obvious oral care tips that I have sent to several folks. So I decided to combine these into a single document and add some other healthy lifestyle practices I recommend. Very little in this guide requires seeing a doctor or getting a prescription, it's mostly all practices 
+I find myself frequently dispensing health advice to friends and family members. In particular I give a lot of advice about sun protection, because it is alarmingly overlooked in our deranged sun-worshipping post-WWII American culture. I also compiled a list of less obvious oral care tips that I have sent to several folks. So I decided to combine these into a single document and add some other healthy lifestyle practices I recommend. This guide is not intended to be a comprehensive wellness guide, but rather a compilation of less obvious or intuitive information that I have discovered over the years through research, and I generally avoid belaboring common sense advice. Very little in this guide requires seeing a doctor or getting a prescription, it's mostly all OTC products and daily habits that anyone can implement.
 
 # Foundations
 
@@ -22,7 +25,7 @@ Insufficient sleep causes irreparable brain damage. Always get at least 8 hours 
 
 ## Hypertension
 
-Many adults have hypertension (elevated blood pressure). Get a home blood pressure monitor, learn how to interpret the numbers, check your blood pressure. Have your feet flat on the floor and put the cuff directly on your arm with no fabric in between. If your blood pressure is elevated, see a primary care doctor and get a blood pressure medication prescription. For some reason when I found out I have hypertension I was scared of blood pressure medication side effects and wasted a lot of time trying to lower my blood pressure by changing my diet. In retrospect, this was extremely stupid and I really regret it. I now take 50 mg losartan potassium every day and have experienced zero side effects. Untreated hypertension causes permanent organ damage over time. There's no reason to delay starting a blood pressure medication if you have hypertension.
+Many adults have hypertension (elevated blood pressure). Get a home blood pressure monitor, learn how to interpret the numbers, and check your blood pressure. Have your feet flat on the floor and put the cuff directly on your arm with no fabric in between. Checking your blood pressure at home may give you more accurate results that in a doctor's office, as many people are anxious when they go to the doctor. If your blood pressure is elevated, see a primary care doctor and get a blood pressure medication prescription. For some reason when I found out I have hypertension I was scared of blood pressure medication side effects and wasted a lot of time trying to lower my blood pressure by changing my diet. In retrospect, this was extremely stupid and I really regret it. I now take 50 mg losartan potassium every day and have experienced zero side effects. Untreated hypertension causes permanent organ damage over time. There's no reason to delay starting a blood pressure medication if you have hypertension.
 
 # Sun Protection
 
@@ -146,7 +149,8 @@ Nimbus toothbrushes (https://www.amazon.com/gp/product/B005LB7C4U/) which our de
 
 Sensodyne Pronamel (https://www.amazon.com/gp/product/B0762LYFKP/) or Sensodyne Fresh Mint (https://www.amazon.com/gp/product/B00H88H4Q0/) for toothpaste. These are some of the few widely available toothpastes without sodium lauryl sulfate (SLS), which is used in lots of personal care products and is SUPER harmful. At one point last year we accidentally started using a toothpaste with SLS in it and our gums literally started sloughing, which went away after we switched back. There are other variants of Sensodyne that do have SLS so watch out (that's what we accidentally got, also we found out the hard way SLS isn't always on the label). But Pronamel and Fresh Mint are SLS-free. We also switched to face washes, body washes, and shampoos are that are SLS-free since SLS is also bad for skin
 PreviDent 5000, a prescription high fluoride toothpaste that I brush with at night after brushing with Sensodyne
-PerioSciences AO ProVantage dental gel (https://www.amazon.com/gp/product/B077H52NGB/) which our dentist gave me for a soft tissue injury once, it helped a lot with healing so I started using it twice a day after brushing
+
+PerioSciences AO ProVantage dental gel (https://www.amazon.com/gp/product/B077H52NGB/) which our dentist gave me for a soft tissue injury once, it helped a lot with healing so I started using it twice a day. I keep it in my mouth for at least 10 minutes (e.g., while I'm in the shower) for maximum absorption.
  
 SuperTeeth dental probiotics, we both take one in the morning and one at night after brushing (https://www.amazon.com/gp/product/B0CNFTFPLJ/)
 
@@ -238,4 +242,4 @@ Jars and lids
 
 - Most cleaning products (including many brands that market themselves as "green") contain ingredients that are carcinogenic and irritating to human tissue. EWG has a guide to cleaners here: https://www.ewg.org/cleaners/
 - Vacuuming/dusting (wear KN95)
-- Air purifiers
+- Air purifiers. As with most things I would refer to the Consumer Reports guide on air purifiers for choosing a model: https://www.consumerreports.org/appliances/air-purifiers/
