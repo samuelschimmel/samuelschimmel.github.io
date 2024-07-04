@@ -143,6 +143,12 @@ Never shave facial or body hair with a razor, always use an electric trimmer. Us
 
 Rosacea (triple cream)
 
+## My Skincare Routine
+
+### AM
+
+### PM
+
 # Oral Care
 
 Nimbus toothbrushes (https://www.amazon.com/gp/product/B005LB7C4U/) which our dentist recommended and are very soft and gentle. According to him, electric toothbrushes can be bad if you have gum recession
