@@ -95,7 +95,7 @@ I would strongly recommend wearing one of these every time you go outside when t
 SPF lip balm: https://www.amazon.com/gp/product/B09GQY5SNF/
 Apply this every time you apply sunscreen, lips are super vulnerable to skin cancer.
 
-Consider getting dedicated prescription sunglasses in addition to your transition lenses glasses. You can ask your optician but I suspect dedicated sunglasses provide greater sun protection. Additionally, the sunglasses we have have much bigger lenses, which means they protect not only our eyes but the skin around our eyes which is extremely delicate and difficult to apply sunscreen to without getting it in your eyes.
+Sunglasses protect not only our eyes but the skin around our eyes which is extremely delicate and difficult to apply sunscreen to without getting it in your eyes.
 
 UPF face covering: https://www.amazon.com/Coolibar-Mens-Womens-Vermilion-Layered/dp/B07Z8DCPP4/
 
