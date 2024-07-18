@@ -54,7 +54,7 @@ Windows and clouds block UVB, but not UVA, which is why it's still necessary to 
 
 Don't rely on just one form of sun protection. The more you can combine the better. For example, use sunscreen, wear sun hats/sunglasses/UPF clothes, and take Heliocare. Additional forms of sun protection is never redundant or overkill.
 
-Apply snscreen 30 minutes before going outside. Reapply for every 80-120 minutes of sun exposure.
+Apply sunscreen 30 minutes before going outside. Reapply for every 80-120 minutes of sun exposure.
 
 Contrary to popular belief, sun exposure is not at all necessary for vitamin D. You can just take vitamin D supplements. You can get them at Costco (https://www.costco.com/kirkland-signature-extra-strength-d3-50-mcg.%2c-600-softgels.product.11467951.html) and they are very cheap. I take 3/day. The sun is actually a very inadequate source of vitamin D, so if you live in the northern hemisphere and are relying on sun exposure for vitamin D, you are probably vitamin D deficient and need to take supplements anyway. Trying to get your vitamin D from sun exposure is like trying to get your calories from rectal feeding - you can technically do it, but that doesn’t mean you should. You can ask your primary care doctor to test your levels. Even if you're not deficient you may want to take vitamin D supplements, as the optimal range for vitamin D levels is much higher than the "sufficient" range.
 
