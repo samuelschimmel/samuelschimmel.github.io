@@ -143,7 +143,9 @@ Red light therapy: https://goalstogetglowing.com/2022/11/18/led-mask-omnilux-men
 
 Never shave facial or body hair with a razor, always use an electric trimmer. Use aftershave lotion afterwards to reduce irritation.
 
-Rosacea (triple cream)
+Spot test more advanced products that aren't moisturizer. With new products I do just half of my face for at least a week. Niacin generally works for rosacea and made mine worse. Adalpene generally doesn't work for rosacea and also made mine worse
+
+Get a prescription for this if you have roscea: https://www.skinmedicinals.com/condition/rosacea
 
 ## My Skincare Routine
 
