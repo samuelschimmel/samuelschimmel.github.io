@@ -77,11 +77,11 @@ I would change "at least 15 SPF" to "at least 30 SPF." Personally I never use an
 
 ## Sunscreen
 
-Daily sunscreen: https://www.amazon.com/Skin-Super-Moisturizing-Essence-version/dp/B0BSFK47H3/
-I strongly recommend putting this on your face and neck (and scalp for Dad) every morning. Even if you're going to be inside all day, even if it's cloudy, even if it's winter, etc.
+Daily sunscreen: https://www.amazon.com/gp/product/B002CML1VG/
+I strongly recommend putting this on your face and neck (and scalp if bald) every morning. Even if you're going to be inside all day, even if it's cloudy, even if it's winter, etc.
 
-Outdoor sunscreen: https://www.amazon.com/dp/B07YGVSGMW
-This is more heavy duty, I would use this if you're going to be out in the sun for any significant amount of time (and reapply after every 2 hours of sun exposure).
+Outdoor sunscreen: https://www.amazon.com/gp/product/B07YGVSGMW/
+This is more heavy duty, I would use this if you're going to be out in the sun for any significant amount of time (and reapply after every 80 minutes of sun exposure).
 
 Japanese sunscreen recommendation site if you want to do more research: https://www.ratzillacosme.com/
 
@@ -195,9 +195,9 @@ Meat is horrifyingly unethical and disastrous for the environment. Unfortunately
 
 ## Strength
 
-Most important is form and range of motion. Go as deep as you can with squat, ideally past 90 degrees. Weight less important. Compound lift with minimal weight added or just body weight is much better than a machine exercise that lets you lift more but does all the stabilization for you
+Most important is form and range of motion. Go as deep as you can with squat, ideally past 90 degrees. The amount of weight you left is much less important. Compound lift with minimal weight added or just body weight is much better than a machine exercise that lets you lift more but does all the stabilization for you
 
-Flat lifting shoes (trail runners), lifting belt (only last two sets), knee sleeves (hang up between workouts and wash every few workouts, just for squats and squat accessories)
+Flat lifting shoes (trail runners), lifting belt (only last 1-2 sets so you don't underwork your core), knee sleeves (hang up between workouts and wash every few workouts, just for squats and squat accessories)
 
 Pyramid sets
 
