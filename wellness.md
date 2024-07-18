@@ -201,6 +201,8 @@ Flat lifting shoes (trail runners), lifting belt (only last 1-2 sets so you don'
 
 Pyramid sets
 
+Work with a trainer
+
 1. Stretch
 2. Compound set: push/pull: deadlift (alternate conventional and sumo), box squat (plyometric platform) (as deep as you can go), bench press (alternate bar and db)
 3. Accessory set push/pull
