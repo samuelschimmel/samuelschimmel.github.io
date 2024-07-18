@@ -13,7 +13,7 @@ I don't have a ton to say about these topics, but I start with them because they
 
 ## Hydration
 
-I try to drink at least 2 gallons of water per day. In particular I try to drink 1.5 gallon within the first 2 hours of waking up when I'm most dehydrated from sleeping.
+I try to drink at least 2 gallons of water per day. In particular I try to drink 1 gallon within the first 2 hours of waking up when I'm most dehydrated from sleeping.
 
 Get a BPA-free water bottle. Wash it every day or every other day. Have a few so you have spares and can rotate between them while the others are in the dishwasher.
 
