@@ -62,6 +62,8 @@ Certain medications increase sun sensitivity (NSAIDs do, ibuprofen doesn’t, so
 
 ## EPA tips
 
+https://www.epa.gov/sunsafety/learn-about-uv-index
+
 Regardless of the UV Index, the following sun safety measures are always encouraged:
 
 - Do Not Burn.
