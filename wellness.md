@@ -31,11 +31,13 @@ Many adults have hypertension (elevated blood pressure). Get a home blood pressu
 
 ## tl;dr
 
-Regardless of season or weather conditions, using UVA sunscreen everyday, and wearing a sun hat and sunglassses when you're outside and the sun is up, are the absolute most important things you can do to limit premature aging and look young in middle age and beyond. There are many things you can do to reduce UV exposure, which I detail in this section, but as with most things in life, you can get 80% of the benefits with 20% of the efforts. **In this case that means applying sunscreen with UVA protection to your face and neck every morning (don't forget SPF lip balm), and wearing sunglasss and a wide-brimmed UPF sun hat whenever you're outside and the sun is up.**
+(insert sun is a deadly laser gif)
+
+Regardless of season or weather conditions, using UVA sunscreen everyday, and wearing a sun hat and sunglassses when you're outside and the sun is up, are the absolute most important things you can do to limit premature (i.e., preventable) aging and look young in middle age and beyond. There are many things you can do to reduce UV exposure, which I detail in this section, but as with most things in life, you can get 80% of the benefits with 20% of the efforts. **In this case that means applying sunscreen with UVA protection to your face and neck every morning (don't forget SPF lip balm), and wearing sunglasss and a wide-brimmed UPF sun hat whenever you're outside and the sun is up.**
 
 ## The Importance of Sun Protection
 
-Post WWII there has been a ton of misinformation about the sun in the US. The sun is not your friend, it is a giant ball of carcinogenic radiation. Most people know about the risks of sun burn and skin cancer, but not photoaging. Sun exposure is responsible for 80-90% of premature visible aging. UV damage (including through clouds and windows) is permanent and cumulative over the course of your lifetime. I know the sun feels great but it is unbelievably damaging to your skin without sunscreen - even in small doses (it all adds up over your lifetime), even if you’re not burning, even through windows, even in the winter, even if it’s cloudy. You can look literally decades younger than your actual age if you wear sunscreen and use other forms of sun protection every day over the course of your life. Part of the confusion is that photo aging doesn't show when you're young - sun damage from your early years can take years or even decades to show up.
+Post WWII there has been a ton of misinformation about the sun in the US. The sun is not your friend, it is a giant ball of carcinogenic radiation. It is an ongoing nuclear detonation that has been happening for billions of years and will continue for billions more. Most people know about the risks of sun burn and skin cancer, but not photoaging. Sun exposure is responsible for 80-90% of premature visible aging. The operative word in that sentence is premature, meaning preventable. UV damage (including through clouds and windows) is permanent and cumulative over the course of your lifetime. I know the sun feels great but it is unbelievably damaging to your skin without sunscreen - even in small doses (it all adds up over your lifetime), even if you’re not burning, even through windows, even in the winter, even if it’s cloudy. You can look literally decades younger than your actual age if you wear sunscreen and use other forms of sun protection every day over the course of your life. Part of the confusion is that photo aging doesn't show when you're young - sun damage from your early years can take years or even decades to show up.
 
 The sun emits 2 kinds of radiation: UVA and UVB.
 
@@ -54,7 +56,7 @@ Windows and clouds block UVB, but not UVA, which is why it's still necessary to 
 
 Don't rely on just one form of sun protection. The more you can combine the better. For example, use sunscreen, wear sun hats/sunglasses/UPF clothes, and take Heliocare. Additional forms of sun protection is never redundant or overkill.
 
-Apply sunscreen 30 minutes before going outside. Reapply for every 80-120 minutes of sun exposure.
+Apply sunscreen 20-30 minutes before going outside. Reapply for every 80-120 minutes of sun exposure. That's minutes _of sun exposure_, not minutes, so if you've been out of the sun you may not necessarily need to reapply (although keep in mind that sunscreen can get wiped off).
 
 Contrary to popular belief, sun exposure is not at all necessary for vitamin D. You can just take vitamin D supplements. You can get them at Costco (https://www.costco.com/kirkland-signature-extra-strength-d3-50-mcg.%2c-600-softgels.product.11467951.html) and they are very cheap. I take 3/day. The sun is actually a very inadequate source of vitamin D, so if you live in the northern hemisphere and are relying on sun exposure for vitamin D, you are probably vitamin D deficient and need to take supplements anyway. Trying to get your vitamin D from sun exposure is like trying to get your calories from rectal feeding - you can technically do it, but that doesn’t mean you should. You can ask your primary care doctor to test your levels. Even if you're not deficient you may want to take vitamin D supplements, as the optimal range for vitamin D levels is much higher than the "sufficient" range.
 
@@ -92,7 +94,7 @@ Japanese sunscreen recommendation site if you want to do more research: https://
 Stay hydrated: in addition to being great for all of your other organs, being very hydrated is amazing for your skin, gives it greater resistance to sun damage, and helps it heal better from sun burn.
 
 Sun hat: https://www.amazon.com/Hat-UPF-Protection-Waterproof-Fishing-Breathable/dp/B07DB2XYZ2/
-I would strongly recommend wearing one of these every time you go outside when the sun is up. They provide tons of protection and there's literally no reason not to wear one.
+I would strongly recommend wearing one of these every time you go outside when the sun is up. They provide tons of protection and there's literally no reason not to wear one. People have been wearing wide brim hats for sun protection for all of human history, and only recently have they fallen out of favor (at least in the US). They are more important now than ever due to the ongoing degradation of Earth's protective atmosphere. Going outside when the sun is up without a wide brim UPF sun hat (and sun glasses) should be denormalized and considered unsafe the same way riding a bicycle without a helmet.
 
 SPF lip balm: https://www.amazon.com/gp/product/B09GQY5SNF/
 Apply this every time you apply sunscreen, lips are super vulnerable to skin cancer.
