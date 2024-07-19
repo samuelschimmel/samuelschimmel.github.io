@@ -39,13 +39,15 @@ Regardless of season or weather conditions, using UVA sunscreen everyday, and we
 
 Post WWII there has been a ton of misinformation about the sun in the US. The sun is not your friend, it is a giant ball of carcinogenic radiation. It is an ongoing nuclear detonation that has been happening for billions of years and will continue for billions more. Most people know about the risks of sun burn and skin cancer, but not photoaging. Sun exposure is responsible for 80-90% of premature visible aging. The operative word in that sentence is premature, meaning preventable. UV damage (including through clouds and windows) is permanent and cumulative over the course of your lifetime. I know the sun feels great but it is unbelievably damaging to your skin without sunscreen - even in small doses (it all adds up over your lifetime), even if you’re not burning, even through windows, even in the winter, even if it’s cloudy. You can look literally decades younger than your actual age if you wear sunscreen and use other forms of sun protection every day over the course of your life. Part of the confusion is that photo aging doesn't show when you're young - sun damage from your early years can take years or even decades to show up.
 
+I would never suggest anyone change their lifestyle to avoid sun exposure, but I would hightly recommend they follow the steps in this guide every day.
+
 The sun emits 2 kinds of radiation: UVA and UVB.
 
 UVB causes sunburn. UVA causes premature skin aging (more in next bullet point). Both UVA and UVB can cause skin cancer.
 
 Sun exposure is responsible for 80-90% of premature visible aging - you can look literally decades younger than your actual age if you wear sunscreen and use other forms of sun protection every day over the course of your life.
 
-Most people greatly underestimate the very permanent dangers of getting sunburned. Every sunburn you get over the course of your life permanently doubles your chances of getting skin cancer.
+Most people greatly underestimate the very permanent dangers of getting sunburned. Every sunburn you get over the course of your life permanently doubles your chances of getting skin cancer. Getting a sun burn isn't an annoying inconvenience, it's one of the most harmful things you can do to your body. **If you are actively sun burned, avoid going out in the sun until it is completely healed.**
 
 Do not try to tan. A tan is your body's response to sun damage and if you are tanning it means you're not using enough sun protection.
 
