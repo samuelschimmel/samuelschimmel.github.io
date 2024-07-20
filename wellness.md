@@ -91,7 +91,15 @@ I strongly recommend putting this on your face and neck (and scalp if bald) ever
 Outdoor sunscreen: https://www.amazon.com/gp/product/B07YGVSGMW/
 This is more heavy duty, I would use this if you're going to be out in the sun for any significant amount of time (and reapply after every 80 minutes of sun exposure).
 
+Fancy sunscreen: https://www.amazon.com/Roche-Posay-Anthelios-Ultra-Light-Sunscreen/dp/B002CML1XE/
+More expensive, fancier sunscreen for when you want look your best. Also less irritating to eyes and therefore ideal for putting around your eye area.
+
+SPF lip balm: https://www.amazon.com/gp/product/B09GQY5SNF/
+Apply this every time you apply sunscreen, lips are super vulnerable to skin cancer.
+
 Japanese sunscreen recommendation site if you want to do more research: https://www.ratzillacosme.com/
+
+Don't leave sunscreen in a hot car as this will ruin it. Pay attention to sunscreen expiration dates, although if you're letting your sunscreen get anywhere near its expiration date, you can rest assured you're not using enough sunscren.
 
 ## Other sun protection stuff I recommend (the more you do, the better)
 
@@ -99,9 +107,6 @@ Stay hydrated: in addition to being great for all of your other organs, being ve
 
 Sun hat: https://www.amazon.com/Hat-UPF-Protection-Waterproof-Fishing-Breathable/dp/B07DB2XYZ2/
 I would strongly recommend wearing one of these every time you go outside when the sun is up. They provide tons of protection and there's literally no reason not to wear one. People have been wearing wide brim hats for sun protection for all of human history, and only recently have they fallen out of favor (at least in the US). They are more important now than ever due to the ongoing degradation of Earth's protective atmosphere. Going outside when the sun is up without a wide brim UPF sun hat (and sun glasses) should be denormalized and considered unsafe the same way riding a bicycle without a helmet.
-
-SPF lip balm: https://www.amazon.com/gp/product/B09GQY5SNF/
-Apply this every time you apply sunscreen, lips are super vulnerable to skin cancer.
 
 Sunglasses protect not only our eyes but the skin around our eyes which is extremely delicate and difficult to apply sunscreen to without getting it in your eyes.
 
