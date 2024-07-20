@@ -210,7 +210,7 @@ Meat is horrifyingly unethical and disastrous for the environment. Unfortunately
 
 ## Strength
 
-Most important is form and range of motion. Go as deep as you can with squat, ideally past 90 degrees. The amount of weight you left is much less important. Compound lift with minimal weight added or just body weight is much better than a machine exercise that lets you lift more but does all the stabilization for you
+Most important is form and range of motion. Go as deep as you can with squat, ideally past 90 degrees. The amount of weight you left is much less important. Compound lift with minimal weight added or just body weight is much better than a machine exercise that lets you lift more but does all the stabilization for you, which doesn't work your core
 
 Flat lifting shoes (trail runners), lifting belt (only last 1-2 sets so you don't underwork your core), knee sleeves (hang up between workouts and wash every few workouts, just for squats and squat accessories)
 
@@ -227,6 +227,8 @@ Work with a trainer
 ## Cardio
 
 Not an efficient way to lose weight but still very important
+
+Compound lifts as injury prevention for cardio
 
 # Supplements
 
@@ -255,7 +257,8 @@ Examine, Labdoor
 
 ## Powders
 
-Jars and lids
+https://www.amazon.com/gp/product/B09NRJRFWV/
+https://www.amazon.com/gp/product/B0C8MGBZYK/
 
 - Collagen peptides
 - Creatine
