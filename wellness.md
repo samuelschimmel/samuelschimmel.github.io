@@ -95,7 +95,7 @@ Fancy sunscreen: https://www.amazon.com/Roche-Posay-Anthelios-Ultra-Light-Sunscr
 More expensive, fancier sunscreen for when you want look your best. Also less irritating to eyes and therefore ideal for putting around your eye area.
 
 SPF lip balm: https://www.amazon.com/gp/product/B09GQY5SNF/
-Apply this every time you apply sunscreen, lips are super vulnerable to skin cancer.
+Apply this every time you apply sunscreen, and reapply more frequently than sunscreen as it will come off as you eat and drink. Lips are super vulnerable to skin cancer.
 
 Japanese sunscreen recommendation site if you want to do more research: https://www.ratzillacosme.com/
 
