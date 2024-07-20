@@ -92,7 +92,7 @@ Outdoor sunscreen: https://www.amazon.com/gp/product/B07YGVSGMW/
 This is more heavy duty, I would use this if you're going to be out in the sun for any significant amount of time (and reapply after every 80 minutes of sun exposure).
 
 Fancy sunscreen: https://www.amazon.com/Roche-Posay-Anthelios-Ultra-Light-Sunscreen/dp/B002CML1XE/
-More expensive, fancier sunscreen for when you want look your best. Also less irritating to eyes and therefore ideal for putting around your eye area.
+More expensive, fancier sunscreen for when you want look your best. Ideal for wearing under makeup. Also less irritating to eyes and therefore ideal for putting around your eye area.
 
 SPF lip balm: https://www.amazon.com/gp/product/B09GQY5SNF/
 Apply this every time you apply sunscreen, and reapply more frequently than sunscreen as it will come off as you eat and drink. Lips are super vulnerable to skin cancer.
