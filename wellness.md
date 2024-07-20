@@ -101,6 +101,8 @@ Japanese sunscreen recommendation site if you want to do more research: https://
 
 Don't leave sunscreen in a hot car as this will ruin it. Pay attention to sunscreen expiration dates, although if you're letting your sunscreen get anywhere near its expiration date, you can rest assured you're not using enough sunscren.
 
+Ideally you should apply sunscreen to anywhere that will be exposed to the sun, but if that's too much, at least apply to your face and neck which is by far the most important (especially for preventing premature aging).
+
 ## Other sun protection stuff I recommend (the more you do, the better)
 
 Stay hydrated: in addition to being great for all of your other organs, being very hydrated is amazing for your skin, gives it greater resistance to sun damage, and helps it heal better from sun burn.
