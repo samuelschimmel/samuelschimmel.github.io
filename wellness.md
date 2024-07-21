@@ -154,9 +154,11 @@ Pat your skin dry with a soft towel. Do not rub your skin with a towel. If your 
 
 CBD lotion from a dispensary. I apply it everywhere below the neck after showering. Provides both moisturization and anti inflammation.
 
-Red light therapy: https://goalstogetglowing.com/2022/11/18/led-mask-omnilux-mens-review/
+LED red light therapy: https://goalstogetglowing.com/2022/11/18/led-mask-omnilux-mens-review/
 
 Never shave facial or body hair with a razor, always use an electric trimmer. Use aftershave lotion afterwards to reduce irritation.
+
+Never touch your face with unwashed hands. Apply skincare products as gently as possible; do not tug or pull on your skin as this creates wrinkles. Around your eyes where the skin is most delicate, gently pat products on using your ring finger instead of rubbing them in.
 
 Spot test more advanced products that aren't moisturizer. With new products I do just half of my face for at least a week. Niacin generally works for rosacea and made mine worse. Adalpene generally doesn't work for rosacea and also made mine worse
 
