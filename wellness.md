@@ -107,7 +107,10 @@ Ideally you should apply sunscreen to anywhere that will be exposed to the sun, 
 
 Stay hydrated: in addition to being great for all of your other organs, being very hydrated is amazing for your skin, gives it greater resistance to sun damage, and helps it heal better from sun burn.
 
-Sun hat: https://www.amazon.com/Hat-UPF-Protection-Waterproof-Fishing-Breathable/dp/B07DB2XYZ2/
+Masc sun hat option: https://www.amazon.com/Hat-UPF-Protection-Waterproof-Fishing-Breathable/dp/B07DB2XYZ2/
+
+Femme sun hat option: https://www.amazon.com/gp/product/B0BZZKFD79/
+
 I would strongly recommend wearing one of these every time you go outside when the sun is up. They provide tons of protection and there's literally no reason not to wear one. People have been wearing wide brim hats for sun protection for all of human history, and only recently have they fallen out of favor (at least in the US). They are more important now than ever due to the ongoing degradation of Earth's protective atmosphere. Going outside when the sun is up without a wide brim UPF sun hat (and sun glasses) should be denormalized and considered unsafe the same way riding a bicycle without a helmet.
 
 Sunglasses protect not only our eyes but the skin around our eyes which is extremely delicate and difficult to apply sunscreen to without getting it in your eyes.
